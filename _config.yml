@@ -3,7 +3,7 @@ title:               Hi :)
 tagline:             '.'
 description:         '.'
 url:                 'http://hyuunnn.github.io'
-baseurl:             ''
+baseurl:             '/'
 paginate:            5
 permalink:           pretty
 
