@@ -2,8 +2,8 @@
 title:               Hi :)
 tagline:             '.'
 description:         '.'
-url:                 'https://hyuunnn.github.io'
-baseurl:             '/'
+url:                 https://hyuunnn.github.io/
+baseurl:             ''
 paginate:            5
 permalink:           pretty
 
