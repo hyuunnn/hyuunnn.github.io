@@ -1,7 +1,7 @@
 # Setup
-title:               Hi :)
-tagline:             '.'
-description:         '.'
+title:               Blog
+tagline:             ''
+description:         ''
 url:                 https://hyuunnn.github.io/
 baseurl:             ''
 paginate:            5
@@ -10,8 +10,6 @@ permalink:           pretty
 # About/contact
 author:
   name:              Hyun Yi
-  #url:               https://twitter.com/mdo
-  #email:             markdotto@gmail.com
 
 # Gems
 plugins:
