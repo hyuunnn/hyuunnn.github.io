@@ -49,7 +49,7 @@ yara에서는 hash.md5(pe.rich_signature.clear_data) == "MD5 hash" 형식으로 
 
 XOR key 값이 다름에도 decode한 rich header 결과가 같을 수 있음
 
-<script src="https://gist.github.com/hy00un/a5a601b5bdae1504b4434f5ea7076f3f.js"></script>
+<script src="https://gist.github.com/hyuunnn/a5a601b5bdae1504b4434f5ea7076f3f.js"></script>
 
 ### 참고 자료
 
