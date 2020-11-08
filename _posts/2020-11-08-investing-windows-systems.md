@@ -3,7 +3,7 @@ layout: post
 title: "Investigating Windows Systems 책 후기"
 description: "Investigating Windows Systems - harlan carvey"
 date: 2020-11-08
-tags: [Forensic]
+tags: [Forensic, Book]
 ---
 
 * 분석 계획 만들기
@@ -26,7 +26,7 @@ tags: [Forensic]
 
 * 느낀점
     - 할렌 카비는 책에서 도구화의 중요성을 여러번 강조하고 있다.
-    - 실무를 경험한 적은 없지만 포렌식 대회에서 사용된 이미지를 분석할 때 각각의 도구를 활용하여 타임라인의 연결고리를 확인할 때 불편함이 존재하였다.
+    - 실무를 경험한 적은 없지만 포렌식 대회에서 사용된 이미지를 분석할 때 각각의 도구를 활용하여 타임라인의 연결고리를 확인할 때 불편함이 존재하였다. ~~(plaso라는 타임라인 도구가 있긴 함)~~
     - 하지만 할렌 카비가 만든 도구는 여러 곳에서 수집한 아티팩트들을 동일한 구조의 텍스트로 만들어서 타임라인을 한 번에 확인할 수 있었다. 
     - <a href="https://www.sleuthkit.org/">The Sleuth Kit</a> output 형식으로 제작하는 기능도 인상 깊었다. ~~(유연성?)~~
 
