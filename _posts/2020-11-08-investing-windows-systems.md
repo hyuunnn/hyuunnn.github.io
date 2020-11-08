@@ -31,9 +31,9 @@ tags: [Forensic]
     - <a href="https://www.sleuthkit.org/">The Sleuth Kit</a> output 형식을 사용하여 만든 것도 인상 깊었다. ~~(유연성?)~~
 
 * 도구
-    - https://github.com/keydet89/Tools
-    - https://github.com/keydet89/RegRipper3.0
-    - https://github.com/simsong/bulk_extractor
+    - <a href="https://github.com/keydet89/Tools">keydet89 Tools</a>
+    - <a href="https://github.com/keydet89/RegRipper3.0">RegRipper3.0</a>
+    - <a href="https://github.com/simsong/bulk_extractor">bulk_extractor</a>
 
 * 도구 사용법?
     - ftkparse.pl
