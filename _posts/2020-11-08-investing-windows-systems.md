@@ -21,7 +21,7 @@ tags: [Forensic]
     3. 악성 파일이 존재한다는 이유만으로 실행되었다고 볼 수 없음 -> 실행되었다는 증거를 확보해야함
 
 * 다양한 도구 활용 및 플러그인 개발
-    1. volatility에서 보여주지 못한 네트워크 통신을 bulk_extractor를 통하여 확인하는 등 도구마다 장단점 존재
+    1. volatility에서 보여주지 못한 네트워크 통신을 bulk_extractor를 통하여 확인하는 등 도구마다 장단점 존재 (<a href="https://www.datadigitally.com/2019/07/extracting-pcap-from-memory-image.html">bulk_extractor를 사용하여 메모리에서 pcap 추출</a>)
     2. 플러그인 개발, 툴 개발을 통하여 새로운 아티팩트 분석을 자동화 및 공유 가능
 
 * 느낀점
