@@ -33,6 +33,7 @@ tags: [Forensic]
 * 도구
     - <a href="https://github.com/keydet89/Tools">keydet89 Tools</a>
     - <a href="https://github.com/keydet89/RegRipper3.0">RegRipper3.0</a>
+    - <a href="https://metacpan.org/pod/Parse::Win32Registry">Parse::Win32Registry (perl)</a>
     - <a href="https://github.com/simsong/bulk_extractor">bulk_extractor</a>
 
 * 도구 사용법?
