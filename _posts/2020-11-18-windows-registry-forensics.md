@@ -77,19 +77,24 @@ RegRipper 플러그인 중에서 tln이 붙은 파일은 tsk 결과에 맞게 �
         * MRUListEx - 가장 최근에 접근한 데이터
 
 * 책에서 언급된 링크들
+    * https://github.com/keydet89/RegRipper3.0
     * https://docs.microsoft.com/en-us/previous-versions//cc750583(v=technet.10)
     * http://amnesia.gtisc.gatech.edu/~moyix/suzibandit.ltd.uk/MSc/
     * https://pogostick.net/~pnh/ntpasswd/
     * https://code.google.com/archive/p/mft2csv/wikis/SetRegTime.wiki, https://github.com/jschicht/SetRegTime
-    * https://github.com/libyal/winreg-kb/blob/master/documentation/SysCache.asciidoc
-    * https://www.swiftforensics.com/2013/12/amcachehve-in-windows-8-goldmine-for.html
+    * https://www.swiftforensics.com/search?q=amcache
     * https://www.fireeye.com/content/dam/fireeye-www/services/freeware/shimcache-whitepaper.pdf
     * http://sentinelchicken.com/data/JolantaThomassenDISSERTATION.pdf, https://github.com/keydet89/Tools/blob/master/source/regslack.pl
     * https://hexacorn.com/tools/3r.html
+    * https://www.mitec.cz/wrr.html
+    * https://ericzimmerman.github.io/
+    * https://github.com/libyal/libfwsi/blob/master/documentation/Windows%20Shell%20Item%20format.asciidoc
+    * https://github.com/libyal/winreg-kb/blob/master/documentation/Application%20Compatibility%20Cache%20key.asciidoc
+    * https://github.com/libyal/winreg-kb/blob/master/documentation/User%20Assist%20keys.asciidoc
+    * https://github.com/libyal/winreg-kb/blob/master/documentation/SysCache.asciidoc
 
 * 그 외 링크들
     * http://forensic.korea.ac.kr/DFWIKI/index.php/RegRipper
-    * https://github.com/keydet89/RegRipper3.0
     * https://github.com/msuhanov/yarp
     * https://github.com/Silv3rHorn/4n6_misc/blob/master/registryFlush.py
     * https://github.com/Silv3rHorn/autoripy
@@ -101,3 +106,5 @@ RegRipper 플러그인 중에서 tln이 붙은 파일은 tsk 결과에 맞게 �
     * http://index-of.co.uk/readings/readings_cf2.pdf
     * <a href="https://github.com/proneer/Slides/blob/master/Windows/(FP)%20%EB%A0%88%EC%A7%80%EC%8A%A4%ED%8A%B8%EB%A6%AC%20%ED%8F%AC%EB%A0%8C%EC%8B%9D%EA%B3%BC%20%EB%B3%B4%EC%95%88%20(Registry%20Forensics).pdf">(FP) 레지스트리 포렌식과 보안 (Registry Forensics).pdf</a>
     * http://index-of.co.uk/Forensic/A%20Forensic%20Analysis%20of%20the%20Windows%20Registry.pdf
+    * https://www.ssi.gouv.fr/uploads/2019/01/anssi-coriin_2019-analysis_amcache.pdf
+    * https://dfir.ru/2018/12/02/the-cit-database-and-the-syscache-hive/
