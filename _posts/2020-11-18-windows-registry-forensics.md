@@ -87,11 +87,11 @@ RegRipper 플러그인 중에서 tln이 붙은 파일은 tsk 결과에 맞게 �
     * http://sentinelchicken.com/data/JolantaThomassenDISSERTATION.pdf, https://github.com/keydet89/Tools/blob/master/source/regslack.pl
     * https://hexacorn.com/tools/3r.html
     * https://www.mitec.cz/wrr.html
-    * https://ericzimmerman.github.io/
-    * https://github.com/libyal/libfwsi/blob/master/documentation/Windows%20Shell%20Item%20format.asciidoc
-    * https://github.com/libyal/winreg-kb/blob/master/documentation/Application%20Compatibility%20Cache%20key.asciidoc
-    * https://github.com/libyal/winreg-kb/blob/master/documentation/User%20Assist%20keys.asciidoc
-    * https://github.com/libyal/winreg-kb/blob/master/documentation/SysCache.asciidoc
+    * https://ericzimmerman.github.io
+    * <a href="https://github.com/libyal/libfwsi/blob/master/documentation/Windows%20Shell%20Item%20format.asciidoc">Windows Shell Item format.asciidoc</a>
+    * <a href="https://github.com/libyal/winreg-kb/blob/master/documentation/Application%20Compatibility%20Cache%20key.asciidoc">AppCompatCache Key.asciidoc</a>
+    * <a href="https://github.com/libyal/winreg-kb/blob/master/documentation/User%20Assist%20keys.asciidoc">UserAssist keys.asciidoc</a>
+    * <a href="https://github.com/libyal/winreg-kb/blob/master/documentation/SysCache.asciidoc">SysCache.asciidoc</a>
 
 * 그 외 링크들
     * http://forensic.korea.ac.kr/DFWIKI/index.php/RegRipper
@@ -103,8 +103,8 @@ RegRipper 플러그인 중에서 tln이 붙은 파일은 tsk 결과에 맞게 �
     * https://medium.com/@stdout_/installing-regripper-v2-8-on-ubuntu-26dc8bc8a2d3
     * https://brettshavers.com/brett-s-blog/entry/regripper
 
-    * http://index-of.co.uk/readings/readings_cf2.pdf
+    * <a href="http://index-of.co.uk/readings/readings_cf2.pdf">readings_cf2.pdf</a>
     * <a href="https://github.com/proneer/Slides/blob/master/Windows/(FP)%20%EB%A0%88%EC%A7%80%EC%8A%A4%ED%8A%B8%EB%A6%AC%20%ED%8F%AC%EB%A0%8C%EC%8B%9D%EA%B3%BC%20%EB%B3%B4%EC%95%88%20(Registry%20Forensics).pdf">(FP) 레지스트리 포렌식과 보안 (Registry Forensics).pdf</a>
-    * http://index-of.co.uk/Forensic/A%20Forensic%20Analysis%20of%20the%20Windows%20Registry.pdf
-    * https://www.ssi.gouv.fr/uploads/2019/01/anssi-coriin_2019-analysis_amcache.pdf
-    * https://dfir.ru/2018/12/02/the-cit-database-and-the-syscache-hive/
+    * <a href="http://index-of.co.uk/Forensic/A%20Forensic%20Analysis%20of%20the%20Windows%20Registry.pdf">A Forensic Analysis of the Windows Registry.pdf</a>
+    * <a href="https://www.ssi.gouv.fr/uploads/2019/01/anssi-coriin_2019-analysis_amcache.pdf">anssi-coriin_2019-analysis_amcache.pdf</a>
+    * <a href="https://dfir.ru/2018/12/02/the-cit-database-and-the-syscache-hive/">the-cit-database-and-the-syscache-hive</a>
