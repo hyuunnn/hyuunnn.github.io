@@ -38,4 +38,4 @@ pppr를 이용해서 함수에 알맞는 값(file descriptor, address, size)을 
 
 이제 read함수를 실행하면 system함수를 실행하기 때문에 system 함수에 맞게 넣어주면 된다.
 
-<script src="https://gist.github.com/hy00un/fb2589628398e71fc5283c17c3bb457d.js"></script>
+<script src="https://gist.github.com/hyuunnn/fb2589628398e71fc5283c17c3bb457d.js"></script>
