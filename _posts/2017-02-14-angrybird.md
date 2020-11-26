@@ -21,4 +21,4 @@ ida의 기능인 그래프 뷰로 보면 정말 끝이 없을 정도로 많이 �
 
 ![angrybird](/assets/images/angrybird/angrybird-03.png)
 
-<script src="https://gist.github.com/hy00un/4bb3fb859e93f4c3025ef8d891096864.js"></script>
+<script src="https://gist.github.com/hyuunnn/4bb3fb859e93f4c3025ef8d891096864.js"></script>
