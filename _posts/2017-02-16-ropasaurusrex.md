@@ -3,7 +3,7 @@ layout: post
 title: "Plaid CTF 2013 ropasaurusrex"
 description: "ropasaurusrex"
 date: 2017-02-16
-tags: [ropasaurusrex, plaid ctf, pwnable]
+tags: [plaid ctf, pwnable]
 comments: true
 share: true
 ---

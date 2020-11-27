@@ -3,7 +3,7 @@ layout: post
 title: "protostar"
 description: "protostar"
 date: 2017-02-17
-tags: [protostar, pwnable]
+tags: [pwnable]
 comments: true
 share: true
 ---
