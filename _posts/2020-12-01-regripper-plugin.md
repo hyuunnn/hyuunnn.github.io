@@ -31,107 +31,107 @@ https://software.naver.com/software/softwareList.nhn
 ![regripper](/assets/images/regripper/1.png)
 
 * 반디집
-    - HKEY_CURRENT_USER\SOFTWARE\Bandizip 
+    - `HKEY_CURRENT_USER\SOFTWARE\Bandizip`
     - RecentArchive{number} 형태로 최근 실행 압축 파일 존재 -> 10개의 최근 기록을 저장하며(0~9), 최근 실행 파일이 위(0)로 간다
     - RecentFolder{number} 형태로 최근 접속 폴더 존재 - 압축 해제된 경로인지 테스트해야할듯 - 아직 모르겠다
 
 * 빵집
-    - HKEY_CURRENT_USER\SOFTWARE\BreadZip\4.0\Reopen
+    - `HKEY_CURRENT_USER\SOFTWARE\BreadZip\4.0\Reopen`
     - 0000~0009 까지 10개의 최근 기록을 저장하며, 최근 실행 파일이 위(0000)로 간다.
 
 * 알집
-    - HKEY_CURRENT_USER\SOFTWARE\ESTsoft\ALZip\MRUOpen
+    - `HKEY_CURRENT_USER\SOFTWARE\ESTsoft\ALZip\MRUOpen`
 
 * 알씨
-    - HKEY_CURRENT_USER\SOFTWARE\ESTsoft\ALSee - X
+    - `HKEY_CURRENT_USER\SOFTWARE\ESTsoft\ALSee` - X
 
 * 알pdf
-    - HKEY_CURRENT_USER\SOFTWARE\ESTsoft\ALPDF - X
+    - `HKEY_CURRENT_USER\SOFTWARE\ESTsoft\ALPDF` - X
 
 * 알캡처
-    - HKEY_CURRENT_USER\SOFTWARE\ESTsoft\ALCapture\Config - FilePath에서 마지막 저장 경로만 존재
+    - `HKEY_CURRENT_USER\SOFTWARE\ESTsoft\ALCapture\Config` - FilePath에서 마지막 저장 경로만 존재
 
 * 알송
-    - HKEY_CURRENT_USER\SOFTWARE\ESTsoft\ALSong LastFileDir에 가장 최근 실행 경로 존재
+    - `HKEY_CURRENT_USER\SOFTWARE\ESTsoft\ALSong` LastFileDir에 가장 최근 실행 경로 존재
 
 * 한글
-    - 2005 - HKU\{USER}\SOFTWARE\HNC\Hwp\6.5\RecentFile - file{number} 형태로 저장 (utf-16)
-    - 2007 - HKU\{USER}\SOFTWARE\HNC\Hwp\7.0\HwpFrame\RecentFile - file{number} 형태로 저장 (utf-16)
-    - 2010 - HKU\{USER\SOFTWARE\HNC\Hwp\8.0\HwpFrame\RecentFile - file{number} 형태로 저장 (utf-16)
-    - HKU\{USER}\SOFTWARE\HNC\Hwp\FindReplace\Find 찾기/바꾸기 목록 - 2005, 2007, 2010에서 동작하며 2014부터 추가되지 않는다.
-    - 2018 - HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\10.0\HwpFrame - X
-    - 2020 - HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\11.0\HwpFrame - X
+    - `2005 - HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\6.5\RecentFile` - file{number} 형태로 저장 (utf-16)
+    - `2007 - HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\7.0\HwpFrame\RecentFile` - file{number} 형태로 저장 (utf-16)
+    - `2010 - HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\8.0\HwpFrame\RecentFile` - file{number} 형태로 저장 (utf-16)
+    - `HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\FindReplace\Find 찾기/바꾸기 목록` - 2005, 2007, 2010에서 동작하며 2014부터 추가되지 않는다.
+    - `2018 - HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\10.0\HwpFrame` - X
+    - `2020 - HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\11.0\HwpFrame` - X
     
 * 한글 viewer
-    - HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\9.6
+    - `HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\9.6`
 
 * 팟플레이어
-    - HKEY_CURRENT_USER\SOFTWARE\DAUM\PotPlayer - X
-    - HKEY_CURRENT_USER\SOFTWARE\DAUM\PotPlayer64 - X
+    - `HKEY_CURRENT_USER\SOFTWARE\DAUM\PotPlayer` - X
+    - `HKEY_CURRENT_USER\SOFTWARE\DAUM\PotPlayer64` - X
 
 * 곰플레이어
-    - HKEY_CURRENT_USER\SOFTWARE\GRETECH\GOMPLAYER - X
+    - `HKEY_CURRENT_USER\SOFTWARE\GRETECH\GOMPLAYER` - X
 
 * 곰캠
-    - HKEY_CURRENT_USER\SOFTWARE\GOM\GOMCAM - X
+    - `HKEY_CURRENT_USER\SOFTWARE\GOM\GOMCAM` - X
 
 * 곰오디오
-    - HKEY_CURRENT_USER\SOFTWARE\GRETECH\GOMAudio - X
+    - `HKEY_CURRENT_USER\SOFTWARE\GRETECH\GOMAudio` - X
 
 * 곰녹음기
-    - HKEY_CURRENT_USER\SOFTWARE\GRETECH\GOMRecorder - X
+    - `HKEY_CURRENT_USER\SOFTWARE\GRETECH\GOMRecorder` - X
 
 * 곰인코더
-    - HKEY_CURRENT_USER\SOFTWARE\GRETECH\GOMEncoder64 - X
+    - `HKEY_CURRENT_USER\SOFTWARE\GRETECH\GOMEncoder64` - X
 
 * kmplayer x64
-    - HKEY_CURRENT_USER\SOFTWARE\KMPlayer 64X\KMPlayer 64X\Recent File List - File{number} 형태로 존재
+    - `HKEY_CURRENT_USER\SOFTWARE\KMPlayer 64X\KMPlayer 64X\Recent File List` - File{number} 형태로 존재
 
 * kmplayer
-    - 컴퓨터\HKEY_CURRENT_USER\SOFTWARE\KMPlayer\KMP3.0 - LastFileName, LastFileTitle로만 남아있음
+    - `HKEY_CURRENT_USER\SOFTWARE\KMPlayer\KMP3.0` - LastFileName, LastFileTitle로만 남아있음
 
 * 카카오톡
-    - 컴퓨터\HKEY_CURRENT_USER\SOFTWARE\Kakao\KakaoTalk\Update - 가장 최근 업데이트 시간이 남아있음
+    - `HKEY_CURRENT_USER\SOFTWARE\Kakao\KakaoTalk\Update` - 가장 최근 업데이트 시간이 남아있음
     - 적어도 이 시간 이후에 카톡에 접근했다는 추정 가능..?
-    - 컴퓨터\HKEY_CURRENT_USER\SOFTWARE\Kakao\KakaoTalk\UserAccounts - 접속 계정 이름 존재
+    - `HKEY_CURRENT_USER\SOFTWARE\Kakao\KakaoTalk\UserAccounts` - 접속 계정 이름 존재
 
 * ocam
     - X
 
 * ezpdf
-    - HKEY_CURRENT_USER\SOFTWARE\UNIDOCS\ezPDF Editor3.0\Recent File List
-    - HKEY_CURRENT_USER\SOFTWARE\UNIDOCS\ezPDF Editor3.0\OpenFileList
+    - `HKEY_CURRENT_USER\SOFTWARE\UNIDOCS\ezPDF Editor3.0\Recent File List`
+    - `HKEY_CURRENT_USER\SOFTWARE\UNIDOCS\ezPDF Editor3.0\OpenFileList`
 
 * polaris office
-    - HKEY_CURRENT_USER\SOFTWARE\Infraware\PolarisOffice - X
+    - `HKEY_CURRENT_USER\SOFTWARE\Infraware\PolarisOffice` - X
 
 * libre office
     - X
 
 * Enterprice Architect
-    - HKEY_CURRENT_USER\SOFTWARE\Sparx Systems\EA400\EA\RecentFiles
+    - `HKEY_CURRENT_USER\SOFTWARE\Sparx Systems\EA400\EA\RecentFiles`
 
 * sqlitebrowser
-    - HKEY_CURRENT_USER\SOFTWARE\sqlitebrowser\sqlitebrowser\General\RecentFileList
+    - `HKEY_CURRENT_USER\SOFTWARE\sqlitebrowser\sqlitebrowser\General\RecentFileList`
 
 * foxit reader
-    - HKEY_CURRENT_USER\SOFTWARE\Foxit Software\Foxit Reader 10.0\MRU\File MRU
-    - HKEY_CURRENT_USER\SOFTWARE\Foxit Software\Foxit Reader 10.0\MRU\Place MRU
-    - HKEY_CURRENT_USER\SOFTWARE\Foxit Software\Foxit Reader 10.0\CommentPanel\Filter\Record {number}\File
+    - `HKEY_CURRENT_USER\SOFTWARE\Foxit Software\Foxit Reader 10.0\MRU\File MRU`
+    - `HKEY_CURRENT_USER\SOFTWARE\Foxit Software\Foxit Reader 10.0\MRU\Place MRU`
+    - `HKEY_CURRENT_USER\SOFTWARE\Foxit Software\Foxit Reader 10.0\CommentPanel\Filter\Record {number}\File`
     - https://github.com/forensenellanebbia/My-RegRipper-plugins/blob/master/foxitrdr.pl
 
 * 꿀뷰
-    - 컴퓨터\HKEY_CURRENT_USER\SOFTWARE\Honeyview - RecentFolder{number} 0~9
-    - 반디집과 다르게 파일 정보는 저장하지 않음
+    - `HKEY_CURRENT_USER\SOFTWARE\Honeyview` - RecentFolder{number} 0~9
+    - 반디집 소프트웨어를 만든 회사인데 반디집에는 파일 정보가 있지만, 꿀뷰에는 남아있지 않음
 
 * photoscape
-    - 컴퓨터\HKEY_CURRENT_USER\SOFTWARE\Mooii\PhotoScape - X
+    - `HKEY_CURRENT_USER\SOFTWARE\Mooii\PhotoScape` - X
 
 * 고클린
-    - 컴퓨터\HKEY_CURRENT_USER\SOFTWARE\GoClean\GoClean\GoClean - RecentExecTime
+    - `HKEY_CURRENT_USER\SOFTWARE\GoClean\GoClean\GoClean` - RecentExecTime
 
 * notepad
-    - 컴퓨터\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Notepad - 가장 최근 검색 기록 존재, replace 문자 존재
+    - `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Notepad` - 가장 최근 검색 기록 존재, replace 문자 존재
 
 * 링크
     * https://github.com/keydet89/RegRipper3.0
