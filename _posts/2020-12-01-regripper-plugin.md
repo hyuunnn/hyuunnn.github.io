@@ -28,7 +28,7 @@ https://software.naver.com/software/softwareList.nhn
 
 그리고 만들어지지 않은 외국 프로그램도 일부 추가하였다.
 
-![regripper](/assets/images/regripper/1.png)
+![regripper](/assets/images/regripper/1.PNG)
 
 * 반디집
     - `HKEY_CURRENT_USER\SOFTWARE\Bandizip`
