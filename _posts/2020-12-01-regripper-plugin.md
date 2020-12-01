@@ -135,6 +135,7 @@ https://software.naver.com/software/softwareList.nhn
     - `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Notepad` - 가장 최근 검색 기록 존재, replace 문자 존재
 
 * TODO
+    * https://github.com/hyuunnn/RegRipper_plugins
     * 현재 최신 버전만 구현되어 있음 -> 버전별로 바뀌는 경로 등등 확인해보기
 
 * 링크
