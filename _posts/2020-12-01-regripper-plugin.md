@@ -55,6 +55,7 @@ https://software.naver.com/software/softwareList.nhn
     - `HKEY_CURRENT_USER\SOFTWARE\ESTsoft\ALSong` LastFileDir에 가장 최근 실행 경로 존재
 
 * 한글
+    - * <a href="https://github.com/proneer/Slides/blob/master/Windows/(FP)%20%EB%A0%88%EC%A7%80%EC%8A%A4%ED%8A%B8%EB%A6%AC%20%ED%8F%AC%EB%A0%8C%EC%8B%9D%EA%B3%BC%20%EB%B3%B4%EC%95%88%20(Registry%20Forensics).pdf">참고 자료 - (FP) 레지스트리 포렌식과 보안 (Registry Forensics).pdf</a>
     - `2005 - HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\6.5\RecentFile` - file{number} 형태로 저장 (utf-16)
     - `2007 - HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\7.0\HwpFrame\RecentFile` - file{number} 형태로 저장 (utf-16)
     - `2010 - HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\8.0\HwpFrame\RecentFile` - file{number} 형태로 저장 (utf-16)
@@ -132,6 +133,9 @@ https://software.naver.com/software/softwareList.nhn
 
 * notepad
     - `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Notepad` - 가장 최근 검색 기록 존재, replace 문자 존재
+
+* TODO
+    * 현재 최신 버전만 구현되어 있음 -> 버전별로 바뀌는 경로 등등 확인해보기
 
 * 링크
     * https://github.com/keydet89/RegRipper3.0
