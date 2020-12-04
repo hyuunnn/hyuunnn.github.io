@@ -34,7 +34,7 @@ ILEAPP은 IOS 분석 도구이며, ALEAPP은 Android 분석 도구이다.
 
 ![ILEAPP](/assets/images/ILEAPP-ALEAPP/ILEAPP-02.png)
 
-카카오톡은 국내에서만 쓰이는 어플이기 때문에 ILEAPP, ALEAPP에 기능을 추가해서 사용하면 괜찮겠다는 생각이 들었다.
+카카오톡은 국내에서만 쓰이는 어플이기 때문에 ILEAPP, ALEAPP에 기능을 추가해서 사용하면 괜찮겠다는 생각이 들었다. (<a href="https://github.com/dfrc-korea/carpe/tree/master/modules/kakaotalk_mobile_decrypt">carpe source code (github)</a>)
 
 * 링크
     * https://www.youtube.com/c/AlexisBrignoni/videos
