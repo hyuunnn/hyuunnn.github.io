@@ -37,3 +37,4 @@ vnoremap <C-c> "zy:call writefile(getreg('z', 1, 1), "/tmp/vimbuffer") \| !cat /
     * https://github.com/search?o=desc&q=dotfiles&s=stars&type=Repositories
     * https://github.com/webpro/awesome-dotfiles
     * https://www.youtube.com/channel/UCpY9pb4-S0PwCJBp2r6nOvg
+    * https://edward0im.github.io/technology/2020/09/17/vim/ 👍👍
