@@ -14,7 +14,7 @@ https://www.codentalks.com/t/topic/3687/5
 vnoremap <C-c> "zy:call writefile(getreg('z', 1, 1), "/tmp/vimbuffer") \| !cat /tmp/vimbuffer \| /mnt/c/Windows/System32/clip.exe <CR><CR>
 ```
 
-.vimrc 외에도 다양한 개발자들의 dotfiles를 보면서 어떻게 세팅했는지 공부해보고 직접 커스터마이징 해봐야겠다. ~~(어중간하게 알고 있는 bash script도 공부 해야겠다.)~~
+.vimrc 외에도 (tmux 등등) 다양한 개발자들의 dotfiles를 보면서 어떻게 세팅했는지 공부해보고 직접 커스터마이징 해봐야겠다. ~~(어중간하게 알고 있는 bash script도 공부 해야겠다.)~~
 
 * 링크
     * https://www.codentalks.com/t/topic/3687/5
@@ -38,3 +38,4 @@ vnoremap <C-c> "zy:call writefile(getreg('z', 1, 1), "/tmp/vimbuffer") \| !cat /
     * https://github.com/webpro/awesome-dotfiles
     * https://www.youtube.com/channel/UCpY9pb4-S0PwCJBp2r6nOvg
     * https://edward0im.github.io/technology/2020/09/17/vim/ 👍👍
+    * https://edward0im.github.io/technology/2020/09/28/tmux/ 👍👍
