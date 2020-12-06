@@ -67,8 +67,8 @@ https://software.naver.com/software/softwareList.nhn
     - `HKEY_CURRENT_USER\SOFTWARE\HNC\Hwp\9.6`
 
 * 팟플레이어
-    - `HKEY_CURRENT_USER\SOFTWARE\DAUM\PotPlayer` - X
-    - `HKEY_CURRENT_USER\SOFTWARE\DAUM\PotPlayer64` - X
+    - `HKEY_CURRENT_USER\SOFTWARE\DAUM\PotPlayer\SimpleOpen` - DefPath{number}Child 형태로 저장 (실행한 영상의 path)
+    - `HKEY_CURRENT_USER\SOFTWARE\DAUM\PotPlayer64\SimpleOpen` - DefPath{number}Child 형태로 저장 (실행한 영상의 path)
 
 * 곰플레이어
     - `HKEY_CURRENT_USER\SOFTWARE\GRETECH\GOMPLAYER` - X
@@ -91,6 +91,9 @@ https://software.naver.com/software/softwareList.nhn
 * kmplayer
     - `HKEY_CURRENT_USER\SOFTWARE\KMPlayer\KMP3.0` - LastFileName, LastFileTitle로만 남아있음
 
+* winSCP
+    - `HKEY_CURRENT_USER\SOFTWARE\Martin Prikryl\WinSCP 2` - 설치 시간, 연결 실패 시간, path 등등 남아있음
+
 * 카카오톡
     - `HKEY_CURRENT_USER\SOFTWARE\Kakao\KakaoTalk\Update` - 가장 최근 업데이트 시간이 남아있음
     - 적어도 이 시간 이후에 카톡에 접근했다는 추정 가능..?
@@ -98,6 +101,24 @@ https://software.naver.com/software/softwareList.nhn
 
 * ocam
     - X
+
+* GIMP
+    - X
+
+* 1gram player
+    - `HKEY_CURRENT_USER\SOFTWARE\1gram` - X
+
+* Cornplayer
+    - `HKEY_CURRENT_USER\SOFTWARE\CORNPlayer` - X
+
+* Mplayer
+    - X
+
+* RealPlayer
+    - `HKEY_CURRENT_USER\SOFTWARE\RealNetworks\RealPlayer` - MostRecentClips{number} 형태로 최근 실행 영상 기록, InstallDate LastLoginTime LastOpenFileDir 등 시간, path 기록
+
+* JetAudio
+    - `HKEY_CURRENT_USER\SOFTWARE\COWON\Jet-Audio` - X
 
 * ezpdf
     - `HKEY_CURRENT_USER\SOFTWARE\UNIDOCS\ezPDF Editor3.0\Recent File List`
