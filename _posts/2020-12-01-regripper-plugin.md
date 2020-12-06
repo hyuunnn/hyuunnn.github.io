@@ -158,6 +158,7 @@ https://software.naver.com/software/softwareList.nhn
 * TODO
     * https://github.com/hyuunnn/RegRipper_plugins
     * 현재 최신 버전만 구현되어 있음 -> 버전별로 바뀌는 경로 등등 확인해보기
+    * 캐드 관련 프로그램도 찾아보기
 
 * 링크
     * https://github.com/keydet89/RegRipper3.0
