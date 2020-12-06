@@ -115,8 +115,7 @@ https://software.naver.com/software/softwareList.nhn
     - X
 
 * RealPlayer
-    - `HKEY_CURRENT_USER\SOFTWARE\RealNetworks\RealPlayer` - MostRecentClips{number} 형태로 최근 실행 영상 기록, InstallDate LastLoginTime LastOpenFileDir 등 시간, path 기록
-    - regripper 테스트해보기 (NTUSER.dat에 데이터가 아직 안남음)
+    - `HKEY_CURRENT_USER\SOFTWARE\RealNetworks\RealPlayer` - MostRecentClips{number} 형태로 최근 실행 영상 기록 (fullpath 포함), InstallDate LastLoginTime LastOpenFileDir 등 시간, path 기록
 
 * JetAudio
     - `HKEY_CURRENT_USER\SOFTWARE\COWON\Jet-Audio` - X
