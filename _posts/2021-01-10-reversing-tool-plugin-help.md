@@ -9,6 +9,7 @@ tags: [IDA, IDAPython, cutter, binaryninja, Plugin]
 IDAPython 사용에 도움을 주는 플러그인을 직접 사용해보고 정리하였다.
 
 IDA를 통해 설치되는 python의 pip 버전이 매우 낮으므로 업그레이드를 해야한다. (구버전)
+
 ``C:\\python27-x64\\python.exe -m pip install --upgrade pip``
 
 IDA 7.5 기준 PC에 설치된 python3 경로를 지정하여 사용할 수 있으며, 위 과정은 생략해도 된다.
@@ -71,6 +72,7 @@ IDA 7.5 기준 PC에 설치된 python3 경로를 지정하여 사용할 수 있�
 <a href="http://cutter.re/">cutter</a>는 IDA와 다르게 오픈소스이며, radare2를 활용한다.
 
 python 3.6.8 버전이 python36.dll로 내장되어 있어서 동일한 python 3.6을 PC에 설치 후 아래 명령어를 사용하여 설치
+
 ``python -m pip install -I -t C:\Cutter-v1.12.0-x64.Windows\python36\site-packages jupyter``
 
 * <a href="https://github.com/rizinorg/cutter-jupyter">cutter-jupyter</a>
