@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "IDAPython 사용에 도움을 주는 Plugin 정리"
+title: "바이너리 분석 도구 Plugin 개발에 도움을 주는 것들"
 description: ""
-date: 2020-11-26
+date: 2021-01-10
 tags: [IDA, IDAPython, Plugin]
 ---
 
@@ -62,3 +62,8 @@ IDA를 통해 설치되는 python의 pip 버전이 매우 낮으므로 업그레
 
 * Other
     * https://github.com/onethawt/idaplugins-list
+
+* http://cutter.re/
+    * python 3.6 버전이 내장되어 있음
+    * ``python -m pip install -I -t C:\Cutter-v1.12.0-x64.Windows\python36\site-packages jupyter``
+    * <a href="https://github.com/rizinorg/cutter-jupyter">cutter-jupyter</a>에서 cutter 플러그인 경로에 넣으면 끝
