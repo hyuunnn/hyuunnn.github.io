@@ -3,14 +3,15 @@ layout: post
 title: "바이너리 분석 도구 Plugin 개발에 도움을 주는 것들"
 description: ""
 date: 2021-01-10
-tags: [IDA, IDAPython, Plugin]
+tags: [IDA, IDAPython, cutter, binaryninja, Plugin]
 ---
 
 IDAPython 사용에 도움을 주는 플러그인을 직접 사용해보고 정리하였다.
 
-IDA를 통해 설치되는 python의 pip 버전이 매우 낮으므로 업그레이드를 해야한다.
-
+IDA를 통해 설치되는 python의 pip 버전이 매우 낮으므로 업그레이드를 해야한다. (구버전)
 ``C:\\python27-x64\\python.exe -m pip install --upgrade pip``
+
+IDA 7.5 기준 PC에 설치된 python3 경로를 지정하여 사용할 수 있으며, 위 과정은 생략해도 된다.
 
 * <a href="https://github.com/eset/ipyida">ipyida</a>
     * IDA에 사용되는 python 경로에서 ``python setup.py build, python setup.py install``
@@ -50,6 +51,9 @@ IDA를 통해 설치되는 python의 pip 버전이 매우 낮으므로 업그레
 * <a href="https://github.com/a1ext/labeless">labeless</a>
     * ida에서 구한 값을 __extern__으로 넘겨서 ollydbg, x64dbg 파이썬 기능으로 작업할 수 있다.
 
+* <a href="https://github.com/idapython/src">idapython-src</a>
+    * idapython 구현 코드를 볼 수 있으며, example 코드도 다양하게 있다.
+
 * <a href="https://github.com/Jinmo/ifred">ifred</a>
     * 해당 주제와는 조금 다른 플러그인이지만 적어봤다.
     * IDA에서 제공하는 모든 기능이 모여있으며, 사용이 가능하다. `Ctrl+Shift+P`
@@ -63,7 +67,25 @@ IDA를 통해 설치되는 python의 pip 버전이 매우 낮으므로 업그레
 * Other
     * https://github.com/onethawt/idaplugins-list
 
-* http://cutter.re/
-    * python 3.6 버전이 내장되어 있음 - python36.dll만 존재하므로 호환성을 위해서 동일한 python 3.6을 PC에 설치 후 아래 명령어를 사용하여 설치
-    * ``python -m pip install -I -t C:\Cutter-v1.12.0-x64.Windows\python36\site-packages jupyter``
-    * <a href="https://github.com/rizinorg/cutter-jupyter">cutter-jupyter</a>에서 cutter 플러그인 경로에 넣으면 끝
+
+<a href="http://cutter.re/">cutter</a>는 IDA와 다르게 오픈소스이며, radare2를 활용한다.
+
+python 3.6.8 버전이 python36.dll로 내장되어 있어서 동일한 python 3.6을 PC에 설치 후 아래 명령어를 사용하여 설치
+``python -m pip install -I -t C:\Cutter-v1.12.0-x64.Windows\python36\site-packages jupyter``
+
+* <a href="https://github.com/rizinorg/cutter-jupyter">cutter-jupyter</a>
+    * 위 플러그인을 설치하여 cutter에서 jupyter를 사용할 수 있다. (위와 같이 jupyter 설치 후 플러그인 경로에 파일 넣기)
+
+* <a href="https://cutter.re/docs/plugins.html">cutter docs</a>
+    * Plugin 개발 관련 문서가 잘 정리되어 있음
+
+* <a href="https://github.com/radareorg/cutter-plugins">cutter-plugins</a>
+    * cutter plugin 정리
+
+<a href="https://binary.ninja/">BinaryNinja</a>도 위 도구들과 같은 유형의 분석 도구임
+
+* https://api.binary.ninja/
+* https://github.com/Vector35/binaryninja-api
+* https://github.com/Vector35/sample_plugin
+* https://github.com/Vector35/community-plugins
+* https://github.com/Vector35/official-plugins
