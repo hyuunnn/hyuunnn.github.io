@@ -64,6 +64,6 @@ IDA를 통해 설치되는 python의 pip 버전이 매우 낮으므로 업그레
     * https://github.com/onethawt/idaplugins-list
 
 * http://cutter.re/
-    * python 3.6 버전이 내장되어 있음
+    * python 3.6 버전이 내장되어 있음 - python36.dll만 존재하므로 호환성을 위해서 동일한 python 3.6을 PC에 설치 후 아래 명령어를 사용하여 설치
     * ``python -m pip install -I -t C:\Cutter-v1.12.0-x64.Windows\python36\site-packages jupyter``
     * <a href="https://github.com/rizinorg/cutter-jupyter">cutter-jupyter</a>에서 cutter 플러그인 경로에 넣으면 끝
