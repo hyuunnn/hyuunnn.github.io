@@ -14,6 +14,14 @@ IDA를 통해 설치되는 python의 pip 버전이 매우 낮으므로 업그레
 
 IDA 7.5 기준 PC에 설치된 python3 경로를 지정하여 사용할 수 있으며, 위 과정은 생략해도 된다.
 
+* IDAPython cheatsheet
+    * https://github.com/inforion/idapython-cheatsheet
+    * https://github.com/Inndy/idapython-cheatsheet
+    * https://gist.github.com/icecr4ck/7a7af3277787c794c66965517199fc9c
+    * https://gist.github.com/icecr4ck/9dea9d1de052f0b2b417abf0046cc0f6
+    * https://gist.github.com/icecr4ck/6c744d489efbb07a32bb22e8a3c748e3
+    * https://gist.github.com/icecr4ck/ec39ddedf3f1948fdf7873094561739a
+
 * <a href="https://github.com/eset/ipyida">ipyida</a>
     * IDA에 사용되는 python 경로에서 ``python setup.py build, python setup.py install``
     * 잘 동작하지만 외부 프로그램(jupyter)으로 사용할 수 없는 것 같다. IDA 내부에서 ipython으로 사용 가능하다.
