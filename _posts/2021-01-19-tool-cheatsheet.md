@@ -8,11 +8,19 @@ tags: []
 
 https://ghidra-sre.org/CheatSheet.html
 
+https://github.com/JeremyBlackthorne/Ghidra-Keybindings
+
+https://github.com/HackOvert/GhidraSnippets
+
+https://github.com/enovella/ida2ghidra-kb
+
 https://malwareunicorn.org/workshops/idacheatsheet.html
 
 https://defkey.com/ida-pro-shortcuts
 
 https://github.com/schlafwandler/x64dbgpy_cheat_sheet
+
+https://github.com/gipi/low-level - <a href="https://low-level.readthedocs.io/en/latest/">readthedocs</a>
 
 <a href="/assets/files/IDA Pro Shortcuts.pdf">IDA Pro Shortcuts.pdf - Datarescue</a>
 
