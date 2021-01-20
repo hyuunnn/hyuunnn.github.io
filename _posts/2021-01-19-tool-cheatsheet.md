@@ -18,6 +18,8 @@ https://malwareunicorn.org/workshops/idacheatsheet.html
 
 https://defkey.com/ida-pro-shortcuts
 
+https://github.com/inforion/idapython-cheatsheet
+
 https://github.com/schlafwandler/x64dbgpy_cheat_sheet
 
 https://github.com/gipi/low-level - <a href="https://low-level.readthedocs.io/en/latest/">readthedocs</a>
