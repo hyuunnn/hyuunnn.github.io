@@ -22,7 +22,7 @@ http://ericzimmerman.github.io/ 에서 RegistryExplorer 다운로드 후 Registr
 
 그리고 위 사진과 같이 Registry와 RegistryPluginBase를 import 해야하는데,
 
-참조에서 dll 파일을 추가하면 된다. (Registry는 없는 경우, nuget에서 설치)
+참조에서 빌드 후 dll 파일을 추가하면 된다. (또는 Registry, RegistryPluginBase를 nuget에서 설치)
 
 ![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/1.png)
 
