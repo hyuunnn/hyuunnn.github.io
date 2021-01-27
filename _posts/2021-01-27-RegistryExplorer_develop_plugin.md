@@ -14,7 +14,7 @@ http://ericzimmerman.github.io/ 에서 RegistryExplorer 다운로드 후 Registr
 
 데이터를 출력하는 cs파일과 Registry 데이터 추출에 사용되는 cs파일 2개를 만들어야 한다.
 
-보고서에서는 데이터 출력에 사용되는 파일을 ValuesOut.cs으로 사용하는데, github에 있는 파일명들을 보면 꼭 그렇진 않음.
+manual에서는 데이터 출력에 사용되는 파일을 ValuesOut.cs으로 사용하는데, github에 있는 파일명들을 보면 꼭 그렇진 않음.
 
 아무튼 ValuesOut.cs는 IValueOut, 추출 파일은 IRegistryPluginGrid 인터페이스를 구현하면 된다.
 
@@ -22,7 +22,7 @@ http://ericzimmerman.github.io/ 에서 RegistryExplorer 다운로드 후 Registr
 
 그리고 위 사진과 같이 Registry와 RegistryPluginBase를 import 해야하는데,
 
-참조에서 빌드 후 dll 파일을 추가하면 된다. 
+빌드 후 참조에서 dll 파일을 추가하면 된다. 
 
 ![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/3.png)
 
@@ -30,10 +30,12 @@ http://ericzimmerman.github.io/ 에서 RegistryExplorer 다운로드 후 Registr
 
 ![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/1.png)
 
-ValuesOut.cs에서 생성자로 초기화한 변수들이 테이블명으로 지정된다.
+ValuesOut.cs에서 생성자로 초기화한 변수명들이 테이블명으로 지정된다.
 
 ![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/2.png)
 
 테이블명에서 `Serial Number`가 중간에 띄어쓰기 되어있는데 변수명의 대문자를 기준으로 띄어쓰기가 되는 것 같다.
 
 그리고 IRegistryPluginGrid 인터페이스에 있는 ProcessValues의 return 값이 테이블의 데이터로 들어간다.
+
+return 값은 ``var l = new List<ValuesOut>();``으로 생성된 객체 (for loop를 돌면서 ``l.Add(ff)``) 
