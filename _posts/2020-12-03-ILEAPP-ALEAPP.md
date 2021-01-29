@@ -18,7 +18,7 @@ python aleappGUI.py
 * Sample Image
     * Android 10 Image : <a href="https://digitalcorpora.org/corpora/cell-phones/android-10">digitalcorpora Android 10</a>
     * Android 11 Image : <a href="https://thebinaryhick.blog/2020/10/07/new-android-image-available-this-one-goes-to-11/">thebinaryhick Android 11</a>
-    * IOS 13 Image : <a href="https://digitalcorpora.org/corpora/cell-phones/ios-13">digitalcorpora IOS13 13</a>
+    * IOS 13 Image : <a href="https://digitalcorpora.org/corpora/cell-phones/ios-13">digitalcorpora IOS 13</a>
 
 ![ILEAPP](/assets/images/ILEAPP-ALEAPP/ALEAPP-01.png)
 
