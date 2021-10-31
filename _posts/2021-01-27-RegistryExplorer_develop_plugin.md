@@ -39,3 +39,13 @@ ValuesOut.cs에서 생성자로 초기화한 변수명들이 테이블명으로 
 그리고 IRegistryPluginGrid 인터페이스에 있는 ProcessValues의 return 값이 테이블의 데이터로 들어간다.
 
 return 값은 ``var l = new List<ValuesOut>();``으로 생성된 객체 (for loop를 돌면서 ``l.Add(ff)``) 
+
+![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/4.png)
+
+최근에 플러그인을 개발하다가 알게 된건데 같은 경로에 여러 개의 플러그인을 사용할 수 있다.
+
+위 사진은 이전에 만들어진 DHCPNetworkHints (Win7에서 사용되는 Artifact로 추정) 
+
+그리고 이번에 내가 만들은 NetworkSettings 플러그인이다. 
+
+사진을 보면 2개의 플러그인이 모두 활성화된 것을 볼 수 있다.
