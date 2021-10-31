@@ -22,6 +22,14 @@ Plugin 목록을 보면 EZ-Tools들은 모두 구현되어 있지만, 이 외에
 
 Timeline Explorer의 심플한 GUI와 기능으로 다른 도구의 output을 분석할 수 있게 만들면 좋겠다는 생각이 들어서 시작하게 되었다.
 
+![TLEFilePlugins](/assets/images/TLEFilePlugins/4.png)
+
+아래 결과는 TLEFilePlugin에 기본적으로 적용되는 TLEFileGenericCsv이며, 위의 결과는 TLEFileMisc이다.
+
+TLEFileMisc를 사용하여 결과가 조금 다르게 나온 것을 확인할 수 있다.
+
+TLEFilePlugin은 csv의 header를 커스터마이징하여 보여주거나 Color를 입혀서 시각적인 분석을 효율적으로 할 수 있게 하는 등 입맛에 맞게 코드를 작성하여 컴파일한 DLL 파일을 Plugins 폴더에 넣어주면 된다. (<a href="https://aboutdfir.com/toolsandartifacts/windows/timeline-explorer/2/">Link</a>)
+
 ![TLEFilePlugins](/assets/images/TLEFilePlugins/1.png)
 
 Registry Explorer Plugin 만들 때처럼 DLL 파일을 생성해야하기 때문에 클래스 라이브러리로 프로젝트를 생성한다.
