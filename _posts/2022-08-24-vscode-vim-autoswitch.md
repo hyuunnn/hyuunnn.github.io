@@ -30,6 +30,8 @@ Vim Extension에서 지원하는 vimrc 기능은 기본적인 set 설정도 인�
 
 <a href="https://johngrib.github.io/blog/2017/05/04/input-source/">Vim 사용시 한/영 전환 문제 해결하기</a>
 
-<a href="https://johngrib.github.io/wiki/hammerspoon/">johngrib 블로그 hammerspoon</a>
+<a href="https://johngrib.github.io/wiki/hammerspoon/">johngrib 블로그 - hammerspoon tags</a>
 
 <a href="https://github.com/johngrib/simple_vim_guide/blob/master/md/with_korean.md">johngrib - simple_vim_guide</a>
+
+<a href="https://twitter.com/John_Grib/status/1534909491581308929">johngrib 트위터 - hammerspoon</a>
