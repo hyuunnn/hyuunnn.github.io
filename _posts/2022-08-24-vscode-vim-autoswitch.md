@@ -22,6 +22,8 @@ Vim Extension에서 지원하는 vimrc 기능은 기본적인 set 설정도 인�
 
 나는 AutoHotKey를 사용하였고, 이번 기회에 AutoHotKey를 공부해보고 싶다는 생각이 들었다.
 
+나중에 Intellij나 Android Studio에 IdeaVim을 깔아서 사용할 때도 If문에 WinActive 함수를 사용해서 특정 프로그램을 사용할 때만 실행되게 하면 되겠다.
+
 다른 사람들이 hammerspoon으로 구현한 기능들을 AutoHotKey에서 구현할 수 있는지 고민해보고 어떤 한계가 있는지도 알아보려고 한다.
 
 참고사이트
