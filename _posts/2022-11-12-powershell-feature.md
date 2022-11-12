@@ -103,11 +103,11 @@ $b = $animals | Get-Member -MemberType Property
 $b.getType().fullname
 $b[0]
 
-# IsPublic IsSerial Name                                     BaseType
-# -------- -------- ----                                     --------
-# True     True     Object[]                                 System.Array
+# IsPublic IsSerial Name       BaseType
+# -------- -------- ----       --------
+# True     True     Object[]   System.Array
 # dog bat
-# True     True     Object[]                                 System.Array
+# True     True     Object[]   System.Array
 # cat bat
 # System.Object[]
 
