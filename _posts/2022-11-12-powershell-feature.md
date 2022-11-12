@@ -159,8 +159,6 @@ plusNumber2 1 2
 
 단순한 명령어, 언어 설명이 아닌 상황을 가정하고 실습해보는게 재미있었다. 과제 마감 시간 때문에 정독은 못했는데, 종강하고 다시 읽어봐야겠다. 
 
-
-
 두 번째 책은 한국에서 유일하게 작성된 책이다보니 읽어봐야겠다는 생각을 가지고 있다.
 
 <a href="https://github.com/PoshCode/PowerShellPracticeAndStyle">PowershellPracticeAndStyle</a> Powershell 코드 스타일과 관련 예제들이 있다.
