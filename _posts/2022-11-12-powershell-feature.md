@@ -161,7 +161,7 @@ plusNumber2 1 2
 
 <a href="https://github.com/PoshCode/PowerShellPracticeAndStyle">PowershellPracticeAndStyle</a> Powershell 코드 스타일과 관련 예제들이 있다.
 
-<a href="https://learn.microsoft.com/ko-kr/powershell/">Microsoft Powershell 설명서</a> Microsoft 공식 사이트에 있는 Powershell 튜토리얼 사이트이다.
+<a href="https://learn.microsoft.com/ko-kr/powershell/">Microsoft Powershell 설명서</a> Microsoft 공식 사이트에 있는 Powershell 튜토리얼이다.
 
 ### 앞으로 계획 중인 아이디어?
 
