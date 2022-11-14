@@ -165,6 +165,8 @@ plusNumber2 1 2
 
 <a href="https://learn.microsoft.com/ko-kr/powershell/">Microsoft Powershell 설명서</a> Microsoft 공식 사이트에 있는 Powershell 튜토리얼이다.
 
+<a href="https://xainey.github.io/2016/powershell-classes-and-concepts/">powershell-classes-and-concepts</a>
+
 ### 앞으로 계획 중인 아이디어?
 
 Windows Debloat라는 단어로 불필요한 프로그램들을 삭제하는 Powershell 프로젝트가 많은데, 나만의 윈도우 세팅을 해주는 프로그램은 못본 것 같다. 
