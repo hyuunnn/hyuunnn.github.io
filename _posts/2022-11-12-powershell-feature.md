@@ -179,4 +179,6 @@ Windows Debloat라는 단어로 불필요한 프로그램들을 삭제하는 Pow
 
 방학 때 CUI, GUI로 만들어보면 어떨까 생각을 가지고 있다.
 
-도구 결과 시각화할 때 볼만한 글이다. (<a href="https://evotec.xyz/easy-way-to-create-diagrams-using-powershell-and-pswritehtml/">easy way to create diagrams using powershell and pswritehtml</a>)
+나중에 도구 결과 시각화할 때 볼만한 글이다. (<a href="https://evotec.xyz/easy-way-to-create-diagrams-using-powershell-and-pswritehtml/">easy way to create diagrams using powershell and pswritehtml</a>)
+
+위 사이트에서 <a href="https://evotec.xyz/category/powershell/">powershell 카테고리</a>로 필터링하면 괜찮은 글들을 볼 수 있다.
