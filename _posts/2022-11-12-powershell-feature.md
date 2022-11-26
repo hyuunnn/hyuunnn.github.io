@@ -8,7 +8,9 @@ tags: ["Powershell"]
 
 학교 과제로 rare한 언어의 튜토리얼을 만드는게 있어서 Powershell을 선택하였다. (해당 언어는 현장에서 사용되고 있어야 한다.)
 
-Powershell은 윈도우에 내장되어 있기 때문에 악성코드에서 자주 사용되며, 포렌식 분야에서도 종종 보이고 있다. (<a href="https://github.com/kacos2000/WindowsTimeline">WindowsTimeline</a>, <a href="https://github.com/Yamato-Security/WELA">WELA</a>)
+Powershell은 윈도우에 내장되어 있기 때문에 악성코드에서 자주 사용되며, 포렌식 분야에서도 종종 보이고 있다. (<a href="https://github.com/kacos2000/WindowsTimeline">WindowsTimeline</a>, <a href="https://github.com/BloodHoundAD/BloodHound">BloodHound</a>, <a href="https://github.com/BC-SECURITY/Empire">Empire</a>, <a href="https://github.com/S3cur3Th1sSh1t/PowerSharpPack">PowerSharpPack</a>, <a href="https://github.com/sans-blue-team/DeepBlueCLI">DeepBlueCLI</a>, <a href="https://github.com/Yamato-Security/WELA">WELA</a>)
+
+윈도우 환경 세팅에 도움을 주는 프로젝트들도 있다. (<a href="https://github.com/Sycnex/Windows10Debloater">Windows10Debloater</a>, <a href="https://github.com/farag2/Sophia-Script-for-Windows">Sophia-Script-for-Windows</a>)
 
 예전부터 공부해보고 싶다는 생각을 가지고 있었는데, 미루고 미루다가 학교 과제로 선택하여 공부를 시작했다.
 
@@ -176,3 +178,5 @@ Windows Debloat라는 단어로 불필요한 프로그램들을 삭제하는 Pow
 사용자만의 json, xml 파일을 활용하여 자동화하는 프로그램이 있으면 좋겠다는 생각이 들었다.
 
 방학 때 CUI, GUI로 만들어보면 어떨까 생각을 가지고 있다.
+
+도구 결과 시각화할 때 볼만한 글이다. (<a href="https://evotec.xyz/easy-way-to-create-diagrams-using-powershell-and-pswritehtml/">easy way to create diagrams using powershell and pswritehtml</a>)
