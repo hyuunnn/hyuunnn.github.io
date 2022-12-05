@@ -159,6 +159,8 @@ plusNumber2 1 2
 
 <a href="http://www.yes24.com/Product/Goods/8870913">윈도우 파워셸 3 시작하기</a>
 
+<a href="https://www.amazon.com/Windows-PowerShell-Action-Bruce-Payette/dp/1633430294">Windows PowerShell in Action</a> - ~~이게 학교 도서관에 있네..?~~
+
 첫 번째 책은 2012년도에 출간된 책이라서 오래되었지만, 예제 코드가 일부 동작이 안되는 경우를 제외하고는 문제 없이 읽을 수 있었다. 
 
 단순한 명령어, 언어 설명이 아닌 상황을 가정하고 실습해보는게 재미있었다. 과제 마감 시간 때문에 정독은 못했는데, 종강하고 다시 읽어봐야겠다. 
@@ -171,7 +173,9 @@ plusNumber2 1 2
 
 <a href="https://xainey.github.io/2016/powershell-classes-and-concepts/">powershell-classes-and-concepts</a> - Powershell class 정리가 자세하게 되어있다.
 
+<a href="https://www.foxdeploy.com/series/LearningPowerShell">Learning PowerShell Posts</a> - Powershell을 효율적으로 개발하는 방법
 
+<a href="https://www.foxdeploy.com/series/LearningGUIs">Learning GUI Toolmaking Series</a> - Poewrshell을 사용하여 GUI 개발하는 시리즈
 
 ### 앞으로 계획 중인 아이디어?
 
