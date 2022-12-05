@@ -163,11 +163,13 @@ plusNumber2 1 2
 
 두 번째 책은 한국에서 유일하게 작성된 책이다보니 읽어봐야겠다는 생각을 가지고 있다.
 
-<a href="https://github.com/PoshCode/PowerShellPracticeAndStyle">PowershellPracticeAndStyle</a> Powershell 코드 스타일과 관련 예제들이 있다.
+<a href="https://github.com/PoshCode/PowerShellPracticeAndStyle">PowershellPracticeAndStyle</a> - Powershell 코드 스타일과 관련 예제들이 있다.
 
-<a href="https://learn.microsoft.com/ko-kr/powershell/">Microsoft Powershell 설명서</a> Microsoft 공식 사이트에 있는 Powershell 튜토리얼이다.
+<a href="https://learn.microsoft.com/ko-kr/powershell/">Microsoft Powershell 설명서</a>, <a href="https://learn.microsoft.com/ko-kr/powershell/scripting/developer/prog-guide/windows-powershell-programmer-s-guide">Windows PowerShell Programmer's Guide</a>, <a href="https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powershell-1.0/ff730946(v=technet.10)?redirectedfrom=MSDN">Windows PowerShell Tip of the Week</a>, <a href="https://devblogs.microsoft.com/scripting/create-custom-objects-in-your-powershell-script/">Create Custom Objects in Your PowerShell Script</a> - Microsoft 공식 사이트에 있는 Powershell 튜토리얼이다.
 
-<a href="https://xainey.github.io/2016/powershell-classes-and-concepts/">powershell-classes-and-concepts</a>
+<a href="https://xainey.github.io/2016/powershell-classes-and-concepts/">powershell-classes-and-concepts</a> - Powershell class 정리가 자세하게 되어있다.
+
+
 
 ### 앞으로 계획 중인 아이디어?
 
