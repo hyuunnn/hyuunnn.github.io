@@ -3,7 +3,7 @@ layout: post
 title: "WSL VIM에서 Copy/Paste"
 description: ""
 date: 2020-12-06
-tags: [Vim]
+tags: [vim]
 ---
 
 https://www.codentalks.com/t/topic/3687/5
