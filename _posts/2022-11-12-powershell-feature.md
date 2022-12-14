@@ -190,3 +190,5 @@ Windows Debloat라는 단어로 불필요한 프로그램들을 삭제하는 Pow
 나중에 도구 결과 시각화할 때 볼만한 글이다. (<a href="https://evotec.xyz/easy-way-to-create-diagrams-using-powershell-and-pswritehtml/">easy way to create diagrams using powershell and pswritehtml</a>)
 
 위 사이트에서 <a href="https://evotec.xyz/category/powershell/">powershell 카테고리</a>로 필터링하면 괜찮은 글들을 볼 수 있다.
+
+추후에 WPF도 공부해야겠다. <a href="https://4sysops.com/archives/create-a-gui-for-your-powershell-script-with-wpf/">Create a GUI for your powershell script with wpf</a> <a href="https://learn.microsoft.com/en-us/archive/msdn-magazine/2011/july/msdn-magazine-windows-powershell-with-wpf-secrets-to-building-a-wpf-application-in-windows-powershell">Windows PowerShell with WPF - Secrets to Building a WPF Application in Windows PowerShell</a> <a href="http://www.powershell-wpf.com/">powershell-wpf</a>
