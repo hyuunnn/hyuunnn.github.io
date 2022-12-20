@@ -25,8 +25,14 @@ String i = "Effective Java!";
 
 11번째 퍼즐: `+` 연산자는 문자열이 있을 때만 문자열 연결을 진행하며, 없으면 숫자 덧셈 연산을 진행한다.
 
-13번째 퍼즐: `==`와 `equals()`의 차이점
+13번째 퍼즐: 연산자 우선순위의 중요성 우선 순위를 명확하게 표현하기 위해 괄호를 사용하자.
 ```java
+System.out.println("Animals are equal: " + pig == dog);
+// 위 코드는 아래와 같은 결과를 만든다. + 연산자가 == 연산자보다 우선순위가 높기 때문
+System.out.println(("Animals are equal: " + pig) == dog);
+```
+```java
+// `==`와 `equals()`의 차이점
 String a = "animal";
 String b = "animal";
 System.out.println(a == b);
