@@ -6,7 +6,7 @@ date: 2022-12-19
 tags: ["book"]
 ---
 
-개발자가 실수 할 수 있는 다양한 유형들을 퍼즐이라고 비유하여 설명하는 책이다. <a href="http://www.yes24.com/Product/Goods/65551284">이펙티브 자바</a>의 저자가 쓴 책이기도 해서 읽어보고 싶다는 생각이 들었다. 책의 내용이 전체적으로 흥미있었고, <a href="http://www.yes24.com/Product/Goods/17926925">유지보수하기 어렵게 코딩하는 방법</a> 느낌의 내용도 있었다.
+개발자가 실수 할 수 있는 다양한 유형들을 퍼즐로 비유하여 설명하는 책이다. <a href="http://www.yes24.com/Product/Goods/65551284">이펙티브 자바</a>의 저자가 쓴 책이기도 해서 읽어보고 싶다는 생각이 들었다. 책의 내용이 전체적으로 흥미있었고, <a href="http://www.yes24.com/Product/Goods/17926925">유지보수하기 어렵게 코딩하는 방법</a> 느낌의 내용도 있었다.
 
 8번째 퍼즐: 3항 연산자에서 2번째 3번째 값의 자료형이 다르면 형변환이 일어나는 경우가 있다.
 
@@ -38,7 +38,7 @@ System.out.println(("Animals are equal: " + pig) == dog);
 String a = "animal";
 String b = "animal";
 System.out.println(a == b);
-// 문자열을 인턴하여 활용되어 true가 나온다. 하지만 비교 대상이 인턴되는 문자열인지 아닌지 알 수 없다.
+// 문자열을 인턴하기 때문에 true가 나온다. 하지만 비교 대상이 인턴되는 문자열인지 아닌지 알 수 없다.
 // 객체의 참조를 비교할 떄는 ==, 내용을 비교할 때는 equals()
 ```
 
@@ -77,9 +77,10 @@ System.out.println(i == 0); // false
 System.out.println(Double.NaN == Double.NaN); // false
 ```
 
-36번쨰 퍼즐: try, catch에서 return을 하더라도, finally에 return이 있다면 이를 수행한다.
+36, 41번째 퍼즐: try, catch에서 return을 하더라도, finally에 return이 있다면 이를 수행한다.
 
 ```java
+// 36번째 퍼즐
 static boolean a() {
     try {
         return true;
@@ -90,4 +91,7 @@ static boolean a() {
 
 System.out.println(a()); // false
 ```
-
+```java
+// 41번째 퍼즐
+// 
+```
