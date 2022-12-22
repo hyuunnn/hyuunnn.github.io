@@ -130,7 +130,7 @@ public class a {
     }
 
     public static void main(String[] args) {
-        new Confusing(null);
+        new a(null);
     }
 }
 ```
