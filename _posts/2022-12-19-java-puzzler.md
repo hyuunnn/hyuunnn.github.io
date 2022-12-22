@@ -93,5 +93,45 @@ System.out.println(a()); // false
 ```
 ```java
 // 41번째 퍼즐
-// 
+// finally의 특징에 적합한 상황이지만 아래와 같은 문제가 발생할 수 있다.
+// in.close();에서 예외가 발생했을 때 out.close();를 실행하지 못하고 코드가 종료된다.
+// Closeable을 받아와서 처리하는 메서드를 생성하여 이를 해결할 수 있다.
+InputStream in = null;
+OutputStream out = null;
+try {
+    in = new FileInputStream(src);
+    out = new FileOutputStream(dest);
+} finally {
+    if (in != null) in.close(); // closeIgnoringException(in);
+    if (out != null) out.close(); // closeIgnoringException(out);
+}
+
+private static void closeIgnoringException(Closeable c) {
+    if (c != null) {
+        try {
+            c.close();
+        } catch (IOException ex) {}
+    }
+}
 ```
+46번째 퍼즐: 오버로딩을 했을 때 생길 수 있는 문제점
+```java
+// Object가 출력될 것 같지만, double array가 출력된다.
+// null을 생각해보면 Object이지만, doublle[]에서도 사용 가능하다.
+// Object보다 double이 작은 형태의 자료형이므로 double array가 출력되는 것이다.
+// 이처럼 코드가 복잡해지므로, 오버로딩은 가능하면 하지 말기 (다른 이름 사용하기)
+public class a {
+    private a(Object o) {
+        System.out.println("Object");
+    }
+
+    private a(double[] arr) {
+        System.out.println("double array");
+    }
+
+    public static void main(String[] args) {
+        new Confusing(null);
+    }
+}
+```
+48번째 퍼즐
