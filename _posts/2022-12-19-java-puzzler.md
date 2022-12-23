@@ -6,7 +6,9 @@ date: 2022-12-19
 tags: ["book"]
 ---
 
-개발자가 실수 할 수 있는 다양한 유형들을 퍼즐로 비유하여 설명하는 책이다. <a href="http://www.yes24.com/Product/Goods/65551284">이펙티브 자바</a>의 저자가 쓴 책이기도 해서 읽어보고 싶다는 생각이 들었다. 책의 내용이 전체적으로 흥미있었고, <a href="http://www.yes24.com/Product/Goods/17926925">유지보수하기 어렵게 코딩하는 방법</a> 느낌의 내용도 있었다.
+개발자가 실수 할 수 있는 다양한 유형들을 퍼즐로 비유하여 설명하는 책이다. <a href="http://www.yes24.com/Product/Goods/65551284">이펙티브 자바</a>의 저자가 쓴 책이기도 해서 읽어보고 싶다는 생각이 들었다. 책의 내용이 전체적으로 흥미있었고, <a href="http://www.yes24.com/Product/Goods/17926925">유지보수하기 어렵게 코딩하는 방법</a> 느낌의 내용도 있었다. 그리고 생각보다 어려웠다..
+
+자바를 계속 써보면서 문제가 생길만한 상황을 아직 접해보지 않았는데, 책을 통해 다양한 퍼즐들을 경험하면서 신중해야겠다는 생각이 들었다. 책을 읽으면서 인상 깊었던 퍼즐들을 정리하였다.
 
 8번째 퍼즐: 3항 연산자에서 2번째 3번째 값의 자료형이 다르면 형변환이 일어나는 경우가 있다.
 
@@ -135,3 +137,91 @@ public class a {
 }
 ```
 48번째 퍼즐
+
+51번째 퍼즐: 오버라이딩 가능한 메서드 생성자에서 호출하지 말기 (호출 순서가 꼬이게 된다.)
+```java
+// [4,2]:null이 나오는데, ColorPoint의 생성자에서 super에 의해 부모 클래스의 생성자가 실행된다.
+// Point의 makeName(), ColorPoint의 makeName()이 실행되는데, this.color = color를 하기 전에 실행되어서 null이 나온다.
+class Point {
+    protected final int x, y;
+    private final String name;
+
+    Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+        name = makeName();
+    }
+
+    private String makeName() {
+        return "[" + x + "," + y + "]";
+    }
+
+    public final String toString() {
+        return name;
+    }
+}
+
+public class ColorPoint extends Point {
+    private final String color;
+    
+    ColorPoint(int x, int y, String color) {
+        super(x, y);
+        this.color = color;
+    }
+
+    protected String makeName() {
+        return super.makeName() + ":" + color;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new ColorPoint(4, 2, "purple"));
+    }
+}
+```
+52번째 퍼즐: static을 사용할 때 주의할 점
+```java
+// 4950이 나와야하는데 9900이 나온다.
+// 그 이유는 static으로 초기화할 때 순서대로 실행되기 때문에 static 블록이 먼저 실행되는데, 그 이후에 initialized 값이 false로 다시 변경되므로 이후에 getSum() 메서드에 의해 다시 실행된다.
+// static 블록을 initialized 초기화되는 부분 이후로 옮기면 해결된다.
+// 또한 이 코드는 무분별하게 메서드를 남용하고 있는데, sum 변수에 이를 계산해주는 헬퍼 메서드 하나면 충분하다.
+class Cache {
+  static {
+    initializeIfNecessary();
+  }
+
+  private static int sum;
+  public static int getSum() {
+    initializeIfNecessary();
+    return sum;
+  }
+
+  private static boolean initialized = false;
+  private static synchronized void initializeIfNecessary() {
+    if (!initialized) {
+      for (int i = 0; i < 100; i++)
+        sum += i;
+      initialized = true;
+    }
+  }
+}
+
+public class Main {
+
+  public static void main(String[] args) {
+    System.out.println(Cache.getSum()); // 9900
+  }
+}
+```
+53번째 퍼즐: 
+
+57번째 퍼즐: equals() 메서드를 오버라이딩할 때 hashCode()도 오버라이딩하자. <a href="https://tecoble.techcourse.co.kr/post/2020-07-29-equals-and-hashCode/">equals와 hashCode는 왜 같이 재정의해야 할까?</a>
+
+60번째 퍼즐: 배열을 문자열로 변환해주는 메서드 Arrays.deepToString()
+```java
+Object[] array = {1, 2, 3, new int[] {1, 2, 3}, new int[] {1, 2, 3}};
+System.out.println(Arrays.deepToString(array)); // [1, 2, 3, [1, 2, 3], [1, 2, 3]]
+
+Object[] array = {1, 2, 3, new int[] {1, 2, 3}, new int[] {1, 2, 3}};
+arrays[0] = array;
+System.out.println(Arrays.deepToString(array)); // [[...], 2, 3, [1, 2, 3], [1, 2, 3]] 
+```
