@@ -136,7 +136,30 @@ public class a {
     }
 }
 ```
-48번째 퍼즐
+48번째 퍼즐: static을 사용할 때 주의할 점
+```java
+// static 메서드는 컴파일 시점에 선택되기 때문에 Dog.bark()가 2번 실행된다.
+// static을 빼면 정상적으로 동작한다.
+// 66번 퍼즐과 유사한 유형이라고 볼 수 있다.
+class Dog {
+    public static void bark() {
+        System.out.print("woof ");
+    }
+}
+
+class Basenji extends Dog {
+    public static void bark() {}
+}
+
+public class Bark {
+    public static void main(String args[]) {
+        Dog woofer = new Dog();
+        Dog nipper = new Basenji();
+        woofer.bark(); // woof
+        nipper.bark(); // woof
+    }
+}
+```
 
 51번째 퍼즐: 오버라이딩 가능한 메서드 생성자에서 호출하지 말기 (호출 순서가 꼬이게 된다.)
 ```java
@@ -224,4 +247,44 @@ System.out.println(Arrays.deepToString(array)); // [1, 2, 3, [1, 2, 3], [1, 2, 3
 Object[] array = {1, 2, 3, new int[] {1, 2, 3}, new int[] {1, 2, 3}};
 arrays[0] = array;
 System.out.println(Arrays.deepToString(array)); // [[...], 2, 3, [1, 2, 3], [1, 2, 3]] 
+```
+66번째 퍼즐: 클래스에서 발생할 수 있는 하이딩과 오버라이딩
+```java
+// Derived 클래스의 className 필드는 하이딩 되어서 Base 클래스의 className을 상속받지 못한다.
+// 그 과정에서 private의 className을 출력하려고 하니 오류가 발생하는 것이다. (리스코프 치환 원칙(LSP) 위반)
+// 필드는 다른 타입에 상관없이 이름이 같다면 하이딩된다.
+class Base {
+    public String className = "Base";
+}
+
+class Derived extends Base {
+    private String className = "Derived";
+}
+
+public class PrivateMatter {
+    public static void main(String[] args) {
+        System.out.println(new Derived().className);
+    }
+}
+```
+```java
+// 메서드로 선언하면 오버라이딩이 진행된다.
+// 오버라이딩을 할 때 접근 제한자와 타입이 같아야하며 다르다면 에러를 발생한다.
+class Base {
+    public String getClassName() {
+        return "Base";
+    }
+}
+
+class Derived extends Base {
+    public String getClassName() {
+        return "Derived";
+    }
+}
+
+public class PrivateMatter {
+    public static void main(String[] args) {
+        System.out.println(new Derived().getClassName());
+    }
+}
 ```
