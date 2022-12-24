@@ -288,3 +288,24 @@ public class PrivateMatter {
     }
 }
 ```
+68번째 퍼즐: static의 실행 우선 순위
+```java
+// 같은 공간에서 변수와 클래스는 이름이 같을 때 변수를 우선적으로 사용하여 White가 출력된다.
+// 이러한 코드는 모호하고 이해하기 어렵기 때문에 컨벤션 지키기
+public class ShadesOfGray {
+    public static void main(String[] args) {
+        System.out.println(X.Y.Z); // White
+    }
+}
+
+class X {
+    static class Y {
+        static String Z = "Black";
+    }
+    static C Y = new C();
+}
+
+class C {
+    String Z = "White";
+}
+```
