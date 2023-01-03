@@ -235,7 +235,26 @@ public class Main {
   }
 }
 ```
-53번째 퍼즐: 
+53번째 퍼즐: private 생성자 활용 패턴
+
+```java
+public class MyThing extends Thing {
+    private final int arg;
+
+    public MyThing() {
+        this(SomeOtherClass.func());
+    }
+
+    private MyThing(int i) {
+        super(i);
+        arg = i;
+    }
+}
+```
+
+이는 `대안 생성자 호출`이라고 하며, `MyThing()` 생성자가 `MyThing(int)` 생성자를 호출하여 초기화하고 있다.
+
+`MyThing(int)`는 클래스 내부에서만 사용되기 때문에 private을 붙였다.
 
 57번째 퍼즐: equals() 메서드를 오버라이딩할 때 hashCode()도 오버라이딩하자. <a href="https://tecoble.techcourse.co.kr/post/2020-07-29-equals-and-hashCode/">equals와 hashCode는 왜 같이 재정의해야 할까?</a>
 
