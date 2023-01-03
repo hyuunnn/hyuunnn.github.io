@@ -309,3 +309,95 @@ class C {
     String Z = "White";
 }
 ```
+
+71번쨰 퍼즐: 정적 임포트의 우선 순위
+
+```java
+import static java.util.Arrays.toString;
+
+class ImportDuty {
+    public static void main(String[] args) {
+        printArgs(1, 2, 3, 4, 5);
+    }
+
+    static void printArgs(Object... args) {
+        System.out.println(toString(args));
+    }
+}
+```
+
+위 코드는 에러가 발생한다. 메서드를 호출하기 전에 메서드 이름이 같고 가장 가까운 곳에 있는 메서드를 선택한다.
+
+이때 정적 임포트보다 우선순위가 높은 `ImportDuty` 클래스의 상위인 `Object`에서 `toString(args)` 형식으로 실행할 수 있는 메서드가 없기 때문이다. (`Object`에는 `toString()`이 구현되어 있지만, `toString(args)` 형식으로 사용할 수 있게 오버로딩이 되어있지 않다.)
+
+import한 `toString()` 메서드는 `ImportDuty` 클래스의 `toString()`으로 `섀도윙`된다.
+
+72번째 퍼즐: 상황에 따라 달라지는 final 키워드의 동작
+
+```java
+class Jeopardy {
+    public static final String PRIZE = "$64,000";
+}
+
+public class DoubleJeopardy extends Jeopardy {
+    public static final String PRIZE = "2 cents";
+
+    public static void main(String[] args) {
+        System.out.println(DoubleJeopardy.PRIZE);
+    }
+}
+```
+
+위 코드는 언뜻 봐선 final로 정의된 PRIZE를 새롭게 정의하니 에러가 발생할 것 같지만, `2 cents`를 출력한다.
+
+메서드, 필드일 때 동작 방식이 달라지는데 final 메서드는 오버라이딩, 하이딩을 할 수 없다. 하지만 final 필드는 단순히 값을 재할당 할 수 없을 뿐이지 위 코드는 정상적으로 동작한다.
+
+결과적으로 `DoubleJeopardy.PRIZE` 필드는 `Jeopardy.PRIZE` 필드를 하이딩하게 된다. 
+
+75번째 퍼즐: 자바 버전에 따라 다르게 동작하는 코드
+
+```java
+import java.util.Random;
+
+public class CoinSide {
+  private static Random rnd = new Random();
+
+  public static CoinSide flip() {
+    return rnd.nextBoolean() ? Heads.INSTANCE : Tails.INSTANCE;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(flip());
+  }
+}
+
+class Heads extends CoinSide {
+  private Heads() {}
+  public static final Heads INSTANCE = new Heads();
+
+  public String toString() {
+    return "heads";
+  }
+}
+
+class Tails extends CoinSide {
+  private Tails() {}
+  public static final Tails INSTANCE = new Tails();
+
+  public String toString() {
+    return "tails";
+  }
+}
+```
+
+위 코드는 자바 1.4에서 에러가 발생한다고 한다.
+
+삼항 연산자에서 2번째, 3번째 값의 타입이 레퍼런스 자료형인 경우 둘 중 하나가 부모 클래스로 자료형 변환을 해야 했다.
+
+```java
+return rnd.nextBoolean() ? (CoinSide)Heads.INSTANCE : Tails.INSTANCE;
+```
+
+하지만 자바 5 이상에서는 `최소 공통 부모 클래스 (least common supertype)`에 의해 자바의 모든 클래스는 `Object`를 상속받으므로 모든 레퍼런스 자료형에 조건 연산자를 사용할 수 있는 것이다.
+
+*항상 최신의 자바 버전 사용하기*
