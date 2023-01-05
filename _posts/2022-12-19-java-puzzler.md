@@ -6,7 +6,7 @@ date: 2022-12-19
 tags: ["book"]
 ---
 
-개발자가 실수 할 수 있는 다양한 유형들을 퍼즐로 비유하여 설명하는 책이다. <a href="http://www.yes24.com/Product/Goods/65551284">이펙티브 자바</a>의 저자가 쓴 책이기도 해서 읽어보고 싶다는 생각이 들었다. 책의 내용이 전체적으로 흥미있었고, <a href="http://www.yes24.com/Product/Goods/17926925">유지보수하기 어렵게 코딩하는 방법</a> 느낌의 내용도 있었다. 그리고 생각보다 어려웠다..
+개발자가 실수 할 수 있는 다양한 유형들을 퍼즐로 비유하여 설명하는 책이다. <a href="http://www.yes24.com/Product/Goods/65551284">이펙티브 자바</a>의 저자가 쓴 책이기도 해서 읽어보고 싶다는 생각이 들었다. 책의 내용이 전체적으로 흥미있었고, <a href="http://www.yes24.com/Product/Goods/17926925">유지보수하기 어렵게 코딩하는 방법</a> 느낌의 내용도 있었다. 그리고 뒷부분으로 가면서 생각보다 많이 어려웠다.. (그만큼 지식이 부족하다는 증거...)
 
 자바를 계속 써보면서 문제가 생길만한 상황을 아직 접해보지 않았는데, 책을 통해 다양한 퍼즐들을 경험하면서 개발할 때 API 문서들을 읽어보고, 찾아보는게 중요하겠다는 생각이 들었다. (API가 내가 원하는 방향으로 구현되었다고 보장할 수 없다.) 책을 읽으면서 인상 깊었던 퍼즐들을 정리하였다.
 
@@ -420,3 +420,58 @@ return rnd.nextBoolean() ? (CoinSide)Heads.INSTANCE : Tails.INSTANCE;
 하지만 자바 5 이상에서는 `최소 공통 부모 클래스 (least common supertype)`에 의해 자바의 모든 클래스는 `Object`를 상속받으므로 모든 레퍼런스 자료형에 조건 연산자를 사용할 수 있는 것이다.
 
 *항상 최신의 자바 버전 사용하기*
+
+p253 ~ p283 - 추가적인 라이브러리 퍼즐에서는 멀티 쓰레딩, 프로세싱 관련 내용이 나온다. 경험을 쌓은 후에 다시 읽어봐야겠다.
+
+93번째 퍼즐: 상수 표현식에 따른 차이점
+
+```java
+public class PrintWords {
+
+    public static void main(String[] args) {
+        System.out.println(Words.FIRST + " " + Words.SECOND + " " + Words.THIRD);
+    }
+}
+
+public class Words {
+    private Words() {};
+    public static final String FIRST = "the";
+    public static final String SECOND = null;
+    public static final String THIRD = "set";
+}
+```
+
+위와 같이 컴파일 후 아래 코드를 import하는 방식을 설명하는 것 같다.
+
+```java
+public class Words {
+    private Words() {};
+    public static final String FIRST = "physics";
+    public static final String SECOND = "chemistry";
+    public static final String THRD = "biology";
+}
+```
+
+import 하더라도 컴파일 시점에서 main과 가까운 `the`, `null`, `set`이 1회 선언되어서 출력될 것 같지만, 결과는 `the`, `chemistry`, `set`이 나온다.
+
+`null`은 상수 표현식이 아니며, 상수 표현식이 아니면 값이 변경된다.
+
+클라이언트에서 위 코드와 같이 상수를 사용하여 외부에서 변경을 요청했음에도 변경되지 않는다면 문제가 발생할 수 있다. 
+
+```java
+class Words {
+    private Words() {};
+    public static final String FIRST = indent("the");
+    public static final String SECOND = indent(null);
+    public static final String THIRD = indent("set");
+
+    private static String ident(String s) {
+        return s;
+    }
+}
+```
+
+위 코드는 메서드를 통해 초기화하므로 상수가 아니라고 한다.
+
+또한 `enum` 상수도 상수 변수가 아니기 때문에 위와 같은 문제가 발생하지 않는다고 한다.
+
