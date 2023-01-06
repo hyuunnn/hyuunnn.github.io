@@ -26,6 +26,10 @@ tags: ["intellij", "setting"]
 
 `Settings -> Editor -> Inlay Hints -> Code vision -> Inheritors, Usages 체크 해제`
 
+## 공백 문자 표시하기
+
+`Settings -> Editor -> General -> Apperance -> Show whitespaces` 체크
+
 ## 단축키 보여주는 플러그인
 
 <a href="https://plugins.jetbrains.com/plugin/7345-presentation-assistant/">Presentation Assistant</a>
