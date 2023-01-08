@@ -30,6 +30,14 @@ tags: ["intellij", "setting"]
 
 `Settings -> Editor -> General -> Apperance -> Show whitespaces` 체크
 
+## 코드 축약해주는 기능 끄기
+
+`Code Folding`이라고 불리는 기능인데 뭔가 불편하다. import한 라이브러리들도 숨기고 괄호도 한 줄로 정리해서 보여주는데 딱히 필요가 없어 보인다.
+
+`Settings -> Editor -> General -> Code Folding -> 필요없는 옵션들 체크 해제`
+
+일단 나는 `General -> Imports`, `Java -> One-line methods`를 해제해서 사용하고 있다.
+
 ## 단축키 보여주는 플러그인
 
 <a href="https://plugins.jetbrains.com/plugin/7345-presentation-assistant/">Presentation Assistant</a>
