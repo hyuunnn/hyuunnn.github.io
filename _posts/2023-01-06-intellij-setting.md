@@ -38,6 +38,10 @@ tags: ["intellij", "setting"]
 
 일단 나는 `General -> Imports`, `Java -> One-line methods`를 해제해서 사용하고 있다.
 
+## 인코딩 설정 (한글 사용)
+
+`Settings -> Editor -> File Encodings -> Transparent native-to-ascii conversion 체크, Default encoding for properties files: UTF-8 변경, 위에 인코딩 설정들 UTF-8로 변경`
+
 ## 단축키 보여주는 플러그인
 
 <a href="https://plugins.jetbrains.com/plugin/7345-presentation-assistant/">Presentation Assistant</a>
