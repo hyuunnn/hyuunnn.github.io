@@ -42,6 +42,13 @@ tags: ["intellij", "setting"]
 
 `Settings -> Editor -> File Encodings -> Transparent native-to-ascii conversion 체크, Default encoding for properties files: UTF-8 변경, 위에 인코딩 설정들 UTF-8로 변경`
 
+`Help -> Edit Custom VM Options`에서 인코딩 설정
+
+```text
+-Dfile.encoding=UTF-8
+-Dconsole.encoding=UTF-8
+```
+ 
 ## 단축키 보여주는 플러그인
 
 <a href="https://plugins.jetbrains.com/plugin/7345-presentation-assistant/">Presentation Assistant</a>
