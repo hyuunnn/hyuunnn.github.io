@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Investigating Windows Systems 책 후기"
+title: "Windows 환경에서 침해 시스템 분석하기"
 description: "Investigating Windows Systems - harlan carvey"
 date: 2020-11-08
 tags: [Forensic, Book]

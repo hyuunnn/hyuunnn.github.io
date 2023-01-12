@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windows Registry Forensics 책 후기"
+title: "윈도우 레지스트리 포렌식"
 description: "Windows Registry Forensics - harlan carvey"
 date: 2020-11-18
 tags: [Forensic, Book]
