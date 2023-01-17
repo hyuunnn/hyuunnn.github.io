@@ -48,6 +48,12 @@ tags: ["intellij", "setting"]
 -Dfile.encoding=UTF-8
 -Dconsole.encoding=UTF-8
 ```
+
+## Gradle 설정 변경하기
+
+`Settings -> Build, Execution, Deployment -> Build Tools -> Gradle -> Build and run using, Run tests using에서 IntelliJ IDEA로 변경`
+
+<a href="https://jojoldu.tistory.com/450">향로님 블로그</a>
  
 ## 단축키 보여주는 플러그인
 
