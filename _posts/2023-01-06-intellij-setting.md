@@ -59,6 +59,16 @@ tags: ["intellij", "setting"]
 
 `Settings -> Editor -> Font -> Enable ligatures 체크`
 
+## line separator 설정하기
+
+`Settings -> Editor -> Code Style -> Line separator: Unix and macOS (\n) 설정`
+
+<a href="https://www.jetbrains.com/help/idea/configuring-line-endings-and-line-separators.html">jetbrains 튜토리얼</a>
+
+팀으로 개발할 때 Windows, Mac, Linux 등 다양한 OS를 사용하는데 각각의 OS마다 개행을 처리하는 방법이 다르다.
+
+윈도우는 CRLF(\r\n), Unix/Linux는 LF(\n)으로 되어있다. 보통 LF로 통일하여 사용하는 것 같다. (큰 프로젝트들은 LF로 사용하고 있다.)
+
 ## 단축키 보여주는 플러그인
 
 <a href="https://plugins.jetbrains.com/plugin/7345-presentation-assistant/">Presentation Assistant</a>
