@@ -12,11 +12,23 @@ tags: ["intellij", "setting"]
 
 `Settings -> Editor -> Code Style -> Java -> Scheme 변경` <a href="https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml">intellij-java-google-style.xml</a>
 
-## 저장할 때 마지막 라인 자동으로 개행하기
+## 저장할 때 마지막 라인 자동으로 개행하기 (No newline at end of file)
 
 `Settings -> Editor -> General -> On Save -> Ensure every saved file ends with a line break` 체크
 
-마지막 라인 개행을 해주지 않으면 github action에서 걸리기도 하고, 지키라고 하니 해야지..
+<a href="https://velog.io/@doondoony/posix-eol">파일 끝에는 항상 개행을 추가해야 해요</a>, <a href="https://blog.coderifleman.com/2015/04/04/text-files-end-with-a-newline/">파일 끝에 개행을 추가해야 하는 이유</a>
+
+POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세한 내용은 위 글을 참고하자.
+
+## line separator 설정하기
+
+`Settings -> Editor -> Code Style -> Line separator: Unix and macOS (\n) 설정`
+
+<a href="https://www.jetbrains.com/help/idea/configuring-line-endings-and-line-separators.html">jetbrains 튜토리얼</a>
+
+팀으로 개발할 때 Windows, Mac, Linux 등 다양한 OS를 사용하는데 각각의 OS마다 개행을 처리하는 방법이 다르다.
+
+윈도우는 CRLF(\r\n), Unix/Linux는 LF(\n)으로 되어있다. 보통 LF로 통일하여 사용하는 것 같다. (큰 프로젝트들은 LF로 사용하고 있다.)
 
 ## 필요없는 객체 관련 팝업 삭제하기
 
@@ -58,16 +70,6 @@ tags: ["intellij", "setting"]
 ## ligatures 설정하기
 
 `Settings -> Editor -> Font -> Enable ligatures 체크`
-
-## line separator 설정하기
-
-`Settings -> Editor -> Code Style -> Line separator: Unix and macOS (\n) 설정`
-
-<a href="https://www.jetbrains.com/help/idea/configuring-line-endings-and-line-separators.html">jetbrains 튜토리얼</a>
-
-팀으로 개발할 때 Windows, Mac, Linux 등 다양한 OS를 사용하는데 각각의 OS마다 개행을 처리하는 방법이 다르다.
-
-윈도우는 CRLF(\r\n), Unix/Linux는 LF(\n)으로 되어있다. 보통 LF로 통일하여 사용하는 것 같다. (큰 프로젝트들은 LF로 사용하고 있다.)
 
 ## 단축키 보여주는 플러그인
 
