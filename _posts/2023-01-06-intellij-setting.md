@@ -12,6 +12,10 @@ tags: ["intellij", "setting"]
 
 `Settings -> Editor -> Code Style -> Java -> Scheme 변경` <a href="https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml">intellij-java-google-style.xml</a>
 
+`Settings -> Editor -> Code Style -> Java -> Wrapping and Braces -> Chained method calls: Wrap if long -> Wrap always` 
+
+프로젝트에서 요구하는 코드 스타일을 참고하여 커스터마이징하면 되겠다.
+
 ## 저장할 때 마지막 라인 자동으로 개행하기 (No newline at end of file)
 
 `Settings -> Editor -> General -> On Save -> Ensure every saved file ends with a line break` 체크
