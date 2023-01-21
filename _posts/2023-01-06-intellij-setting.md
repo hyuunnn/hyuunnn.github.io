@@ -79,6 +79,24 @@ POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세
 
 https://whitekeyboard.tistory.com/874
 
+## New UI
+
+`Settings -> Appearance & Behavior -> New UI -> Enable new UI`
+
+jetbrains 도구에서 지원하는 새로운 UI인데 전체적으로 깔끔하고, 화면에 필요한 기능만 보여주는 것 같아서 사용하고 있다.
+
+## Dark Purple Theme
+
+<a href="https://plugins.jetbrains.com/plugin/12100-dark-purple-theme">Dark Purple Theme</a>
+
+jetbrains 기본 테마인 Darcula만 사용하다가 다른 테마도 다운받아서 사용해보고 있는데, 꽤 괜찮다.
+
+## Atom Material Icons
+
+<a href="https://plugins.jetbrains.com/plugin/10044-atom-material-icons">Atom Material Icons</a>
+
+아이콘 관련 플러그인들을 중에서 다운로드 수를 보면 압도적으로 많다. 나는 일단 New UI에서 제공하는 기본 아이콘을 사용하고 있는데, Atom 아이콘은 뭔가 정신 사납다는 느낌이 들었다 ㅎ.. 기본 아이콘이 깔끔하고, 개인적으로 더 좋은 것 같다.
+
 ## 단축키 보여주는 플러그인
 
 <a href="https://plugins.jetbrains.com/plugin/7345-presentation-assistant/">Presentation Assistant</a>
