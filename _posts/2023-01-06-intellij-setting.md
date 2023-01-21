@@ -60,6 +60,12 @@ POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세
 
 위 옵션이 체크되어 있으면 코드 오른쪽에 가이드 줄이 생기는데, 딱히 필요가 없어서 사용하지 않고 있다.
 
+## Project 트리 구조 변경하기
+
+`Project -> Options -> Tree Appearance -> Flatten Packages, Compact Middle Packages 체크 해제`
+
+패키지가 많을 때 편리한 기능이겠지만, 개인적으로는 불편해서 사용하지 않고 있다.
+
 ## 인코딩 설정 (한글 사용)
 
 `Settings -> Editor -> File Encodings -> Transparent native-to-ascii conversion 체크, Default encoding for properties files: UTF-8 변경, 위에 인코딩 설정들 UTF-8로 변경`
