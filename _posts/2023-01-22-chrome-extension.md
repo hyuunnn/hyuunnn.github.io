@@ -22,7 +22,9 @@ github repository의 폴더, 파일들을 tree 형식으로 보여주는 익스�
 
 익스텐션에 부가적인 기능들을 제공하고 있는데 북마크 기능은 필요 없어서 끄고 있다.
 
-Multi-tab 기능도 정말 좋다. octotree에서 더블 클릭으로 페이지에 접속하면 tab 리스트에 추가되며, github 페이지 상단에 리스트를 띄워주고 `Shift + Tab`으로 리스트 중에서 선택하여 다른 파일로 이동할 수도 있다.
+~~Multi-tab 기능도 정말 좋다. octotree에서 더블 클릭으로 페이지에 접속하면 tab 리스트에 추가되며, github 페이지 상단에 리스트를 띄워주고 `Shift + Tab`으로 리스트 중에서 선택하여 다른 파일로 이동할 수도 있다.~~
+
+나중에 알았는데 Multi-tab, 북마크 기능은 유료였다.. 15일 체험판으로 사용할 수 있던 것이다 ㅋㅋ.. <a href="https://www.octotree.io/pricing">pricing</a>
 
 ## JSON Viewer
 
