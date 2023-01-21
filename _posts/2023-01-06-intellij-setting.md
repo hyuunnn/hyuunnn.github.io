@@ -54,6 +54,12 @@ POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세
 
 일단 나는 `General -> Imports`, `Java -> One-line methods`를 해제해서 사용하고 있다.
 
+## visual guides 지우기
+
+`Settings -> Editor -> General -> Appearance -> Show hard wrap and visual guides 체크 해제`
+
+위 옵션이 체크되어 있으면 코드 오른쪽에 가이드 줄이 생기는데, 딱히 필요가 없어서 사용하지 않고 있다.
+
 ## 인코딩 설정 (한글 사용)
 
 `Settings -> Editor -> File Encodings -> Transparent native-to-ascii conversion 체크, Default encoding for properties files: UTF-8 변경, 위에 인코딩 설정들 UTF-8로 변경`
