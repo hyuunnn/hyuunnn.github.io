@@ -75,6 +75,10 @@ POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세
 
 `Settings -> Editor -> Font -> Enable ligatures 체크`
 
+## Download pre-built shared indexes
+
+https://whitekeyboard.tistory.com/874
+
 ## 단축키 보여주는 플러그인
 
 <a href="https://plugins.jetbrains.com/plugin/7345-presentation-assistant/">Presentation Assistant</a>
