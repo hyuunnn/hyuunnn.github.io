@@ -6,7 +6,7 @@ date: 2023-01-17
 tags: ["book"]
 ---
 
-<a href="http://www.yes24.com/Product/Goods/83849117">스프링 부트와 AWS로 혼자 구현하는 웹 서비스</a>
+<a href="http://www.yes24.com/Product/Goods/83849117">스프링 부트와 AWS로 혼자 구현하는 웹 서비스</a> <a href="https://jojoldu.tistory.com/463">출간 후기</a>
 
 2019년에 나온 책이기 때문에 많은 부분이 업데이트가 되었고, deprecated된 기능도 꽤 있다.
 
