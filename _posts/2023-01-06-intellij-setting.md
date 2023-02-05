@@ -83,6 +83,28 @@ POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세
 
 <a href="https://jojoldu.tistory.com/450">향로님 블로그</a>
 
+## snippet 설정하기
+
+`Settings -> Editor -> Live Templates`에서 자유롭게 추가
+
+최근에 test snippet을 만들어서 사용 중인데 매우 편리하다.
+
+`Abbreviation: test`, `Description: java test` (대충 적음)
+
+```java
+@Test
+@DisplayName("")
+public void testName() {
+    //given
+
+    //when
+
+    //then
+}
+```
+
+`test`를 입력하면 위 템플릿으로 만들어준다.
+
 ## ligatures 설정하기
 
 `Settings -> Editor -> Font -> Enable ligatures 체크`
