@@ -89,21 +89,29 @@ POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세
 
 최근에 test snippet을 만들어서 사용 중인데 매우 편리하다.
 
-`Abbreviation: test`, `Description: java test` (대충 적음)
+*Template text*
 
 ```java
 @Test
-@DisplayName("")
-public void testName() {
-    //given
-
-    //when
-
-    //then
+@DisplayName("$TEST_NAME$")
+public void $METHOD_NAME$() {
+  //given
+  
+  //when
+  
+  //then
 }
 ```
 
-`test`를 입력하면 위 템플릿으로 만들어준다.
+`Abbreviation: test`, `Description: java test` (대충 적음)
+
+`Edit Variables` 버튼 클릭 후 아래 사진과 같이 설정
+
+![1](/assets/images/intellij-setting/1.jpg)
+
+`test`를 입력하면 위 템플릿으로 만들어주며, 아래 사진과 같이 space를 눌렀을 때 underscore로 변환해준다.
+
+![2](/assets/images/intellij-setting/2.jpg)
 
 ## ligatures 설정하기
 
