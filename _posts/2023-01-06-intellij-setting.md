@@ -107,11 +107,11 @@ public void $METHOD_NAME$() {
 
 `Edit Variables` 버튼 클릭 후 아래 사진과 같이 설정
 
-![1](/assets/images/intellij-setting/1.jpg)
+![1](/assets/images/intellij-setting/1.png)
 
 `test`를 입력하면 위 템플릿으로 만들어주며, 아래 사진과 같이 space를 눌렀을 때 underscore로 변환해준다.
 
-![2](/assets/images/intellij-setting/2.jpg)
+![2](/assets/images/intellij-setting/2.png)
 
 ## ligatures 설정하기
 
