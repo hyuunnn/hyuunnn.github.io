@@ -130,6 +130,8 @@ METHOD_NAME의 Expression는 아래 코드를 사용하면 된다.
 
 <a href="https://www.jetbrains.com/help/idea/template-variables.html">Jetbrains 튜토리얼</a>
 
+<a href="https://github.com/mraible/idea-live-templates">idea-live-templates</a> 
+
 ## ligatures 설정하기
 
 `Settings -> Editor -> Font -> Enable ligatures 체크`
