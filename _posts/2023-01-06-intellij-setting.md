@@ -107,11 +107,19 @@ public void $METHOD_NAME$() {
 
 `Edit Variables` 버튼 클릭 후 아래 사진과 같이 설정
 
-![1](/assets/images/intellij-setting/1.png)
+METHOD_NAME은 아래 코드를 사용하면 된다.
+
+`regularExpression(spacesToUnderscores(TEST_NAME), "[.]", "")`
+
+![1](/assets/images/intellij-setting/01.png)
 
 `test`를 입력하면 위 템플릿으로 만들어주며, 아래 사진과 같이 space를 눌렀을 때 underscore로 변환해준다.
 
-![2](/assets/images/intellij-setting/2.png)
+그리고 정규표현식을 사용하여 점을 공백으로 변환하였다.
+
+`@DisplayName`에 점을 포함하는 문장을 적었을 때 메서드명에는 점을 사용할 수 없기 때문이다.
+
+![2](/assets/images/intellij-setting/02.png)
 
 ## ligatures 설정하기
 
