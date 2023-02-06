@@ -92,14 +92,15 @@ POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세
 *Template text*
 
 ```java
-@Test
-@DisplayName("$TEST_NAME$")
+@org.junit.jupiter.api.Test
+@org.junit.jupiter.api.DisplayName("$TEST_NAME$")
 public void $METHOD_NAME$() {
   //given
   $END$
   //when
   
   //then
+  org.assertj.core.api.Assertions.assertThat();
 }
 ```
 
@@ -107,19 +108,27 @@ public void $METHOD_NAME$() {
 
 `Edit Variables` 버튼 클릭 후 아래 사진과 같이 설정
 
-METHOD_NAME은 아래 코드를 사용하면 된다.
+METHOD_NAME의 Expression는 아래 코드를 사용하면 된다.
 
 `regularExpression(spacesToUnderscores(TEST_NAME), "[.]", "")`
 
 ![1](/assets/images/intellij-setting/01.png)
 
+마지막으로 Options에서 `Use static import if possible`, `Shorten FQ names` 체크
+
+첫 번째 옵션을 활성화하면 `Assertions.assertThat`을 static import하여 `assertThat`으로 사용할 수 있다.
+
+두 번째 옵션을 활성화하면 템플릿에 적혀있는 경로의 라이브러리들을 import 해준다.
+
 `test`를 입력하면 위 템플릿으로 만들어주며, 아래 사진과 같이 space를 눌렀을 때 underscore로 변환해준다.
 
-그리고 정규표현식을 사용하여 점을 공백으로 변환하였다.
+그리고 정규표현식을 사용하여 점을 빈 값으로 replace 하였다.
 
 `@DisplayName`에 점을 포함하는 문장을 적었을 때 메서드명에는 점을 사용할 수 없기 때문이다.
 
-![2](/assets/images/intellij-setting/02.png)
+![2](/assets/images/intellij-setting/2.png)
+
+<a href="https://www.jetbrains.com/help/idea/template-variables.html">Jetbrains 튜토리얼</a>
 
 ## ligatures 설정하기
 
