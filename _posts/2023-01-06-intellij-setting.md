@@ -134,6 +134,8 @@ METHOD_NAME의 Expression는 아래 코드를 사용하면 된다.
 
 <a href="https://github.com/mraible/idea-live-templates">idea-live-templates</a> 
 
+<a href="https://smallgiant.tistory.com/103">내가 사용하는 live template - tistory</a>
+
 ## ligatures 설정하기
 
 `Settings -> Editor -> Font -> Enable ligatures 체크`
