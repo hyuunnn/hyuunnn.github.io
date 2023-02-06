@@ -96,7 +96,7 @@ POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세
 @DisplayName("$TEST_NAME$")
 public void $METHOD_NAME$() {
   //given
-  
+  $END$
   //when
   
   //then
