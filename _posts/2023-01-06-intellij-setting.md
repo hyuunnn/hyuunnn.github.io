@@ -132,7 +132,7 @@ METHOD_NAME의 Expression는 아래 코드를 사용하면 된다.
 
 ![2](/assets/images/intellij-setting/02.png)
 
-### AssertThrows snippet
+### assertThrows snippet
 
 *Template text*
 
