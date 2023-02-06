@@ -87,7 +87,9 @@ POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세
 
 `Settings -> Editor -> Live Templates`에서 자유롭게 추가
 
-최근에 test snippet을 만들어서 사용 중인데 매우 편리하다.
+최근에 snippet들을 만들어서 사용 중인데 매우 편리하다.
+
+### Test Snippet
 
 *Template text*
 
@@ -129,6 +131,30 @@ METHOD_NAME의 Expression는 아래 코드를 사용하면 된다.
 `@DisplayName`에 점을 포함하는 문장을 적었을 때 메서드명에는 점을 사용할 수 없기 때문이다.
 
 ![2](/assets/images/intellij-setting/02.png)
+
+### AssertThrows snippet
+
+*Template text*
+
+```java
+org.junit.jupiter.api.Assertions.assertThrows($EXCEPTION$.class, () -> {
+  $MOVE_CODE$$END$
+});
+```
+
+`Abbreviation: throws`, `Description: Assertions.assertThrows`
+
+![3](/assets/images/intellij-setting/03.png)
+
+Options에서 `Use static import if possible`, `Shorten FQ names` 체크
+
+![4](/assets/images/intellij-setting/04.gif)
+
+잘라내기(`CTRL + X`)를 사용하여 복사된 값을 `assertThrows` 안에 넣는 방식으로 사용할 수 있다.
+
+처음에는 코드를 자동으로 `assertThrows` 안으로 이동할 수 있는 방법을 찾아봤는데 없어서 `clipboard()`를 사용했다.
+
+### 참고
 
 <a href="https://www.jetbrains.com/help/idea/template-variables.html">Jetbrains 튜토리얼</a>
 
