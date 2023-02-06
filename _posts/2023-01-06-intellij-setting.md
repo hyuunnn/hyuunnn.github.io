@@ -100,7 +100,7 @@ public void $METHOD_NAME$() {
   //when
   
   //then
-  org.assertj.core.api.Assertions.assertThat();
+  org.assertj.core.api.Assertions.assertThat(true);
 }
 ```
 
@@ -120,13 +120,15 @@ METHOD_NAME의 Expression는 아래 코드를 사용하면 된다.
 
 두 번째 옵션을 활성화하면 템플릿에 적혀있는 경로의 라이브러리들을 import 해준다.
 
+`assertThat`에 `true`를 넣은 이유는 에러를 뜨지 않게 하기 위함이다. `F2` 단축키로 에러를 처리할 때 `assertThat` 때문에 1번 더 누르는게 귀찮다.
+
 `test`를 입력하면 위 템플릿으로 만들어주며, 아래 사진과 같이 space를 눌렀을 때 underscore로 변환해준다.
 
 그리고 정규표현식을 사용하여 점을 빈 값으로 replace 하였다.
 
 `@DisplayName`에 점을 포함하는 문장을 적었을 때 메서드명에는 점을 사용할 수 없기 때문이다.
 
-![2](/assets/images/intellij-setting/2.png)
+![2](/assets/images/intellij-setting/02.png)
 
 <a href="https://www.jetbrains.com/help/idea/template-variables.html">Jetbrains 튜토리얼</a>
 
