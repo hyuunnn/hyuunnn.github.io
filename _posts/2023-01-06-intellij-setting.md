@@ -114,9 +114,9 @@ public void $METHOD_NAME$() throws Exception {
 
 METHOD_NAME의 Expression는 아래 코드를 사용하면 된다.
 
-`regularExpression(spacesToUnderscores(TEST_NAME), "[.]", "")`
+`regularExpression(spacesToUnderscores(TEST_NAME), "[.|,]", "")`
 
-![1](/assets/images/intellij-setting/01.png)
+![1](/assets/images/intellij-setting/1.png)
 
 마지막으로 Options에서 `Use static import if possible`, `Shorten FQ names` 체크
 
@@ -128,9 +128,9 @@ METHOD_NAME의 Expression는 아래 코드를 사용하면 된다.
 
 `test`를 입력하면 위 템플릿으로 만들어주며, 아래 사진과 같이 space를 눌렀을 때 underscore로 변환해준다.
 
-그리고 정규표현식을 사용하여 점을 빈 값으로 replace 하였다.
+그리고 정규표현식을 사용하여 `.` 또는 `,`을 빈 값으로 변환했다.
 
-`@DisplayName`에 점을 포함하는 문장을 적었을 때 메서드명에는 점을 사용할 수 없기 때문이다.
+`@DisplayName`에 위 문자를 포함하는 문장을 적었을 때 메서드명으로 사용할 수 없기 때문이다.
 
 원하는 메서드명이 있다면 수정해서 사용하면 된다.
 
