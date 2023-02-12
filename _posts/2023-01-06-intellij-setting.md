@@ -130,7 +130,7 @@ METHOD_NAME의 Expression는 아래 코드를 사용하면 된다.
 
 `@DisplayName`에 점을 포함하는 문장을 적었을 때 메서드명에는 점을 사용할 수 없기 때문이다.
 
-![2](/assets/images/intellij-setting/02.png)
+![2](/assets/images/intellij-setting/02.gif)
 
 ### assertThrows snippet
 
