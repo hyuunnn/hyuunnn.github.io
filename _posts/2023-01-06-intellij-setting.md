@@ -85,7 +85,7 @@ POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세
 
 ## snippet 설정하기
 
-`Settings -> Editor -> Live Templates` 경로에서 추가 버튼 누르기
+`Settings -> Editor -> Live Templates` 경로에서 추가 버튼 클릭 후 Live Template 선택
 
 ![5](/assets/images/intellij-setting/05.png)
 
