@@ -12,7 +12,7 @@ tags: ["intellij", "setting"]
 
 `Settings -> Editor -> Code Style -> Java -> Scheme 변경` <a href="https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml">intellij-java-google-style.xml</a>
 
-`Settings -> Editor -> Code Style -> Java -> Wrapping and Braces -> Chained method calls: Wrap if long -> Wrap always` 
+~~`Settings -> Editor -> Code Style -> Java -> Wrapping and Braces -> Chained method calls: Wrap if long -> Wrap always`~~ (203-02-12 기준 google style 기본 설정 사용 - Wrap if long)
 
 프로젝트에서 요구하는 코드 스타일을 참고하여 커스터마이징하면 되겠다.
 
