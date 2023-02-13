@@ -210,3 +210,10 @@ jetbrains 기본 테마인 Darcula만 사용하다가 다른 테마도 다운받
 
 `CTRL + SHIFT + G` 단축키로 Hide/Unhide가 가능하다. 이 기능은 vscode에 기본적으로 있는데, 인텔리제이에서는 플러그인을 쓰면 된다.
 
+## 그 외에 플러그인 관련 링크
+
+https://sihyung92.oopy.io/etc/intellij/2
+
+https://sihyung92.oopy.io/etc/intellij/3
+
+https://github.com/jojoldu/intellij-development
