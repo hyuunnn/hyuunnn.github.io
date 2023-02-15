@@ -210,6 +210,16 @@ jetbrains 기본 테마인 Darcula만 사용하다가 다른 테마도 다운받
 
 `CTRL + SHIFT + G` 단축키로 Hide/Unhide가 가능하다. 이 기능은 vscode에 기본적으로 있는데, 인텔리제이에서는 플러그인을 쓰면 된다.
 
+## IdeaVim 플러그인
+
+<a href="https://github.com/JetBrains/ideavim">ideavim</a>
+
+Intellij에서 vim 기능을 사용할 수 있는 플러그인이다. vim 기능 외에도 vim에서 자주 사용하는 easymotion, surround, NERDTree 플러그인 등 지원하고 있다.
+
+확실히 vim에 익숙하면 코드 생산성에 도움을 준다. (geohot이 라이브 코딩하는 영상들을 보면 vscode에 vim extension을 설치해서 사용하는데, 코딩 속도가 정말 빠르다. <a href="https://www.youtube.com/@geohotarchive/videos">george hotz archive</a>)
+
+책 추천: <a href="http://www.yes24.com/Product/Goods/36686205">Practical Vim</a>
+
 ## 그 외에 플러그인 관련 링크
 
 https://sihyung92.oopy.io/etc/intellij/2
