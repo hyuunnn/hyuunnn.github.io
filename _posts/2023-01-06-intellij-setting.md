@@ -180,6 +180,32 @@ try {
 
 <a href="https://smallgiant.tistory.com/103">내가 사용하는 live template - tistory</a>
 
+## keymap 설정
+
+<a href="https://mangkyu.tistory.com/270">MangKyu님 블로그</a>를 통해 꿀팁들을 얻어갈 수 있었다.
+
+### Annotate with blame 설정
+
+`Settings -> Keymap -> blame 검색 -> CTRL + SHIFT + A 수정`
+
+![7](/assets/images/intellij-setting/07.png)
+
+블로그에서 설명하는 단축키와 동일하게 설정했다. `Find Action` 팝업을 띄우는 단축키와 중복되는데, 사용한 적이 없어서 괜찮았다. (Shift 2번을 누르면 `Search Everywhere` 기능이 동작하는데, 위와 동일한 팝업이고 카테고리만 다르다.)
+
+단축키가 없어서 Git 로그를 볼 때마다 마우스로 클릭했었는데 단축키로 On/Off를 할 수 있어서 정말 편하다.
+
+![8](/assets/images/intellij-setting/08.gif)
+
+### Run with Coverage 설정
+
+`Settings -> Keymap -> Run with Coverage 검색 -> CTRL + SHIFT + C 수정`
+
+테스트 커버리지를 측정해주는 기능이다. 이런 좋은 기능에 단축키 설정이 왜 없을까 의문이 들었다.
+
+위 단축키는 절대 경로를 복사해주는 기능과 중복되는데, 역시 사용한 적이 없기 때문에 괜찮았다.
+
+![9](/assets/images/intellij-setting/09.png)
+
 ## ligatures 설정하기
 
 `Settings -> Editor -> Font -> Enable ligatures 체크`
