@@ -234,6 +234,16 @@ Intellij에서 vim 기능을 사용할 수 있는 플러그인이다. vim 기능
 
 책 추천: <a href="http://www.yes24.com/Product/Goods/36686205">Practical Vim</a>
 
+## Translation 플러그인
+
+<a href="https://github.com/YiiGuxing/TranslationPlugin">Github</a>, <a href="https://plugins.jetbrains.com/plugin/8579-translation">jetbrains</a>
+
+intellij에서 번역 기능을 사용할 수 있는 플러그인이다. `CTRL + SHIFT + Y`를 누르면 번역 결과를 보여준다.
+
+test snippet에서 메서드명을 한글로 작성한 후에 영어로 바꿔야 할 때 활용하면 되겠다.
+
+![6](/assets/images/intellij-setting/06.png)
+
 ## 그 외에 플러그인 관련 링크
 
 https://sihyung92.oopy.io/etc/intellij/2
