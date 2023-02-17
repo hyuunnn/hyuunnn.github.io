@@ -206,9 +206,9 @@ jetbrains 기본 테마인 Darcula만 사용하다가 다른 테마도 다운받
 
 아이콘 관련 플러그인들을 중에서 다운로드 수를 보면 압도적으로 많다. 나는 일단 New UI에서 제공하는 기본 아이콘을 사용하고 있는데, Atom 아이콘은 뭔가 정신 사납다는 느낌이 들었다 ㅎ.. 기본 아이콘이 깔끔하고, 개인적으로 더 좋은 것 같다.
 
-## 단축키 보여주는 플러그인
+## Presentation Assistant 플러그인
 
-<a href="https://plugins.jetbrains.com/plugin/7345-presentation-assistant/">Presentation Assistant</a>
+<a href="https://github.com/chashnikov/IntelliJ-presentation-assistant">Github</a>, <a href="https://plugins.jetbrains.com/plugin/7345-presentation-assistant/">Jetbrains</a>
 
 인프런 김영한님 강의 외에도 유튜브 강의를 보면 단축키를 하단에 자동으로 보여주는데 위 플러그인을 사용한 것이다. 
 
@@ -216,9 +216,11 @@ jetbrains 기본 테마인 Darcula만 사용하다가 다른 테마도 다운받
 
 `Settings -> Appearance & Behavior -> Presentation Assistant -> Font size 16으로 변경, Display duration (in ms) 3000으로 변경`
 
-## 코드 미니맵 보여주는 플러그인
+## CodeGlance Pro 플러그인
 
-<a href="https://plugins.jetbrains.com/plugin/18824-codeglance-pro">CodeGlance Pro</a>
+<a href="https://github.com/Nasller/CodeGlancePro">Github</a>, <a href="https://plugins.jetbrains.com/plugin/18824-codeglance-pro">Jetbrains</a>
+
+vscode에서 기본적으로 제공하는 미니맵 기능을 intellij에서는 플러그인을 사용해야 한다.
 
 현재 <a href="https://github.com/vektah/CodeGlance">CodeGlance</a>는 유지보수가 안되고 있어서 다른 사람이 fork 떠서 하고 있다고 한다. (<a href="https://github.com/Nasller/CodeGlancePro">CodeGlancePro</a> - 현재 인텔리제이 플러그인에 검색하면 CodeGlance는 안뜬다.)
 
@@ -226,7 +228,7 @@ jetbrains 기본 테마인 Darcula만 사용하다가 다른 테마도 다운받
 
 ## IdeaVim 플러그인
 
-<a href="https://github.com/JetBrains/ideavim">ideavim</a>
+<a href="https://github.com/JetBrains/ideavim">Github</a>, <a href="https://plugins.jetbrains.com/plugin/164-ideavim">Jetbrains</a>
 
 Intellij에서 vim 기능을 사용할 수 있는 플러그인이다. vim 기능 외에도 vim에서 자주 사용하는 easymotion, surround, NERDTree 플러그인 등 지원하고 있다.
 
@@ -236,7 +238,7 @@ Intellij에서 vim 기능을 사용할 수 있는 플러그인이다. vim 기능
 
 ## Translation 플러그인
 
-<a href="https://github.com/YiiGuxing/TranslationPlugin">Github</a>, <a href="https://plugins.jetbrains.com/plugin/8579-translation">jetbrains</a>
+<a href="https://github.com/YiiGuxing/TranslationPlugin">Github</a>, <a href="https://plugins.jetbrains.com/plugin/8579-translation">Jetbrains</a>
 
 intellij에서 번역 기능을 사용할 수 있는 플러그인이다. `CTRL + SHIFT + Y`를 누르면 번역 결과를 보여준다.
 
