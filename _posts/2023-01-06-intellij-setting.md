@@ -158,6 +158,20 @@ Options에서 `Use static import if possible`, `Shorten FQ names` 체크
 
 처음에는 코드를 자동으로 `assertThrows` 안으로 이동할 수 있는 방법을 찾아봤는데 없어서 `clipboard()`를 사용했다. (좋은 방법이 있다면 알려주세요..!!)
 
+### try catch Snippet
+
+*Template text*
+
+```java
+try { 
+  $END$ 
+} catch ($EXCEPTION$ e) { 
+  e.printStackTrace(); 
+}
+```
+
+`Abbreviation: try`, `Description: try catch`
+
 ### 참고
 
 <a href="https://www.jetbrains.com/help/idea/template-variables.html">Jetbrains 튜토리얼</a>
