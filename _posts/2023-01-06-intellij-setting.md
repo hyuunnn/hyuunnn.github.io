@@ -114,7 +114,7 @@ public void $METHOD_NAME$() throws Exception {
 
 METHOD_NAME의 Expression는 아래 코드를 사용하면 된다.
 
-`regularExpression(spacesToUnderscores(TEST_NAME), "[.|,|(|)]", "")`
+`regularExpression(spacesToUnderscores(TEST_NAME), "[.|,|(|)|?]", "")`
 
 ![1](/assets/images/intellij-setting/1.png)
 
