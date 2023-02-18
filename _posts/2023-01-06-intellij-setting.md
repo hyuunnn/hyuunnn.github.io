@@ -262,6 +262,12 @@ Intellij에서 vim 기능을 사용할 수 있는 플러그인이다. vim 기능
 
 책 추천: <a href="http://www.yes24.com/Product/Goods/36686205">Practical Vim</a>
 
+## asciidoc 플러그인
+
+<a href="https://github.com/asciidoctor/asciidoctor-intellij-plugin">Github</a>, <a href="https://plugins.jetbrains.com/plugin/7391-asciidoc">Jetbrains</a>
+
+spring rest docs로 만든 결과를 미리 볼 수 있는 플러그인이다.
+
 ## Translation 플러그인
 
 <a href="https://github.com/YiiGuxing/TranslationPlugin">Github</a>, <a href="https://plugins.jetbrains.com/plugin/8579-translation">Jetbrains</a>
