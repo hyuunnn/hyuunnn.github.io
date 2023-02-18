@@ -266,7 +266,7 @@ Intellij에서 vim 기능을 사용할 수 있는 플러그인이다. vim 기능
 
 <a href="https://github.com/asciidoctor/asciidoctor-intellij-plugin">Github</a>, <a href="https://plugins.jetbrains.com/plugin/7391-asciidoc">Jetbrains</a>
 
-spring rest docs로 만든 결과를 미리 볼 수 있는 플러그인이다.
+spring rest docs로 만든 결과를 미리 볼 수 있는 플러그인이다. <a href="https://jojoldu.tistory.com/299">향로님 블로그</a>
 
 ## Translation 플러그인
 
