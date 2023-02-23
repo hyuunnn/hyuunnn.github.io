@@ -96,17 +96,24 @@ class Astronaut {
 
 빈 catch 블록은 어떤 의도인지 불분명하다. 책에서는 `e` 대신에 `ignored`(흔한 `e`보다 더 나은 이름)를 사용하고 `조건(CONDITION) -> 영향(EFFECT)` 형식으로 주석을 적는 방법을 제안했다.
 
-## 실제 값보다 기대 값을 먼저 적기 161
+## 실제 값보다 기대 값을 먼저 적기
 
+```java
+Assertions.assertEquals(cruiseControl.getTargetSpeedKmh(), 7667);
+// expected: <1337> but was <7667>
+```
 
+위 오류는 1337이 올바른 결과이고 7667이 잘못된 결과이라는 의미인데, 사실은 7667이 올바른 결과이다. 테스트 코드 동작에는 문제가 없지만 나중에 복잡한 테스트 코드에서 디버깅할 때 문제가 발생할 수 있다.
 
-## 부동소수점 테스트에서는 약간의 오차를 허용해야 한다. 164
+## 부동소수점 테스트에서는 약간의 오차를 허용해야 한다.
 
 ```java
 static final double TOLERANCE = 0.00001;
 Assertions.assertEquals(0.114, tank.getStatus(), TOLERANCE);
 // assertEquals(double expected, double actual, double delta)
 ```
+
+부동소수점은 근사값이기 때문에 완전한 일치는 존재하지 않는다.
 
 ## 독립형 테스트 사용하기
 
@@ -144,3 +151,50 @@ class OxygenTankTest {
 
 책에서는 스크롤 없이 테스트 메서드만 봐도 이해할 수 있다면 훌률한 코드이며, `@BeforeEach`를 가능하면 쓰지 말라고 한다. 프로그래머 입장에서 코드를 읽기 힘들어지기 때문이다. (trade off가 있다.)
 
+## 참조 누수 피하기
+
+```java
+public class Inventory {
+
+  private final List<Supply> supplies;
+
+  Inventory(List<Supply> supplies) {
+    this.supplies = supplies;
+  }
+
+  List<Supply> getSupplies() {
+    return supplies;
+  }
+}
+```
+
+```java
+List<Supply> externalSupplies = new ArrayList<>();
+Inventory inventory = new Inventory(externalSupplies);
+
+inventory.getSupplies().size(); // 0
+externalSupplies.add(new Supply("Apple"));
+inventory.getSupplies().size(); // 1
+
+inventory.getSupplies().add(new Supply("Banana"));
+inventory.getSupplies().size(); // 2
+```
+
+첫 번째 문제는 생성된 하나의 `ArrayList`를 공유하여 사용하고 있기 때문에 초기화 이후의 데이터를 마음대로 수정할 수 있다. 
+
+두 번째는 `getSupplies()`가 `list`를 반환하기 때문에 `add`를 사용하여 데이터를 수정할 수 있다.
+
+```java
+public class Inventory {
+
+  private final List<Supply> supplies;
+
+  Inventory(List<Supply> supplies) {
+    this.supplies = new ArrayList<>(supplies);
+  }
+
+  List<Supply> getSupplies() {
+    return Collections.unmodifiableList(supplies);
+  }
+}
+```
