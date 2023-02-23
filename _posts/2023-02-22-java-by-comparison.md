@@ -42,10 +42,6 @@ static final Pattern CODE = Pattern.compile("^S\\d{5}\\\\(US|EU|RU|CN)\\.[a-z]+$
 
 구현 과정에서 트레이드 오프가 있는 코드에는 왜 그렇게 작성했는지 주석을 적는 경우도 있는데, `README.md` 파일을 만들어서 별도의 설명 파일을 만드는 것도 좋은 것 같다.
 
-## JavaDoc을 활용하기
-
-p95-p105
-
 ## 축약 쓰지 않기
 
 약자, 축약한 이름으로 지정하면 어떻게 동작하는지 이해하는데 시간이 걸린다. 흔히 사용되는 **CSV** 같은 경우 그대로 사용해도 괜찮지만, 나머지는 전체 이름을 사용해라.
@@ -198,3 +194,28 @@ public class Inventory {
   }
 }
 ```
+
+## 부수 효과 피하기
+
+```java
+class Inventory {
+
+  private final List<Supply> supplies;
+
+  long countDifferentKinds() {
+    List<String> names = new ArrayList<>();
+
+    Consumer<String> addToNames = name -> names.add(name);
+
+    supplies.stream()
+          .filter(Supply:isUncontaminated)
+          .map(Supply:getName)
+          .distinct()
+          .forEach(addToNames);
+    return names.size();
+  }
+}
+```
+
+함수형 프로그래밍은 명령형, 객체 지향 프로그래밍과 다르게 사이드 이펙트가 없다는 점이다. Java에 도입된 Stream은 함수형 프로그래밍처럼 사용할 수 있지만 `forEach`를 사용하여 사이드 이펙트가 발생할 수 있다는 것이다. 책에서는 `forEach`는 쉽게 부수 효과를 일으키니(객체 지향에 더 익숙한 일반적인 사람들)  `collect`, `reduce`를 쓰려고 노력하라고 한다.
+
