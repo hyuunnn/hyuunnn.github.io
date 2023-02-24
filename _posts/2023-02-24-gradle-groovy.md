@@ -10,6 +10,8 @@ tags: ["gradle", "groovy"]
 
 <a href="http://www.yes24.com/Product/Goods/23449551">Gradle 철저 입문</a>
 
+<a href="http://www.yes24.com/Product/Goods/63799530">JVM 언어 입문</a>
+
 <a href="https://techblog.woowahan.com/2560/">Spock으로 테스트코드를 짜보자</a>
 
 <a href="https://jojoldu.tistory.com/228">Spock 소개 및 튜토리얼</a>
