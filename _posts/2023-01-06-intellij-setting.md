@@ -68,7 +68,7 @@ POSIX 표준에 의하면 마지막 행은 개행으로 끝나야 한다. 자세
 
 ## 인코딩 설정 (한글 사용)
 
-`Settings -> Editor -> File Encodings -> Default encoding for properties files: UTF-8 변경, 위에 인코딩 설정들 UTF-8로 변경`
+`Settings -> Editor -> File Encodings -> Transparent native-to-ascii conversion 체크, Default encoding for properties files: UTF-8 변경, 위에 인코딩 설정들 UTF-8로 변경`
 
 `Help -> Edit Custom VM Options`에서 인코딩 설정
 
