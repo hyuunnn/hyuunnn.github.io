@@ -22,6 +22,16 @@ tags: ["book"]
 
 책을 따라가면 구글 URI 설정에서 막히는데 까다로운 절차가 있는 것 같다. 네이버는 http를 지원하므로 네이버 로그인을 사용하면 된다.
 
+### CI/CD 파트에서 막히는 내용
+
+Travis CI는 신용카드 등록을 해야 사용할 수 있고, 무료로 주는 10000 크레딧을 사용하면 유료로 전환해야 한다.
+
+<a href="https://circleci.com/pricing">Circle CI</a> 또는 <a href="https://docs.github.com/ko/billing/managing-billing-for-github-actions/about-billing-for-github-actions">Github Action</a>을 사용할 수 있다.
+
+<a href="https://github.com/jojoldu/freelec-springboot2-webservice/issues/806">Github 이슈에 올라온 Travis CI 대신에 Github Action 사용하기</a>
+
+<a href="https://docs.github.com/ko/actions/learn-github-actions">Learn Github Actions</a>, <a href="https://blog.outsider.ne.kr/1510">GitHub Actions 워크플로우 사용하기</a>, <a href="https://meetup.nhncloud.com/posts/286">Github Actions으로 배포 자동화하기</a>, <a href="https://wbluke.tistory.com/39">Github Actions + CodeDeploy + Nginx 로 무중단 배포하기</a>, <a href="https://velog.io/@jjy5349/Travis-CI%EC%97%90%EC%84%9C-Github-Action%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84">Travis CI에서 Github Action으로 이전</a>
+
 ### 단위 테스트는 개발단계 초기에 문제를 발견하게 도와준다.
 
 사람은 완벽하지 않기 때문에 코드를 수정하면서 실수를 하게 된다. 하지만 테스트 코드가 일종의 안전 장치 역할을 하기 때문에 미연의 방지를 할 수 있다.
