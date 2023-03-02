@@ -12,7 +12,7 @@ tags: ["book"]
 
 저자 분께서 이를 해결하기 위해 <a href="https://jojoldu.tistory.com/539">블로그 글</a>도 작성해주셨고, <a href="https://github.com/jojoldu/freelec-springboot2-webservice/issues">github</a>으로도 이슈를 받고 있지만 한계가 있었다.
 
-2023-02-27 기준 <a href="https://github.com/hyuunnn/spring-aws-book">spring-aws-book</a>의 코드를 사용하여 문제 없이 책을 완주할 수 있다.
+2023-02-27 기준 <a href="https://github.com/hyuunnn/spring-aws-book">spring-aws-book</a>의 코드를 사용하여 Travis CI 전까지 완주할 수 있다.
 
 책에서는 <a href="https://start.spring.io/">spring initializr</a>을 사용하지 말라고 하는데, 이니셜라이저에서 만들어주는 설정 값이 최신 버전에서 제일 깔끔하게 동작하기 때문에 `build.gradle` 설정 값만 가져다 사용했다. 또한 `build.gradle`에서 사용된 기능들을 하나씩 찾아봤다. (저자 분은 `build.gradle`을 어떻게 작성하는지, 어떤 역할을 하는지 이해하는 것을 원하셨기 때문에 ㅇㅇ..)
 
