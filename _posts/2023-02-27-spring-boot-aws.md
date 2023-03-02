@@ -30,7 +30,7 @@ Travis CI는 신용카드 등록을 해야 사용할 수 있고, 무료로 주�
 
 <a href="https://github.com/jojoldu/freelec-springboot2-webservice/issues/806">Github 이슈에 올라온 Travis CI 대신에 Github Action 사용하기</a>
 
-<a href="https://docs.github.com/ko/actions/learn-github-actions">Learn Github Actions</a>, <a href="https://blog.outsider.ne.kr/1510">GitHub Actions 워크플로우 사용하기</a>, <a href="https://meetup.nhncloud.com/posts/286">Github Actions으로 배포 자동화하기</a>, <a href="https://wbluke.tistory.com/39">Github Actions + CodeDeploy + Nginx 로 무중단 배포하기</a>, <a href="https://velog.io/@jjy5349/Travis-CI%EC%97%90%EC%84%9C-Github-Action%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84">Travis CI에서 Github Action으로 이전</a>
+<a href="https://docs.github.com/ko/actions">Github 공식 문서</a>, <a href="https://zzsza.github.io/development/2020/06/06/github-action/">Github Action 사용법 정리</a>, <a href="https://blog.outsider.ne.kr/1510">GitHub Actions 워크플로우 사용하기</a>, <a href="https://meetup.nhncloud.com/posts/286">Github Actions으로 배포 자동화하기</a>, <a href="https://wbluke.tistory.com/39">Github Actions + CodeDeploy + Nginx 로 무중단 배포하기</a>, <a href="https://velog.io/@jjy5349/Travis-CI%EC%97%90%EC%84%9C-Github-Action%EC%9C%BC%EB%A1%9C-%EC%9D%B4%EC%A0%84">Travis CI에서 Github Action으로 이전</a>
 
 ### 단위 테스트는 개발단계 초기에 문제를 발견하게 도와준다.
 
