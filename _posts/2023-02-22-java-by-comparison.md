@@ -195,6 +195,10 @@ public class Inventory {
 }
 ```
 
+생성자에서 `new ArrayList`를 통해 항상 새로운 데이터가 들어오게 된다.
+
+그리고 `unmodifiableList`를 사용하여 예를 들어 `add` 메서드를 호출했을 때 `UnsupportedOperationException`이 발생하게 된다.
+
 ## 부수 효과 피하기
 
 ```java
