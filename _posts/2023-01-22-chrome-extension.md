@@ -26,6 +26,10 @@ github repository의 폴더, 파일들을 tree 형식으로 보여주는 익스�
 
 나중에 알았는데 Multi-tab, 북마크 기능은 유료였다.. 15일 체험판으로 사용할 수 있던 것이다 ㅋㅋ.. <a href="https://www.octotree.io/pricing">pricing</a>
 
+23-03-05 기준 octotree를 사용할 필요가 없다. (octotree에 비해 여는 속도가 조금 느리지만 쓸만하다.)
+
+<a href="https://github.com/orgs/community/discussions/48301">Code View + Code Search</a>
+
 ## JSON Viewer
 
 <a href="https://github.com/tulios/json-viewer">JSON Viewer</a>
