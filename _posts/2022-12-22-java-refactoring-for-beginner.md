@@ -165,7 +165,7 @@ public class Label {
         return NullLabel.getInstance();
     }
 
-    private static class NullLabel extends Label { // Private Static Inner Class
+    private static class NullLabel extends Label { // Static Nested Class
 
         private static final NullLabel singleton = new NullLabel(); // 싱글톤 패턴 (1번 생성한 객체를 재사용한다.)
 
