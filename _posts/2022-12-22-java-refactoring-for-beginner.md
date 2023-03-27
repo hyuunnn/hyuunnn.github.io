@@ -263,3 +263,7 @@ public class Book {
 ```
 
 인터페이스에 getter 메서드만 있는 것이 핵심이다. `book.getAuthor().setName("authorName")` 코드처럼 `setName`을 호출했을 때 `ImmutableAuthor`는 `setName`을 모르기 때문에 컴파일 에러가 발생한다.
+
+```
+소프트웨어 개발은 정원 관리와 비슷합니다. 나무와 화초의 균형, 잎과 꽃의 균형을 맞추는 것처럼 소프트웨어 전체를 주기적으로 정리할 필요가 있습니다. 한쪽으로 치우치지 않고 골고루 관리해야 합니다. - p164
+```
