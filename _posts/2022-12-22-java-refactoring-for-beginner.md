@@ -161,11 +161,11 @@ public class Label {
         return false;
     }
 
-    public static Label newNull() {  // 팩터리 메서드 패턴 (NullLabel 클래스를 숨겼다.)
+    public static Label newNull() {  // 팩터리 메서드 패턴 (NullLabel 클래스의 존재를 숨겼다.)
         return NullLabel.getInstance();
     }
 
-    private static class NullLabel extends Label { 
+    private static class NullLabel extends Label { // Private Static Inner Class
 
         private static final NullLabel singleton = new NullLabel(); // 싱글톤 패턴 (1번 생성한 객체를 재사용한다.)
 
@@ -228,4 +228,38 @@ OOP에서 `instanceof`는 smell이 있다고 한다. 이런 인터페이스를 �
 
 네이밍을 잘하는건 프로그래머의 숙명이다. 참조 문서나 소스 코드 등을 읽을 때도 나라면 어떤 이름을 붙일까? 고민하는 습관이 중요하다.
 
+## 클래스 추출
 
+### 불변 인터페이스
+
+```java
+public interface ImmutableAuthor {
+    public String getName();
+    public String getMail();
+}
+
+public class Author implements ImmutableAuthor {
+    private String _name;
+    private Strign _mail;
+    public Author(String name, String mail) {
+        _name = name;
+        _mail = mail;
+    }
+    public String getName() { return _name; }
+    public String getMail() { return _mail; }
+    public void setName(String name) { _name = name; }
+    public void setMail(Strign mail) { _mail = mail; }
+    // ...
+}
+
+public class Book {
+    ...
+    private Author _author;
+    ...
+    public ImmutableAuthor getAuthor() {
+        return _author;
+    }
+}
+```
+
+인터페이스에 getter 메서드만 있는 것이 핵심이다. `book.getAuthor().setName("authorName")` 코드처럼 `setName`을 호출했을 때 `ImmutableAuthor`는 `setName`을 모르기 때문에 컴파일 에러가 발생한다.
