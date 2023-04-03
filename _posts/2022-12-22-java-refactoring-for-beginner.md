@@ -508,11 +508,11 @@ public class Dice {
     private final Random _random;
 
     public Dice() {
-        _random = new Random(314159L);
+        this(314159L);
     }
 
     public Dice(long seed) {
-        _random = new Random(314159L);
+        _random = new Random(seed);
     }
 
     public int nextInt() {
@@ -524,3 +524,149 @@ public class Dice {
     }
 }
 ```
+
+상속은 상위 클래스의 모든 기능을 사용할 수 있으므로 신중하게 사용해야 한다. 특히 라이브러리 개발자는 공개 후에는 수정하기 번거롭기 때문이다. (자바의 deprecated 코드도 공개되어 이미 사용 중이기 때문에 지울 수 없다.) -> 마츠모토 유키히로는 **상속을 최후의 무기**라고 표현했다.
+
+### 리스코프 치환 원칙 (LSP)
+
+상위 클래스의 타입으로 하위 클래스의 인스턴스를 할당해도 사용에 문제가 없다면 원칙을 지킨다고 볼 수 있다.
+
+```java
+Random r = new Dice();
+int n = r.nextInt();
+boolean b = r.nextBoolean(); // UnsupportedOperationException 예외 (LSP 위반)
+```
+
+## 대리자 은폐 (Hide Delegate)
+
+```java
+public class AddressFile {
+    private final Database _database;
+    public AddressFile(String filename) {
+        _database = new Database(filename);
+    }
+    public Database getDatabase() {
+        return _database;
+    }
+    public Enumeration names() {
+        return _database.getProperties().propertyNames();
+    }
+}
+```
+
+```java
+public class Database {
+    private final Properties _properties;
+    private final String _filename;
+
+    public Database(String filename) {
+        _filename = filename;
+        _properties = new Properties();
+        try {
+            _properties.load(new FileInputStream(_filename));
+        } catch (IOException ignore) {
+        }
+    }
+
+    public void set(String key, String value) {
+        _properties.setProperty(key, value);
+    }
+
+    public String get(String key) {
+        return _properties.getProperty(key, null);
+    }
+
+    public void update() throws IOException {
+        _properties.store(new FileOutputStream(_filename), "");
+    }
+
+    public Properties getProperties() {
+        return _properties;
+    }
+}
+```
+
+위와 같은 코드를 작성했을 때 AddressFile 클래스 뿐만 아니라 Database 클래스(대리 클래스)도 접근해야 한다.
+
+Database 클래스만 접근하면 되는데 AddressFile을 통해서 접근해야 하는 것이다. (`file.getDatabase().get(name);`)
+
+이는 위임 메서드와 대리 클래스 은폐로 해결할 수 있다.
+
+### 위임 메서드 및 대리자 은폐
+
+```java
+public class AddressFile {
+    private final Database _database;
+    public AddressFile(String filename) {
+        _database = new Database(filename);
+    }
+
+    public Enumeration names() {
+        return _database.getProperties().propertyNames();
+    }
+
+    public void set(String key, String value) {
+        _database.set(key, value);
+    }
+
+    public String get(String key) {
+        return _database.get(key);
+    }
+
+    public void update() throws IOException {
+        _database.update();
+    }
+}
+
+// AddressFile file = new AddressFile("address.txt");
+// ...
+// String mail = file.get(name);
+```
+
+`getDatabase()`를 통해 `Database`에 접근했던 코드에서 위임 메서드(`set`, `get`, `update`)를 사용하여 `Database` 클래스의 사용을 은폐하고 있다.
+
+또한 `getDatabase()`는 호출할 필요가 없기 때문에 삭제해준다.
+
+`names()` 메서드도 위와 같은 방법으로 코드를 수정할 수 있다.
+
+```java
+// Database.java
+public Enumeration names() {
+    return _properties.propertyNames();
+}
+
+// AddressFile.java
+public Enumeration names() {
+    return _database.keys();
+}
+```
+
+의존 관계를 줄이기 위해서 적절한 **정보 은폐**(상세 구현을 숨김)는 중요하다. 예를 들어 클래스를 삭제한다고 했을 때 클래스가 여러 곳에서 의존한다면 코드 수정에 많은 비용이 발생한다. (**서버 클래스의 상세 구현을 숨기면 상세 구현에 의존하는 클라이언트 클래스는 없어지며, 클래스 수정이 편해진다.**)
+
+### 접근 제어를 사용한 은폐
+
+`private`이나 `protected`로 필드, 메서드로 선언하여 외부에서 접근할 수 없게 한다.
+
+### 패키지를 사용한 은폐
+
+`package-private`으로 선언하여 패키지 외부에서 보이지 않게 한다.
+
+### 중첩 클래스(nested class)를 사용한 은폐
+
+클래스 내부에 다른 클래스를 선언하여 위임을 은폐할 수 있다.
+
+### 중개자 제거 (Remove Middle Man)
+
+**모든 메서드가 위임 메서드**면 결국 다른 클래스의 메서드를 호출하는 것이기 때문에 중개자라고 볼 수 있다.
+
+예제 코드에서 `AddressFile` 클래스가 해당된다. 
+
+중개자 제거, 대리자 은폐 중에서 뭐가 더 좋은지는 상황에 따라 다르다. 클래스의 관계를 파악하여 적절한 방법을 사용하면 된다.
+
+대리자 은폐 후에는 **클래스 인라인화**를 같이 하는 편이라고 한다.
+
+```text
+이 클래스는 위임할 클래스를 호출하고 있으니 대리자 은폐를 하면 좋겠지?
+이 클래스는 위임 메서드뿐이니까 중개자 제거를 검토해보자 - p361
+```
+
