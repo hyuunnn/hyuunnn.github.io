@@ -210,7 +210,7 @@ trade off를 고려하여 리팩토링을 수행해야 한다.
 
 <a href="http://www.yes24.com/Product/Goods/14752528">패턴을 위한 리팩터링</a>에서 이런 부류를 패턴 중독이라고 부른다고 한다.
 
-### 기존 클래스를 수정할 수 없을 떄
+### 기존 클래스를 수정할 수 없을 때
 
 `Null`이라는 인터페이스를 만들고 `NullLabel` 클래스가 인터페이스를 구현하여 `obj instanceof Null` 표현식을 사용하면 된다.
 
@@ -465,3 +465,62 @@ public Shape createShapeOval(int startx, int start,y int endx, int endy) { ... }
 ```
 
 지금까지 다양한 방법으로 리팩토링을 할 수 있었다. 이는 규모나 기능 추가 예정 등 trade off를 판단하여 적절한 리팩토링을 진행해야 한다. (절대적인 정답은 없다.)
+
+## 상속을 위임으로 치환
+
+`extends`만 붙이면 상속할 수 있기 때문에 남용하는 경우도 있다. 상속을 필요하지 않은 곳에서 하면 코드가 더러워지고 재사용하기 어렵게 된다.
+
+책의 예시 코드는 `Random`을 상속하고 있는데 다른 메서드들을 override하여 클래스 설계자가 의도하지 않는 방향(상속 거부)으로 코드를 작성했다. -> 계약(contract) 위반
+
+```java
+public class Dice extends Random {
+    public Dice() {
+        super(314159L);
+    }
+
+    public Dice(long seed) {
+        super(seed);
+    }
+
+    @Override public int nextInt() {
+        return nextInt(6) + 1;
+    }
+
+    @Override public void nextBytes(byte[] bytes) {
+        throw new UnsupportedOperationException();
+    } 
+    
+    @Override public long nextLong() {
+        throw new UnsupportedOperationException();
+    } 
+    
+    @Override public Bolean nextBoolean() {
+        throw new UnsupportedOperationException();
+    }
+    ...
+}
+```
+
+위임용 필드를 만들어서 이를 반환하는 메서드를 만들어주면 된다.
+
+```java
+public class Dice {
+    private final Random _random;
+
+    public Dice() {
+        _random = new Random(314159L);
+    }
+
+    public Dice(long seed) {
+        _random = new Random(314159L);
+    }
+
+    public int nextInt() {
+        return _random.nextInt(6) + 1;
+    }
+
+    public void setSeed(long seed) {
+        _random.setSeed(seed);
+    }
+}
+```
