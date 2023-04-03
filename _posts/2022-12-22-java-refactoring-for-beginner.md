@@ -464,7 +464,7 @@ public Shape createShapeRectangle(int startx, int starty, int endx, int endy) {
 public Shape createShapeOval(int startx, int start,y int endx, int endy) { ... }
 ```
 
-지금까지 다양한 방법으로 리팩토링을 할 수 있었다. 이는 규모나 기능 추가 예정 등 trade off를 판단하여 적절한 리팩토링을 진행해야 한다. (절대적인 정답은 없다.)
+지금까지 다양한 방법으로 리팩토링을 할 수 있었다. 다양한 방법이 있다는 것은 규모나 기능 추가 예정 등 trade off를 판단하여 적절한 리팩토링을 진행해야 한다. (절대적인 정답은 없다.)
 
 ## 상속을 위임으로 치환
 
