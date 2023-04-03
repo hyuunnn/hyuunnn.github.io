@@ -267,3 +267,201 @@ public class Book {
 ```
 소프트웨어 개발은 정원 관리와 비슷합니다. 나무와 화초의 균형, 잎과 꽃의 균형을 맞추는 것처럼 소프트웨어 전체를 주기적으로 정리할 필요가 있습니다. 한쪽으로 치우치지 않고 골고루 관리해야 합니다. - p164
 ```
+
+## 분류 코드를 하위 클래스로 치환
+
+```java
+public class Shape {
+    public static final int TYPECODE_LINE = 0;
+    public static final int TYPECODE_RECTANGLE = 1;
+    public static final int TYPECODE_OVAL = 2;
+    
+    private final int _typecode;
+    private final int _startx;
+    private final int _starty;
+    private final int _endx;
+    private final int _endy;
+
+    protected Shape(int typecode, int startx, int starty, int endx, int endy) {
+        _typecode = typecode;
+        _startx = startx;
+        _endx = endx;
+        _starty = starty;
+        _endy = endy;
+    }
+
+    public int getTypecode() { return _typecode; }
+
+    public String getName() {
+        switch (_typecode) {
+            case TYPECODE_LINE:
+                return "LINE";
+            case TYPECODE_RECTANGLE:
+                return "RECTANGLE";
+            case TYPECODE_OVAL:
+                return "OVAL";
+            default:
+                return null;
+        }
+    }
+
+    public void draw() {
+        switch (_typecode) {
+            case TYPECODE_LINE:
+                drawLine();
+                break;
+            case TYPECODE_RECTANGLE:
+                drawRectangle();
+                break;
+            case TYPECODE_OVAL:
+                drawOval();
+                break;
+            default:
+                ;
+        }
+    }
+}
+```
+
+위 코드를 보면 기능이 추가될 때마다 switch 코드를 수정해야하므로 OCP를 위반하는 코드이다. Shape는 `draw()`, `getName()`을 호출할 때 어떻게 동작해야 하는지 알 필요 없이 단순히 메서드를 호출하면 된다.
+
+```java
+public abstract class Shape {
+    public static final int TYPECODE_LINE = 0;
+    public static final int TYPECODE_RECTANGLE = 1;
+    public static final int TYPECODE_OVAL = 2;
+    
+    private final int _startx;
+    private final int _starty;
+    private final int _endx;
+    private final int _endy;
+
+    public static Shape create(int typecode, int startx, int starty, int endx, int endy) {
+        switch (typecode) {
+            case TYPECODE_LINE:
+                return new ShapeLine(startx, starty, endx, endy);
+            case TYPECODE_RECTANGLE:
+                return new ShapeRectangle(statx, starty, endx, endy);
+            case TYPECODE_OVAL:
+                return new ShapeOval(startx, starty, endx, endy);
+            default:
+                throw new IllegalArgumentException("typecode = " + typecode);
+        }
+    }
+
+    protected Shape(int startx, int starty, int endx, int endy) {
+        _startx = startx;
+        _endx = endx;
+        _starty = starty;
+        _endy = endy;
+    }
+
+    public abstract int getTypecode();
+    public abstract String getName();
+    public abstract void draw();
+}
+```
+
+```java
+public class ShapeLine extends Shape {
+    protected ShapeLine(int startx, int starty, int endx, int endy) {
+        super(startx, starty, endx, endy);
+    }
+
+    @Override public int getTypecode() { return Shape.TYPECODE_LINE; }
+    @Override public String getName() { return "LINE"; }
+    @Override public void draw() { drawLine(); }
+    
+    private void drawLine() {
+        System.out.println("drawLine");
+    }
+}
+
+public class ShapeRectangle extends Shape {
+    protected ShapeRectangle(int startx, int starty, int endx, int endy) {
+        super(startx, starty, endx, endy);
+    }
+
+    @Override public int getTypecode() { return Shape.TYPECODE_RECTANGLE; }
+    @Override public String getName() { return "RECTANGLE"; }
+    @Override public void draw() { drawRectangle(); }
+    
+    private void drawRectangle() {
+        System.out.println("drawRectangle");
+    }
+}
+
+public class ShapeOval extends Shape { ... }
+```
+
+위와 같이 모양에 해당하는 각각의 클래스가 Shape 클래스를 상속하여 구현한 후에 이를 호출하면 되는 것이다. 이전 코드처럼 모양이 추가될 때마다 `draw()`와 `getName()`에 switch case를 추가할 필요가 없다.
+
+하지만 `create`에서 switch를 사용하기 때문에 이것도 결국 내부 코드를 수정해야 하므로 OCP를 위반하고 있다. 
+
+그러나 Strategy Pattern을 사용하면 어떤 클래스의 객체를 반환해야 하는지 알 필요 없이 `factory` 필드와 `setFactory` 메서드를 만들어서 `setFactory` 메서드를 통해 받은 객체로 `facotry` 필드를 단순히 갈아끼우면 된다. (그저 `factory.create(~~)` 메서드를 호출하면 된다.)
+
+책에서는 아래와 같은 코드를 작성했다.
+
+```java
+public abstract class Shape {
+    ...
+    public static Shape createShape(ShapeFactory factory, int startx, int starty, int endx, int endy) {
+        return factory.create(startx, starty, endx, endy);
+    }
+    ...
+}
+```
+
+```java
+public abstract class ShapeFactory {
+    public abstract Shape create(int startx, int starty, int endx, int endy);
+
+    public static class LineFactory extends ShapeFactory {
+        private static final ShapeFactory factory = new LineFactory();
+        
+        private LineFactory() {
+        }
+
+        public static ShapeFactory getInstance() {
+            return factory;
+        }
+
+        public Shape create(int startx, int starty, int endx, int endy) {
+            return new ShapeLine(startx, starty, endx, endy);
+        }
+    }
+
+    public static class RectangleFactory extends ShapeFactory { ... }
+    public static class OvalFactory extends ShapeFactory { ... }
+}
+```
+
+```java
+Shape line = Shape.createShape(ShapeFactory.LineFactory.getInstance(), 0, 0, 100, 200);
+Shape rectangle = Shape.createShape(ShapeFactory.RectangleFactory.getInstance(), 0, 0, 100, 200);
+```
+
+그러나 위와 같은 코드는 가독성이나 사용하는 입장에서 봤을 때 괜찮은 코드는 아니다. (너무 길다.)
+
+`ShapeFactory`를 구현하는 클래스들을 각각의 파일로 만들어서 하나의 패키지에 넣는 것도 괜찮은 방법이겠다. (`Shape` 패키지 안에 `ShapeFactory`, `LineFactory`, `RectangleFactory` 등이 있는 형태)
+
+```java
+Shape line = Shape.createShape(LineFactory.getInstance(), 0, 0, 100, 200);
+Shape rectangle = Shape.createShape(RectangleFactory.getInstance(), 0, 0, 100, 200);
+```
+
+`create`라는 메서드 하나로 해결하지 않고, `createShapeLine`, `createShapeRectangle` 처럼 팩토리 메서드를 여러개 만들어서 사용하는 방법도 있다.
+
+```java
+public Shape createShapeLine(int startx, int starty, int endx, int endy) {
+    return new ShapeLine(startx, starty, endx, endy);
+}
+
+public Shape createShapeRectangle(int startx, int starty, int endx, int endy) {
+    return new ShapeRectangle(startx, starty, endx, endy);
+}
+
+public Shape createShapeOval(int startx, int start,y int endx, int endy) { ... }
+```
+
+지금까지 다양한 방법으로 리팩토링을 할 수 있었다. 이는 규모나 기능 추가 예정 등 trade off를 판단하여 적절한 리팩토링을 진행해야 한다. (절대적인 정답은 없다.)
