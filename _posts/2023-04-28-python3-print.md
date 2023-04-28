@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python으로 입력 값을 넣을 때 발생하는 문제"
+title: "커맨드 라인에서 파이썬으로 값을 넣을 때 발생하는 문제"
 description: ""
 date: 2023-04-28
 tags: [pwnable, python]
