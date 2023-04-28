@@ -14,6 +14,10 @@ pwnable 문제를 풀 때 대부분의 사람들은 <a href="https://github.com/
 
 ![1](/assets/images/python3-print/1.png)
 
+마지막에 남는 `0x0a`는 개행(LF)을 의미한다.
+
+### 첫 번째 결과
+
 python3은 ascii에서 unicode로 바뀌면서 `b"A"`처럼 `b`를 사용해야 하는데 첫 번째 결과를 보면 A가 24개이므로 `*24`는 정상적으로 동작했다. 
 
 하지만 `\x96\x11\x40\x00` 값 자체가 ascii 코드로 출력됨을 확인할 수 있었다.
@@ -25,6 +29,8 @@ r <<< $(python3 -c 'print(b"A"*24 + b"\x96\x11\x40\x00")')
 ```
 
 ![6](/assets/images/python3-print/6.png)
+
+### 두 번째 결과
 
 두번째는 `0x41` ascii 값이 정상적으로 들어갔지만 그 이후에 `0xc2`라는 의문을 모르는 값이 들어갔고 그 이후에 `\x96\x11\x40\x00`이 추가되었다. 
 
@@ -42,9 +48,9 @@ r <<< $(python3 -c 'print("A"*24 + "\x96\x11\x40\x00")')
 
 ![7](/assets/images/python3-print/7.png)
 
-마지막은 이전 사진을 참고하여 `std.stdout.buffer.write`를 사용한 결과 깔끔하게 값이 출력되는 것을 확인할 수 있었다.
+### 마지막 결과
 
-추가로 마지막에 남는 `0x0a`는 개행(LF)을 의미한다.
+마지막은 이전에 참고한 글을 참고하여 `std.stdout.buffer.write`를 사용한 결과 깔끔하게 값이 출력되는 것을 확인할 수 있었다.
 
 ```console
 r <<< $(python3 -c 'import sys;sys.stdout.buffer.write(b"A"*24 + b"\x96\x11\x40\x00\x00\x00\x00\x00")')
