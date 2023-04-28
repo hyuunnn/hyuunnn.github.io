@@ -8,7 +8,7 @@ tags: [pwnable, python]
 
 pwnable 문제를 풀 때 대부분의 사람들은 <a href="https://github.com/Gallopsled/pwntools">pwntools</a>를 사용한다.
 
-하지만 예전에 LOB(Lord Of Buffer overflow)를 풀을 때 command line을 사용했던 기억이 나서 python3에서 생각했던 것과 다르게 정상적으로 동작하지 않았다.
+하지만 예전에 LOB(Lord Of Buffer overflow)를 풀을 때 command line을 사용했던 기억이 나서 python3에서 사용해보니 생각했던 결과와 다른 값이 메모리에 저장되었다.
 
 원인을 알아보기 위해 xxd 명령어로 확인해봤더니 값이 다르게 남는 것을 확인할 수 있었다.
 
