@@ -20,7 +20,7 @@ python3은 ascii에서 unicode로 바뀌면서 `b"A"`처럼 `b`를 사용해야 
 
 gdb를 사용하여 메모리에 정말 그렇게 남는지도 확인하였다.
 
-```text
+```console
 r <<< $(python3 -c 'print(b"A"*24 + b"\x96\x11\x40\x00")')
 ```
 
@@ -36,7 +36,7 @@ r <<< $(python3 -c 'print(b"A"*24 + b"\x96\x11\x40\x00")')
 
 ![4](/assets/images/python3-print/4.png)
 
-```text
+```console
 r <<< $(python3 -c 'print("A"*24 + "\x96\x11\x40\x00")')
 ```
 
@@ -46,7 +46,7 @@ r <<< $(python3 -c 'print("A"*24 + "\x96\x11\x40\x00")')
 
 추가로 마지막에 남는 `0x0a`는 개행(LF)을 의미한다.
 
-```text
+```console
 r <<< $(python3 -c 'import sys;sys.stdout.buffer.write(b"A"*24 + b"\x96\x11\x40\x00\x00\x00\x00\x00")')
 ```
 
