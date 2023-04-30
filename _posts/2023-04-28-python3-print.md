@@ -66,6 +66,14 @@ python2는 2가지 방법 모두 동일한 결과를 보여주고 있다.
 
 ![5](/assets/images/python3-print/5.png)
 
+### cat의 역할
+
+<a href="https://www.hackerschool.org/HS_Boards/zboard.php?id=QNA_system&page=1&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=1950">;cat을 사용하는 이유</a>
+
+<a href="https://github.com/Gallopsled/pwntools/blob/dev/pwnlib/tubes/tube.py#L862">pwntools interactive()</a>
+
+<a href="https://stackoverflow.com/questions/68137400/using-pwntools-process-interactive-mode-to-control-python3">Using pwntools process interactive mode to control python3</a>
+
 ### 참고
 
 <a href="https://oz1ng019.tistory.com/125">oz1ng019님의 글</a>
