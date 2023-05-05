@@ -116,7 +116,7 @@ return 주소인 0x4011d5를 확인해보니 `qwe+51`을 가리키고 있다.
 
 ![13](/assets/images/stack-frame/13.png)
 
-qwe+51은 `call qweqwe`를 수행한 후 다음으로 실행해야 하는 주소이다.
+`qwe+51`은 `call qweqwe`를 수행한 후 다음으로 실행해야 하는 주소이다.
 
 ![14](/assets/images/stack-frame/14.png)
 
@@ -124,11 +124,11 @@ qwe+51은 `call qweqwe`를 수행한 후 다음으로 실행해야 하는 주소
 
 ![15](/assets/images/stack-frame/15.png)
 
-return 주소인 0x401221를 확인해보니 main+73을 가리키고 있다.
+return 주소인 0x401221를 확인해보니 `main+73`을 가리키고 있다.
 
 ![16](/assets/images/stack-frame/16.png)
 
-main+73은 `call qwe`를 수행한 후 다음으로 실행해야 하는 주소이다.
+`main+73`은 `call qwe`를 수행한 후 다음으로 실행해야 하는 주소이다.
 
 ### 정리
 
