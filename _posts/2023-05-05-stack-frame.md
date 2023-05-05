@@ -3,7 +3,7 @@ layout: post
 title: "Stack Frame"
 description: ""
 date: 2023-05-05
-tags: [stack]
+tags: [pwnable, stack]
 ---
 
 ```c
@@ -137,3 +137,4 @@ main+73은 `call qwe`를 수행한 후 다음으로 실행해야 하는 주소�
 해당 함수를 마무리하고 빠져나올 때 메모리에 보관했던 주소로 스택의 시작점을 복구한다.
 
 그다음 이어서 수행할 명령어인 RET 주소를 실행한다.
+
