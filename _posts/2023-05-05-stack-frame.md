@@ -74,7 +74,7 @@ RSP: 0x7fffffffdde8 -> 0x7fffffffdde0, RBP: 0x7fffffffde00
 
 RSP: 0x7fffffffdde0, RBP: 0x7fffffffdde0
 
-이제 `qwe`함수에서 새롭게 사용할 스택 공간을 사용하기 위해 RSP와 RBP를 같게 한다.
+이제 `qwe`함수에서 새롭게 사용할 스택 공간을 사용하기 위해 `mov rbp, rsp`를 수행하여 RSP와 RBP를 같게 한다.
 
 ![7](/assets/images/stack-frame/7.png)
 
