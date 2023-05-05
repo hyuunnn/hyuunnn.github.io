@@ -6,7 +6,7 @@ date: 2023-05-05
 tags: [pwnable]
 ---
 
-스택 프레임 설명 <a href="https://hyuunnn.github.io/2023/05/05/stack-frame/">Stack Frame</a>
+<a href="https://hyuunnn.github.io/2023/05/05/stack-frame/">S스택 프레임 설명</a>
 
 ```c
 #include <stdio.h>
