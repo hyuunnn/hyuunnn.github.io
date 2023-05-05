@@ -66,7 +66,7 @@ RSP: 0x7fffffffdde8 -> 0x7fffffffdde0, RBP: 0x7fffffffde00
 
 ![5](/assets/images/stack-frame/5.png)
 
-`push rbp` 명령을 수행했을 떄 RSP 주소가 -8 되었고 이 주소(0x7fffffffdde0)에는 이전 스택 프레임 주소 (0x7fffffffde00)가 저장(push)된다.
+`push rbp` 명령을 수행했을 때 RSP 주소가 -8 되었고 이 주소(0x7fffffffdde0)에는 이전 스택 프레임 주소 (0x7fffffffde00)가 저장(push)된다.
 
 즉 `main`으로 돌아갈 때 복구할 스택의 주소를 메모리에 보관한다. (`main`에서 `qwe`를 호출했으니까 `qwe`의 역할이 끝난 후에 `main`에서 하던 일을 마저 해야한다.)
 
