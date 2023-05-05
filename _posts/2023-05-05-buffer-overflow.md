@@ -9,6 +9,7 @@ tags: [pwnable]
 <a href="https://hyuunnn.github.io/2023/05/05/stack-frame/">S스택 프레임 설명</a>
 
 ```c
+// bof.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -27,6 +28,10 @@ int main() {
   gets(buf);
   printf("%s\n", buf);
 }
+```
+
+```console
+gcc -o bof bof.c -fno-stack-protector -fno-PIE -no-pie
 ```
 
 get_shell 함수는 shell을 띄우기 위해 임의로 만들었다.
