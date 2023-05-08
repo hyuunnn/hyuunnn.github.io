@@ -63,7 +63,39 @@ tags: [PL]
 
 ## 1.3 언어 평가 기준
 
-TODO...
+![1](/assets/images/concepts-of-programming-languages-1/1.png)
+
+프로그래밍 언어의 다양한 구조와 기능들에 대한 개념을 주의 깊게 조사하기 위한 평가 기준이다.
+
+그러나 덜 중요한 특성들이 고려되었다면 책에서는 총알 밭이 되었을 것이라고 한다. (사람마다 중요시하는 기준이 다르기 때문이다.)
+
+### 판독성 (READABILITY)
+
+프로그래밍 언어를 얼마나 쉽게 읽고 이해할 수 있는지에 대한 기준이다.
+
+1970년대 언어 구조는 사용자가 아닌 컴퓨터의 관점에서 설계되었다. 하지만 소프트웨어 생명 주기(Software life cycle)라는 개념이 생기면서 기계가 아닌 인간 중심으로 전환되었다.
+
+#### 단순성 (Simplicity)
+
+#### 직교성 (Orthogonality)
+
+#### 데이터 타입 (Data types)
+
+#### 구문 설계 (Syntax design)
+
+### 작성력 (WRITABILITY)
+
+#### 추상화의 지원 (Support for abstraction)
+
+#### 표현력 (Expressivity)
+
+### 신뢰성 (RELIABILITY)
+
+#### 타입 검사 (Type checking)
+
+#### 예외 처리 (Exception handling)
+
+#### 별칭 (Restricted aliasing)
 
 ## 1.4 언어 설계에 미친 영향
 
