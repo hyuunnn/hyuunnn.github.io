@@ -6,6 +6,8 @@ date: 2023-05-08
 tags: [PL]
 ---
 
+# 1.1 프로그래밍 언어의 개념 학습 이유
+
 "프로그래밍 언어를 만들 것도 아닌데 프로그래밍 언어론을 왜 배워야하지?"라는 생각을 가지고 있는 사람이 많을 것이라고 생각한다.
 
 그런 독자들을 위해서 이 책에서는 왜 공부해야 하는지 알려주고 있다.
@@ -58,3 +60,15 @@ tags: [PL]
 <a href="https://green-labs.github.io/is-clojure-hard-to-read">클로저(Clojure) 코드는 정말 읽기 어려운가?</a>
 
 <a href="https://csrc.kaist.ac.kr/blog/2020/08/12/%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%EB%B6%84%EC%84%9D%EC%97%90-%EC%9B%AC-fsharp/">바이너리 분석에 웬 F#?</a>
+
+# 1.3 언어 평가 기준
+
+TODO...
+
+# 1.4 언어 설계에 미친 영향
+
+TODO...
+
+# 1.7 구현 방법
+
+TODO...
