@@ -63,6 +63,8 @@ tags: [PL]
 
 <a href="https://csrc.kaist.ac.kr/blog/2020/08/12/%EB%B0%94%EC%9D%B4%EB%84%88%EB%A6%AC-%EB%B6%84%EC%84%9D%EC%97%90-%EC%9B%AC-fsharp/">바이너리 분석에 웬 F#?</a>
 
+<a href="https://parksb.github.io/article/40.html">함수형 프로그래밍의 설득력</a>
+
 ## 1.3 언어 평가 기준
 
 ![1](/assets/images/concepts-of-programming-languages-1/1.png)
