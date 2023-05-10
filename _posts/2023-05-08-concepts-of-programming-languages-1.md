@@ -65,6 +65,8 @@ tags: [PL]
 
 <a href="https://parksb.github.io/article/40.html">함수형 프로그래밍의 설득력</a>
 
+<a href="https://lionhairdino.github.io/posts/2021-05-07-chef.html">함수형 시작과 아마도 끝</a>
+
 ## 1.3 언어 평가 기준
 
 ![1](/assets/images/concepts-of-programming-languages-1/1.png)
