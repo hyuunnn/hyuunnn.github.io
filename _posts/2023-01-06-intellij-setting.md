@@ -240,6 +240,8 @@ jetbrains 도구에서 지원하는 새로운 UI인데 전체적으로 깔끔하
 
 jetbrains 기본 테마인 Darcula만 사용하다가 다른 테마도 다운받아서 사용해보고 있는데, 꽤 괜찮다.
 
+2023-05-14 기준 New UI + 기본 Black 테마 사용
+
 ## Atom Material Icons
 
 <a href="https://plugins.jetbrains.com/plugin/10044-atom-material-icons">Atom Material Icons</a>
