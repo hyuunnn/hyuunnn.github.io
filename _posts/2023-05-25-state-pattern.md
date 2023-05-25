@@ -2,7 +2,7 @@
 layout: post
 title: "State Pattern"
 description: ""
-date: 2023-05-08
+date: 2023-05-25
 tags: [pattern]
 ---
 
