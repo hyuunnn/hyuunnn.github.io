@@ -8,6 +8,10 @@ tags: [pattern]
 
 <a href="http://www.yes24.com/Product/Goods/12501269">자바 객체지향 디자인 패턴</a>
 
+Strategy Pattern은 전략을 쉽게 바꿀 수 있도록 해주는 디자인 패턴이다. (전략이란 어떤 목적을 달성하기 위해 일을 수행하는 방식이나 해결 방법 등을 의미한다.)
+
+예를 들어 게임 캐릭터가 상황에 따라서 공격이나 행동을 바꿔야 할 때 전략 패턴은 유용하다.
+
 ![0](/assets/images/strategy-pattern/0.png)
 
 ```java
@@ -69,7 +73,7 @@ public class Atom extends Robot {
 
 ![1](/assets/images/strategy-pattern/1.png)
 
-위와 같이 구현하면 로봇의 입장에서는 그저 attack()과 move() 메서드를 호출하기만 하면 된다. (구현된 코드의 수정 여부를 알 필요가 없다.) 
+위와 같이 구현하면 로봇의 입장에서는 그저 `attack()`과 `move()` 메서드를 호출하기만 하면 된다. (구현된 코드의 수정 여부를 알 필요가 없다.) 
 
 수정할 때는 `setMovingStrategy`, `setAttackStrategy` 메서드를 사용하여 외부에서 변경하기 때문에 OCP를 만족하는 코드가 된다.
 
