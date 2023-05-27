@@ -194,7 +194,7 @@ public class PunchStrategy implements AttackStrategy {
   private PunchStrategy() {
   }
 
-  public static Punch getInstance() {
+  public static PunchStrategy getInstance() {
     return PUNCH;
   }
 
@@ -211,7 +211,7 @@ public class MissileStrategy implements AttackStrategy {
   private MissileStrategy() {
   }
 
-  public static Missile getInstance() {
+  public static MissileStrategy getInstance() {
     return MISSILE;
   }
 
