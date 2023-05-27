@@ -231,11 +231,11 @@ public class Main {
     Robot taekwonV = new TaekwonV("taekwon");
     Robot atom = new Atom("atom");
 
-    taekwonV.setMoving(Walking.getInstance());
-    taekwonV.setAttack(Missile.getInstance());
+    taekwonV.setMoving(WalkingStrategy.getInstance());
+    taekwonV.setAttack(MissileStrategy.getInstance());
 
-    atom.setMoving(Flying.getInstance());
-    atom.setAttack(Punch.getInstance());
+    atom.setMoving(FlyingStrategy.getInstance());
+    atom.setAttack(PunchStrategy.getInstance());
 
     taekwonV.move();
     taekwonV.attack();
