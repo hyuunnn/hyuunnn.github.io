@@ -2,7 +2,7 @@
 layout: post
 title: "Registry Explorer Plugin 개발"
 description: ""
-date: 2021-01-27
+date: 2023-05-28
 tags: [Forensic, Registry, EZ-Tools]
 ---
 
