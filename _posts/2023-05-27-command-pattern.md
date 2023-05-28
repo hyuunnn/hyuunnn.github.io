@@ -157,6 +157,10 @@ public class Client {
 
 더 나아가서 Lamp나 Alarm을 끄는 기능도 별도의 Command 클래스를 만들어서 setCommand 메서드를 통해 기능을 변경한 후 pressed 메서드를 호출하면 된다.
 
+### 더 알아보기
 
+Command Pattern은 State Pattern과 유사한 형태를 띄고 있다. (OCP를 해결하기 위해 각 기능을 클래스로 구현하여 갈아끼운다는 점에서)
+
+더 알아봐야겠다..
 
 <a href="http://www.yes24.com/Product/Goods/108192370">헤드 퍼스트 디자인 패턴</a>
