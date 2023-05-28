@@ -184,7 +184,7 @@ public class Main {
 
 위와 같은 코드는 `setMovingStrategy`, `setAttackStrategy` 메서드를 사용할 때마다 새로운 객체가 생성된다.
 
-하지만 움직이거나 공격하는 방법은 항상 같기 때문에 싱글톤 패턴을 적용할 수 있다.
+하지만 움직이거나 공격하는 방법은 변하지 않기 때문에 싱글톤 패턴을 적용할 수 있다.
 
 ```java
 public class PunchStrategy implements AttackStrategy {
