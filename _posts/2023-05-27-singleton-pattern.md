@@ -2,7 +2,7 @@
 layout: post
 title: "Singleton Pattern"
 description: ""
-date: 2023-05-25
+date: 2023-05-27
 tags: [pattern]
 ---
 
