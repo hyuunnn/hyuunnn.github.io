@@ -151,7 +151,7 @@ public class Client {
 
 ![1](/assets/images/command-pattern/1.png)
 
-위와 같이 코드를 작성하면 사용자 입장에서는 갈아끼우기만 하면 되며, Button 클래스 입장에서는 어떻게 구현되었는지 알 필요 없이 Command 인터페이스의 execute() 메서드만 호출하면 된다.
+위와 같이 코드를 작성하면 사용자 입장에서는 갈아끼우기만 하면 되며 Button 클래스 입장에서는 버튼을 눌렀을 때 어떤 기능을 수행해야 하는지, 어떻게 구현되었는지 알 필요 없이 Command 인터페이스의 execute() 메서드만 호출하면 된다.
 
 즉 Lamp와 Alarm 클래스는 각 역할에 맞는 기능이 구현되어 있으며, LampOnCommand, AlarmOnCommand 클래스에서 execute() 메서드를 구현하여 어떻게 수행할 것인지 컨트롤한다.
 
