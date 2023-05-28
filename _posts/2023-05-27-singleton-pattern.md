@@ -62,6 +62,8 @@ Printer printer = Printer.getInstance();
 
 <a href="https://velog.io/@skyepodium/%EC%8B%B1%EA%B8%80%ED%86%A4-%EC%A0%95%EB%A7%90-%ED%95%9C%EA%B0%9C%EB%A7%8C-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B4%85%EC%8B%9C%EB%8B%A4">[자바] 싱글톤 정말 한개만 만들어봅시다.</a>
 
+<a href="https://madplay.github.io/post/singleton-pattern">madplay - singleton pattern</a>
+
 TODO: 시험 끝나고 딥하게 공부해보기
 
 <a href="http://www.yes24.com/Product/Goods/108192370">헤드 퍼스트 디자인 패턴</a>
