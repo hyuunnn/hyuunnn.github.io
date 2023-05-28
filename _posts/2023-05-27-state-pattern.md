@@ -50,6 +50,15 @@ public class Light {
     }
   }
 }
+
+public class Client {
+    public static void main(String[] args) {
+        Light light = new Light();
+        light.off(); // 반응 없음
+        light.on();
+        light.off();
+    }
+}
 ```
 
 위 코드는 형광등의 ON, OFF 기능을 가지고 있다. 그리고 형광등이 켜져있을 때 ON 버튼을 누르면 취침등(SLEEPING) 모드로 전환된다.
