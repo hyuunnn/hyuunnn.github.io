@@ -159,8 +159,10 @@ public class Client {
 
 ### 더 알아보기
 
-Command Pattern은 State Pattern과 유사한 형태를 띄고 있다. (OCP를 해결하기 위해 각 기능을 클래스로 구현하여 갈아끼운다는 점에서)
+Command Pattern은 <a href="https://hyuunnn.github.io/2023/05/27/state-pattern/">State Pattern</a>과 유사한 형태를 띄고 있다. (OCP를 해결하기 위해 각 기능을 클래스로 구현하여 갈아끼운다는 점에서)
 
-더 알아봐야겠다..
+하지만 State Pattern은 예를 들어 버튼을 눌렀을 때 `ON -> OFF` 혹은 `OFF -> ON`과 같이 상태가 수시로 바뀌어야 하는데 이러한 기능을 하나의 메서드(`button_pushed`)에 의해 추상화되어 있다.
+
+Command Pattern은 수시로 변하는게 아닌 다른 기능을 수행하고 싶을 때 변경하는 개념이라고 볼 수 있겠다.
 
 <a href="http://www.yes24.com/Product/Goods/108192370">헤드 퍼스트 디자인 패턴</a>
