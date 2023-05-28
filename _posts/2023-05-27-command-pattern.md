@@ -157,6 +157,12 @@ public class Client {
 
 더 나아가서 Lamp나 Alarm을 끄는 기능도 별도의 Command 클래스를 만들어서 setCommand 메서드를 통해 기능을 변경한 후 pressed 메서드를 호출하면 된다.
 
+```
+예를 들어 FileOpen, FileClose 라는 메뉴 항목이 선택되었을 때 실행되는 기능은 다를 것이다.
+
+이런 경우 각 항목을 위한 MenuItem 클래스를 각각 구현해야 하는데, Command Pattern을 활용하면 MenuItem 클래스를 재사용하게 만들 수 있다. - p243
+```
+
 ### 더 알아보기
 
 Command Pattern은 <a href="https://hyuunnn.github.io/2023/05/27/state-pattern/">State Pattern</a>과 유사한 형태를 띄고 있다. (OCP를 해결하기 위해 각 기능을 클래스로 구현하여 갈아끼운다는 점에서)
@@ -164,5 +170,7 @@ Command Pattern은 <a href="https://hyuunnn.github.io/2023/05/27/state-pattern/"
 하지만 State Pattern은 예를 들어 버튼을 눌렀을 때 `ON -> OFF` 혹은 `OFF -> ON`과 같이 상태가 수시로 바뀌어야 하는데 이러한 기능이 메서드(`button_pushed`)로 추상화되어 있다.
 
 Command Pattern은 수시로 변하는게 아닌 다른 기능을 수행하고 싶을 때 변경하는 개념이라고 볼 수 있겠다.
+
+위의 메뉴 선택 예시에서도 선택한 메뉴에 따라서 다른 기능을 수행하는 것이지 내부의 상태를 변경하는 개념이 아니다.
 
 <a href="http://www.yes24.com/Product/Goods/108192370">헤드 퍼스트 디자인 패턴</a>
