@@ -8,6 +8,8 @@ tags: [pattern]
 
 <a href="http://www.yes24.com/Product/Goods/12501269">자바 객체지향 디자인 패턴</a>
 
+![0](/assets/images/command-pattern/0.png)
+
 ```java
 public class Alarm {
   public void start() {
@@ -61,13 +63,13 @@ public class Client {
 }
 ```
 
-![0](/assets/images/command-pattern/0.png)
-
 버튼을 누르는 동작에 따라 다른 기능을 실행하게 하려면 기능이 실행되는 시점에 필요한 프로그램(메서드)을 선택할 수 있어야 한다. - p236
 
 새로운 기능을 추가할 때마다 Button 클래스를 수정해야 한다면 OCP를 위반한다. (내부 코드를 수정하는 것이 아닌 확장해야 한다.)
 
 Button 클래스에서 구현하는 것이 아닌 외부로부터 제공받아 호출하는 방법으로 해결할 수 있다. (생성자 주입)
+
+![1](/assets/images/command-pattern/1.png)
 
 ```java
 public interface Command {
@@ -148,8 +150,6 @@ public class Client {
   }
 }
 ```
-
-![1](/assets/images/command-pattern/1.png)
 
 위와 같이 코드를 작성하면 사용자 입장에서는 갈아끼우기만 하면 되며 Button 클래스 입장에서는 버튼을 눌렀을 때 어떤 기능을 수행해야 하는지, 어떻게 구현되었는지 알 필요 없이 Command 인터페이스의 execute() 메서드만 호출하면 된다.
 
