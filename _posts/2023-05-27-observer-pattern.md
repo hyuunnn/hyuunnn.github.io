@@ -216,6 +216,6 @@ public class Client {
 
 위 코드는 새로운 성적 출력 기능을 추가할 때 내부 코드를 수정하지 않고 외부에서 attach와 detach 메서드를 호출하여 추가, 삭제한다. (Subject라는 클래스를 만들어서 성적 출력 객체들을 관리하고 있다.)
 
-성적이 추가되면 observer 변수에 추가했던 객체들을 loop 돌면서 update 메서드를 호출하여 최신 결과를 출력한다.
+addScore 메서드를 사용하여 성적을 추가하면 notifyObserver 메서드를 호출하여 observer 변수에 추가했던 객체들을 loop 돌면서 update 메서드를 호출하여 최신 결과를 출력한다.
 
 <a href="http://www.yes24.com/Product/Goods/108192370">헤드 퍼스트 디자인 패턴</a>
