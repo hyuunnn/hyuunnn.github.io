@@ -301,3 +301,11 @@ https://sihyung92.oopy.io/etc/intellij/2
 https://sihyung92.oopy.io/etc/intellij/3
 
 https://github.com/jojoldu/intellij-development
+
+### 정리 예정
+
+공부해보고 괜찮은 꿀팁이 있다면 정리 예정
+
+https://github.com/judasn/IntelliJ-IDEA-Tutorial
+
+https://github.com/guobinhit/intellij-idea-tutorial
