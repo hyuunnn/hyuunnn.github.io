@@ -78,6 +78,8 @@ DataSheetView 클래스는 변경된 최신 점수를 출력한다.
 
 ScoreRecord 클래스에 선언된 View 클래스를 다른 형태의 View 클래스로 수정해야 하기 때문에 OCP를 위배한다.
 
+또한 새로운 View 클래스를 추가할 때마다 ScoreRecord 클래스를 수정해야 하는 변화에 의존하기 때문에 DIP를 위반한다고 볼 수 있다.
+
 즉 다른 형태의 클래스를 추가하더라도 ScoreRecord 클래스를 수정하지 않고 그대로 사용할 수 있어야 한다.
 
 ![1](/assets/images/observer-pattern/1.png)
@@ -165,6 +167,7 @@ public abstract class Subject {
     observers.remove(observer);
   }
 
+  // 책에서는 public을 사용하지만 Subject를 상속하는 클래스에서만 사용하기 때문에 protected가 바람직할 수 있다.
   public void notifyObservers() {
     for (Observer o: observers)
       o.update();
@@ -216,6 +219,22 @@ public class Client {
 
 위 코드는 새로운 성적 출력 기능을 추가할 때 내부 코드를 수정하지 않고 외부에서 attach와 detach 메서드를 호출하여 추가, 삭제한다. - Subject라는 클래스를 만들어서 여러 개의 Observer 클래스들을(성적 출력 객체) 관리하고 있다.
 
-addScore 메서드를 사용하여 성적을 추가하면 notifyObserver 메서드를 호출하여 observers 변수에 추가했던 객체들을 loop 돌면서 update 메서드를 호출하여 최신 결과를 출력한다. (Subject 클래스인 ScoreRecord를 정의할 때 Observer 클래스에 의존하지 않는 방식으로 설계해야 한다.)
+addScore 메서드를 사용하여 성적을 추가하면 notifyObserver 메서드를 호출하여 observers 변수에 추가했던 객체들을 loop 돌면서 update 메서드를 호출하여 최신 결과를 출력한다.
+
+ScoreRecord 클래스가 Observer 클래스에 의존하지 않는 방법으로 설계되어 DIP를 충족하고 있다.
+
+Subject 입장에서 얼마나 많은 Observer 객체들이 업데이트되는지 알지 않으면서도 통보할 수 있는 방법이 Observer Pattern이다.
+
+```java
+// Before - 새로운 기능을 추가할 때마다 새로운 setter 메서드를 생성해야 했다.
+scoreRecord.setDataSheetView(dataSheet);
+scoreRecord.setStatisticsView(statistics);
+scoreRecord.setXView(X);
+
+// After - attach 메서드로 Observer 인터페이스의 구현 클래스라면 추가할 수 있다.
+scoreRecord.attach(dataSheet);
+scoreRecord.attach(statistics);
+scoreRecord.attach(X);
+```
 
 <a href="http://www.yes24.com/Product/Goods/108192370">헤드 퍼스트 디자인 패턴</a>
