@@ -72,7 +72,7 @@ python2는 2가지 방법 모두 동일한 결과를 보여주고 있다.
 
 <a href="https://www.hackerschool.org/HS_Boards/zboard.php?id=QNA_system&page=1&sn1=&divpage=1&sn=off&ss=on&sc=on&select_arrange=headnum&desc=asc&no=1950">;cat을 사용하는 이유</a>
 
-<a href="https://github.com/Gallopsled/pwntools/blob/dev/pwnlib/tubes/tube.py#L862">pwntools interactive()</a>
+<a href="https://github.com/Gallopsled/pwntools/blob/61bce7f6cfb9389c7590932db7570ff47c07605d/pwnlib/tubes/tube.py#L863">pwntools interactive()</a>
 
 <a href="https://stackoverflow.com/questions/68137400/using-pwntools-process-interactive-mode-to-control-python3">Using pwntools process interactive mode to control python3</a>
 
