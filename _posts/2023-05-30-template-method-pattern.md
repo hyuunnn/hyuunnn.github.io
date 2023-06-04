@@ -2,7 +2,7 @@
 layout: post
 title: "Template Method Pattern"
 description: ""
-date: 2023-05-30
+date: 2023-06-04
 tags: [pattern]
 ---
 
@@ -51,7 +51,7 @@ public class HyundaiMotor {
   }
 
   private void moveHyundaiMotor(Direction direction) {
-    // Hyundai Motor를 구동시킴
+    System.out.println("Hyundai Motor: Move " + direction);
   }
 
   public MotorStatus getMotorStatus() {
@@ -64,12 +64,10 @@ public class HyundaiMotor {
 
   public void move(Direction direction) {
     MotorStatus motorStatus = getMotorStatus();
-    if (motorStatus == MotorStatus.MOVING)
-      return;
+    if (motorStatus == MotorStatus.MOVING) return;
 
     DoorStatus doorStatus = door.getDoorStatus();
-    if (doorStatus == DoorStatus.OPENED)
-      door.close();
+    if (doorStatus == DoorStatus.OPENED) door.close();
 
     moveHyundaiMotor(direction);
     setMotorStatus(MotorStatus.MOVING);
@@ -99,7 +97,7 @@ public class LGMotor {
   }
 
   private void moveLGMotor(Direction direction) {
-    // LG Motor를 구동시킴
+    System.out.println("LG Motor: Move " + direction);
   }
 
   public MotorStatus getMotorStatus() {
@@ -155,7 +153,7 @@ public class HyundaiMotor extends Motor {
   }
 
   private void moveHyundaiMotor(Direction direction) {
-    // Hyundai Motor를 구동시킴
+    System.out.println("Hyundai Motor: Move " + direction);
   }
 
   public void move(Direction direction) {
@@ -179,7 +177,7 @@ public class LGMotor extends Motor {
   }
 
   private void moveLGMotor(Direction direction) {
-    // LG Motor를 구동시킴
+    System.out.println("LG Motor: Move " + direction);
   }
 
   public void move(Direction direction) {
@@ -219,10 +217,12 @@ public abstract class Motor {
     this.motorStatus = motorStatus;
   }
 
+  // 책에서는 언급되지 않았지만 move 메서드는 오버라이딩하면 안되기 때문에 final을 사용하는게 바람직하다.
   public void move(Direction direction) {
     MotorStatus motorStatus = getMotorStatus();
     if (motorStatus == MotorStatus.MOVING) return;
 
+    // 예를 들어 LG와 Hyundai 모터에서는 필요한 동작이지만, 다른 제조사의 모터에서는 불필요하다면 이 부분도 abstract 메서드로 선언하여 override하는 것이 필요할 수 있다.
     DoorStatus doorStatus = door.getDoorStatus();
     if (doorStatus == DoorStatus.OPENED) door.close();
 
@@ -239,7 +239,7 @@ public class HyundaiMotor extends Motor {
   }
 
   protected void moveMotor(Direction direction) {
-    // Hyundai Motor를 구동시킴
+    System.out.println("Hyundai Motor: Move " + direction);
   }
 }
 
@@ -249,9 +249,19 @@ public class LGMotor extends Motor {
   }
 
   protected void moveMotor(Direction direction) {
-    // LG Motor를 구동시킴
+    System.out.println("LG Motor: Move " + direction);
   }
 }
 ```
+
+### Strategy Pattern과 Template Method Pattern의 차이점
+
+||Template Method|Strategy|
+|-|----------|----------|
+|Motivation|공통적인 코드를 superclass로 올려서 재사용|상이한 알고리즘을 교체하면서 사용하기 위함|
+|Variation Scope|알고리즘의 일부가 수정될 수 있다.|알고리즘 전체가 바뀔 수 있다.|
+|Variation mechanism|Inheritance|delegation|
+|Variation Binding Time|Compile time|Run time|
+|Operation in superclass|Concrete|Abstract|
 
 <a href="http://www.yes24.com/Product/Goods/108192370">헤드 퍼스트 디자인 패턴</a>
