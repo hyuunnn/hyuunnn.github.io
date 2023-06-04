@@ -2,7 +2,7 @@
 layout: post
 title: "Facade Pattern"
 description: ""
-date: 2023-05-08
+date: 2023-06-04
 tags: [pattern]
 ---
 

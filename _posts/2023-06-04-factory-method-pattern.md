@@ -2,7 +2,7 @@
 layout: post
 title: "Factory Method Pattern"
 description: ""
-date: 2023-05-28
+date: 2023-06-04
 tags: [pattern]
 ---
 
