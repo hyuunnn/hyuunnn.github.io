@@ -70,3 +70,5 @@ Detailed Design은 데이터 멤버, 함수들의 정의를 의미한다.
 <a href="https://github.com/DovAmir/awesome-design-patterns">awesome-design-patterns</a>
 
 <a href="https://refactoring.guru/">refactoring guru</a>
+
+<a href="https://johngrib.github.io/wiki/pattern/quotes/">디자인 패턴 인용문 모음 - johngrib</a>
