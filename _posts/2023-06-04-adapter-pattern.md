@@ -114,6 +114,8 @@ public class Client {
 
 다음은 레거시 코드인 LEDLight 클래스를 Lamp 클래스에서 사용하는 예제이다. 
 
+![1](/assets/images/adapter-pattern/1.png)
+
 ILamp를 상속하는 Lamp 클래스의 turnOn, turnOff 메서드에서 switchOn, switchOff 메서드를 사용해야 한다. 
 
 또한 switchOn 메서드는 int 타입을 요구하기 때문에 BrightnessLevel에 따라서 적절한 값을 반환해야 한다.
