@@ -198,7 +198,7 @@ public class Client {
 }
 ```
 
-위 예제 코드를 보면 주석으로 표현한 부분이 중복되어 사용됨을 확인할 수 있다.
+위 예제 코드를 보면 주석으로 표시한 부분이 중복되어 사용됨을 확인할 수 있다.
 
 또한 ElevatorController 클래스가 엘리베이터의 문을 닫고(elevatorDoor) 이전 층의 문을 닫고(floorDoors) 타이머를 종료하는(doorTimer) 행위와 이와 반대되는 행위(시작) 각각을 제어하고 있다.
 
