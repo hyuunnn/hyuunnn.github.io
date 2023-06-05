@@ -294,6 +294,12 @@ test snippet에서 메서드명을 한글로 작성한 후에 영어로 바꿔�
 
 ![6](/assets/images/intellij-setting/06.png)
 
+## SonarLint 플러그인
+
+<a href="https://github.com/SonarSource/sonarlint-core">Github</a>, <a href="https://plugins.jetbrains.com/plugin/7973-sonarlint">Jetbrains</a>
+
+code smell을 찾아주는 플러그인이다. 짧게 사용해봤는데 괜찮은 것 같다. 
+
 ## 그 외에 플러그인 관련 링크
 
 https://sihyung92.oopy.io/etc/intellij/2
