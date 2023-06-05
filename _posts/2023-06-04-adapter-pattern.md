@@ -6,6 +6,8 @@ date: 2023-06-04
 tags: [pattern]
 ---
 
+![0](/assets/images/adapter-pattern/0.png)
+
 ```java
 public class Point {
   private int x;
