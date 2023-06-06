@@ -202,7 +202,7 @@ public class Client {
 
 또한 ElevatorController 클래스가 엘리베이터의 문을 닫고(elevatorDoor) 이전 층의 문을 닫고(floorDoors) 타이머를 종료하는(doorTimer) 행위와 이와 반대되는 행위(시작) 각각을 제어하고 있다.
 
-하지만 이를 Facade 클래스로 만들어서 사용한다면 구조가 단순해진다.
+하지만 이를 DoorController라는 Facade 클래스로 만들어서 사용한다면 구조가 단순해진다.
 
 ```java
 public interface IDoorTimeout {
