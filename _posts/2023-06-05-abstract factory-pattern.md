@@ -112,7 +112,7 @@ public class UI {
 }
 ```
 
-하지만 factory method pattern 글에서 봤듯이 결국 UIType에 의존하여 값에 따라서 Button과 Menu를 반환하기 때문에 바람직한 코드라고 볼 수는 없다.
+하지만 <a href="https://hyuunnn.github.io/2023/06/05/factory-method-pattern/">factory method pattern</a> 글에서 봤듯이 결국 UIType에 의존하여 값에 따라서 Button과 Menu를 반환하기 때문에 바람직한 코드라고 볼 수는 없다.
 
 또한 Factory Method에 새로운 UIType을 처리하지 않아서 _button은 MOTIF인데 _menu는 WINDOWS라면 의도하지 않는 동작을 하게 된다. (각 Factory Method는 독립적으로 떨어져서 동작하고 있음)
 
