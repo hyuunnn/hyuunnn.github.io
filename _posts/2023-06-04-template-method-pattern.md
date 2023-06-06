@@ -127,7 +127,7 @@ LGMotor와 HyundaiMotor 클래스의 기능을 보면 매우 유사한 것을 �
 
 ```java
 public abstract class Motor {
-  protected Door door;
+  private Door door;
   private MotorStatus motorStatus;
 
   public Motor(Door door) {
@@ -201,7 +201,7 @@ LG 모터로 동작할 것인지, Hyundai 모터로 동작할 것인지를 제�
 
 ```java
 public abstract class Motor {
-  protected Door door;
+  private Door door;
   private MotorStatus motorStatus;
 
   public Motor(Door door) {
