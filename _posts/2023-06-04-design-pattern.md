@@ -8,9 +8,9 @@ tags: [pattern]
 
 시스템은 규모가 크기 때문에 일반적으로 3가지의 설계 스텝이 존재한다.
 
-Top Level Design은 시스템 전체에 걸친 이슈들, 컴포넌트 간의 커뮤니케이션은 어떻게 할 것인지 등을 정리한다.
+Top Level Design은 시스템 전체에 걸친 이슈들, 컴포넌트 간의 커뮤니케이션은 어떻게 할 것인지 등을 정리한다. (레이어, 파이프 & 필터, 브로커 패턴 등이 있다.)
 
-Component Level Design은 클래스간의 관계를 정리한다
+Component Level Design은 클래스/객체 간의 구조와 관계를 정리한다.
 
 Detailed Design은 데이터 멤버, 함수들의 정의를 의미한다.
 
@@ -33,9 +33,9 @@ Detailed Design은 데이터 멤버, 함수들의 정의를 의미한다.
 
 |패턴|설명|
 |----|---|
-|Creational Patterns|클래스를 바탕으로 object를 어떻게 만드는게 바람직한가?|
-|Structural Patterns|좀 더 큰 규모의 시스템을 개발하기 위해 클래스, 오브젝트를 어떻게 구성하는게 바람직한가?|
-|Behavioral Patterns|object 간의 커뮤니케이션을 어떻게 하는 것이 필요한가?|
+|Creational Patterns (생성 패턴)|클래스를 바탕으로 object를 어떻게 만드는게 바람직한가? - 객체를 캡슐화하여 특정 객체가 생성/변경되어도 프로그램 구조에 영항을 크게 받지 않게 하는 유연성을 제공한다던지|
+|Structural Patterns (구조 패턴)|좀 더 큰 규모의 시스템을 개발하기 위해 클래스, 오브젝트를 어떻게 구성하는게 바람직한가?|
+|Behavioral Patterns (행위 패턴)|object 간의 커뮤니케이션을 어떻게 하는 것이 필요한가? - 객체 혼자서 수행할 수 없는 작업을 어떻게 분배할지, 그와중에도 객체 사이의 결합도를 최소화하는 것에 중점을 둔다.|
 
 ||Creational|Structural|Behavioral|
 |-|----------|----------|----------|
