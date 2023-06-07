@@ -6,7 +6,7 @@ date: 2023-06-07
 tags: ["misc"]
 ---
 
-프로그래밍 언어의 유행은 킬러 앱의 존재가 어느정도 있는 것 같다.
+프로그래밍 언어의 유행은 킬러 앱의 존재가 어느정도 있는 것 같다. 그런 의미에서 <a href="https://hyuunnn.github.io/2023/05/08/concepts-of-programming-languages-1/">언어의 트렌드는 계속 바뀐다.</a>
 
 ### golang
 
