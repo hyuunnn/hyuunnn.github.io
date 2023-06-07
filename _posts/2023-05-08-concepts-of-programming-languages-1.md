@@ -44,7 +44,7 @@ tags: [PL]
         * 수학식인 `2!=2`를 봤을 때 일반적인 사람은 2 팩토리얼(`2!`)을 생각하겠지만, 컴퓨터를 전공한 사람이라면 not equals(`!=`)을 생각하곤 한다.
 * 프로그래밍도 패러다임에 따라서 다양한 관점을 제공한다.
     * 우리가 <a href="http://ropas.snu.ac.kr/~kwang/paper/position/edu.html">학교에서 배우는 일반적인 언어</a>들은 물건 중심의 프로그래밍(Object Oriented Programming)이다. 값이 변경될 가능성을 제공하며, 사이드 이펙트로 인한 문제가 발생할 수 있다.
-    * 하지만 값 중심의 프로그래밍(Value Oriented Programming)은 불변한 값 그 자체이기 때문에 문맥이 끝날 때까지 생각할 필요가 없다. (<a href="https://youtu.be/H6JxxWL6bJI?t=782">라인 개발자의 함수형 프로그래밍 언어 실전 사용기</a>)
+    * 하지만 <a href="http://ropas.snu.ac.kr/~kwang/paper/maso/1.html">값 중심의 프로그래밍</a>(Value Oriented Programming)은 불변한 값 그 자체이기 때문에 문맥이 끝날 때까지 생각할 필요가 없다. (<a href="https://youtu.be/H6JxxWL6bJI?t=782">라인 개발자의 함수형 프로그래밍 언어 실전 사용기</a>)
 * 새로운 프로그래밍 패러다임을 배울 필요가 있다.
     * 지금까지 당연하다고 생각해왔던 물건 중심의 프로그래밍에서 값 중심의 프로그래밍을 배움으로써 새로운 방법으로 사고할 수 있게 된다.
     * 또한 프로그래밍 언어들은 그들만의 철학이 있으며, 다양한 언어들을 접하면서 생각의 폭이 넓어질 수 있다고 생각한다.
