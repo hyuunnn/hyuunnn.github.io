@@ -10,7 +10,7 @@ tags: ["misc"]
 
 ### <a href="https://github.com/golang/go">golang</a>
 
-<a href="https://github.com/docker">docker</a>, <a href="https://github.com/kubernetes/kubernetes">kubernetes</a>, <a href="https://github.com/hashicorp/terraform">terraform</a>, <a href="https://github.com/containerd/containerd">containerd</a>, <a href="https://github.com/cri-o/cri-o">cri-o</a>, <a href="https://github.com/etcd-io/etcd">etcd</a>, <a href="https://github.com/istio/istio">istio</a> 등 클라우드 분야..? 특히 컨테이너 쪽은 golang이 압도적인 점유율을 보여주고 있다.
+<a href="https://github.com/docker">docker</a>, <a href="https://github.com/kubernetes/kubernetes">kubernetes</a>, <a href="https://github.com/hashicorp/terraform">terraform</a>, <a href="https://github.com/containerd/containerd">containerd</a>, <a href="https://github.com/cri-o/cri-o">cri-o</a>, <a href="https://github.com/etcd-io/etcd">etcd</a>, <a href="https://github.com/istio/istio">istio</a> <a href="https://github.com/flannel-io/flannel">flannel</a> 등 클라우드 분야..? 특히 컨테이너 쪽은 golang이 압도적인 점유율을 보여주고 있다.
 
 <a href="https://github.com/ethereum/go-ethereum">go-ehtereum</a>도 있다.
 
