@@ -69,6 +69,8 @@ tags: [PL]
 
 <a href="https://lionhairdino.github.io/posts/2021-05-07-chef.html">함수형 시작과 아마도 끝</a>
 
+<a href="https://youtu.be/0g8hQreGlE8">프로그래밍언어론 01: 프로그래밍 패러다임</a>
+
 ## 1.3 언어 평가 기준
 
 ![1](/assets/images/concepts-of-programming-languages-1/1.png)
