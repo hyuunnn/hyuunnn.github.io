@@ -85,7 +85,7 @@ Perl에서는 `@`으로 시작하는 이름은 배열, `%`으로 시작하는 �
 
 묵시적 선언의 다른 유형은 문맥을 파악하고 타입을 추론(type inference)하여 정적으로 타입을 부여하는 방법이다. (70년대부터 있었는데 최근 2011년경에 유명해졌다. - 메이저 언어들에서 이 기능을 도입하고 있다.)
 
-```CSharp
+```csharp
 var sum = 0; // int
 var total = 0.0; // float 
 var name = "Fred"; // string
