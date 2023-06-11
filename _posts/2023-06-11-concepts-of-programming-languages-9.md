@@ -6,14 +6,6 @@ date: 2023-06-11
 tags: [PL]
 ---
 
----
-layout: post
-title: "Subprograms"
-description: ""
-date: 2023-06-08
-tags: ["PL"]
----
-
 ## Parameter Passing
 
 ㅁㄴㅇㄴㅁㅇ
