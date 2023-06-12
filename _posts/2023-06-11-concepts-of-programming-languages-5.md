@@ -218,6 +218,8 @@ Rust는 소유권이라는 개념을 추가하여 dragling reference를 차단�
 
 ### 정적 영역 (static scoping)
 
+쉽게 말해 소스코드를 보고 이미 다 알고 있는 상태를 의미하며, lexical scope라 부르기도 한다.
+
 ```javascript
 function big() {
     function sub1() {
@@ -236,7 +238,9 @@ function big() {
 
 sub2의 변수 x에 대한 참조는 프로시저 big에 선언된 x이다.
 
-sub1은 sub2의 정적 조상에 속하지 않기 때문에 sub1의 x는 은폐된다. (sub1의 x은 지역변수의 역할을 수행하며 외부에 선언된 x는 sub1으로부터 은폐된다.)
+sub1은 sub2의 정적 조상에 속하지 않기 때문에 sub1의 x는 은폐된다. (sub1의 x은 지역변수의 역할을 수행하며 외부에 선언된 x는 sub1으로부터 은폐된다.) - Scope hole
+
+쉽게 말해 선언된 x들 중에서 가장 가까운 x를 선택한다.
 
 * 장점
     * 정적 타입 체킹으로 인한 신뢰성
