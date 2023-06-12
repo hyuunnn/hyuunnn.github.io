@@ -159,17 +159,153 @@ C#, Java는 generic 배열을 제공한다.
 
 단점: 할당과 회수의 시간이 더 길어지고, 프로그램 실행 중에 여러 번 일어날 수 있다.
 
-TODO: 책의 예시들 정리
+```csharp
+List<String> stringList = new List<String>();
+stringList.Add("Michael");
+```
 
-## Conformant Array
+```perl
+my @colors = ("red", "green");
+push @colors, "blue";
+unshift @colors, "yellow";
+print "@colors";  # Output: yellow red green blue
+```
+
+### Subscript Type
+
+Fortran, C, Java 등은 index에서 integer 값만 사용할 수 있다.
+
+하지만 Pascal, Ada에서는 ordinal type을 사용할 수 있다는 것이다.
+
+```pascal
+type
+  Month = (January, February, March, April, May, June, July, August, September, October, November, December);
+  TemperatureArray = array[Month] of Integer;
+
+var
+  Temperatures: TemperatureArray;
+
+begin
+  Temperatures[January] := 10;
+  Temperatures[February] := 15;
+  Temperatures[March] := 20;
+
+  writeln('Temperature in January:', Temperatures[January]);
+  writeln('Temperature in February:', Temperatures[February]);
+  writeln('Temperature in March:', Temperatures[March]);
+end.
+```
+
+key-value 형태로 동작하고 있다..?
+
+### 적응 배열 (Conformant Array)
+
+<a href="https://stackoverflow.com/questions/8482318/what-is-a-conformant-array">stackoverflow</a>
+
+### 슬라이스 (slice)
+
+슬라이스는 배열의 substructure이며 새로운 데이터 타입이 아니다.
+
+* FORTRAN90
+    ```fortran
+    INTEGER VECTOR(1:10), MAT(1:4, 1:4)
+    MAT(1:4, 1): the first column
+    MAT(2, 1:4): the second row
+    VECTOR((/3, 2, 1, 8/)): the array consists of the 3rd, 2nd, 1st, and 8th elements
+    ```
+
+### 배열 타입의 구현
+
+* Compile-Time Descritor
+    * 도프 벡터 (dope vector)
+* Access Function
+
+TODO.. p289 참고
 
 ## 연상 배열 (associative array)
 
-ㅁㄴㅇㄴㅁㅇ
+인덱싱되는 순서를 갖지 않는 데이터 요소들의 모임 (key, value 쌍으로 되어 있음)
+
+* Perl
+    ```perl
+    %salaries = ("Gary" => 75000, "Perry" => 57000);
+    %salaries{"Perry"} = 58850;
+    delete %salaries{"Gary"};
+    ```
+* Python
+    ```python
+    a = {"Gary":75000, "Perry":57000}
+    a["Perry"] = 58850
+    del a["Gary"]
+    ```
+
+### 연상 배열의 구현
+
+수업에서는 언급안됨 -> 나중에 읽어보고 정리하기 (p297 참고)
 
 ## 레코드 타입 (record type)
 
-ㅁㄴㅇㅁㄴㅇ
+개개의 원소들이 같은 타입, 크기가 아닌 데이터들의 모임으로 모델링할 필요가 자주 발생한다. (예: 학생 정보 - 이름(문자), 학번(정수), 학점(실수) 등)
+
+```cobol
+01 EMPLOYEE-RECORD
+    02 EMPLOYEE-NAME
+        05 FIRST PICTURE IS X(20)
+        05 MIDDLE PICTURE IS X(10)
+        05 LAST PICTURE IS X(20)
+    02 HOURLY-RATE PICTURE IS 99V99
+```
+
+앞의 숫자는 수준 번호 (level number), X(20)은 20개의 영수치(alphanumeric), 99V99는 중간에 소수점을 갖는 4개의 십진수 숫자 (ex: 12.34)
+
+일반적인 필드 접근 방법은 `Employee_Record.Employee_Name.Middle`와 같이 dot(`.`)을 사용한다. 
+
+하지만 COBOL은 `OF` 키워드를 사용하여 `MIDDLE OF EMPLOYEE-NAME OF EMPLOYEE-RECORD`처럼 첫 번째 레코드명은 가장 작은 레코드를 가리킨다.
+
+### 완전 자격 참조 (fully qualified reference)
+
+위 예제처럼 해당 값을 가져올 때 모든 record 이름을 입력해야 하는 방법이다.
+
+### 생략 참조 (elliptical reference)
+
+`MIDDLE`, `MIDDLE OF EMPLOYEE-RECORD`, `MIDDLE OF EMPLOYEE-NAME`과 같이 모호하지 않은 일부분의 생략을 허용하는 방법이다.
+
+프로그래머 입장에서는 편리하지만, 판독성을 해치는 방법이다. 
+
+```pascal
+type
+  TEmployee = record
+    FirstName: string[20];
+    MiddleName: string[10];
+    LastName: string[20];
+    HourlyRate: Double;
+  end;
+
+var
+  Employee1: TEmployee;
+  CurrentEmployee: ^TEmployee;
+
+begin
+  Employee1.FirstName := 'John';
+  Employee1.LastName := 'Doe';
+  Employee1.HourlyRate := 12.50;
+
+  CurrentEmployee := @Employee1;
+
+  with CurrentEmployee^ do
+  begin
+    WriteLn('Employee 1: ', FirstName, ' ', LastName, ', Hourly Rate: ', HourlyRate:0:2);
+  end;
+
+  ReadLn;
+end.
+```
+
+Pascal, Modula-2에서는 with을 사용하여 위 코드처럼 생략 참조를 사용할 수 있다.
+
+### 레코드 타입의 구현
+
+p301 참고
 
 ## 공용체 타입 (union type)
 
