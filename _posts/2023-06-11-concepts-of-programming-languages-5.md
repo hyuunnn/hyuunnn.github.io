@@ -52,6 +52,8 @@ tags: [PL]
 
 이는 언어 구성요소(예약어, 일반어 등)마다, 또는 같은 구성요소라도 속성(동적, 정적 언어)에 따라 바인딩 시간이 다를 수 있다.
 
+바인딩이 어려운 이유는 값을 정확히 지칭하기 위한 방법에서부터 복잡해진다.
+
 ```c
 static int X; int Y; 
 scanf("%d", &x); 
@@ -78,7 +80,7 @@ X = X + 10;
 
 ```c
 int a, b, c;
-````
+```
 
 **묵시적 선언(implicit declaration)**
 
@@ -138,13 +140,18 @@ Perl에서는 `@`으로 시작하는 이름은 배열, `%`으로 시작하는 �
 
 타입을 선언문으로 명세하지 않고, 값이 할당될 때 타입이 바인딩된다. (Late Binding)
 
-즉 변수의 타입은 일시적일 수 있음을 인지해야 한다. (언제든지 타입의 변경 가능성을 제공한다.)
+즉 변수의 타입은 일시적일 수 있음을 인지해야 한다. (언제든지 타입의 변경 가능성을 제공한다.) - type checking을 하긴 하는데 정적이 아닌 동적으로 하기 때문에 동작 중에 터지게 되는 것
 
 Python, Ruby, JavaScript, PHP, <a href="https://xpqz.github.io/learnapl/intro.html">APL</a>(<a href="https://en.wikipedia.org/wiki/APL_syntax_and_symbols">APL syntax and symbols</a>), SNOBOL4, Scheme 등은 동적 타입 바인딩이다.
 
 ```python
 a = [10.2, 3.5] # list type
 a = 47 # int type
+a = 3 * x # 정수 * x를 계산할 때 x도 정수, 결과도 정수겠다고 타입 추론
+
+def f(a, b): return a + b
+b = f(1, 2) # 가능
+b = f("qwe", "qweqwe") # 가능
 ```
 
 ```apl
@@ -167,11 +174,19 @@ LIST <- 10.2 (LIST는 부동소수점 타입이다.)
 
 정적 타입 바인딩 언어는 **순수 인터프리터**로 구현되지 않는데, 기계 코드로 쉽게 번역할 수 있기 때문이다. (Early Binding)
 
+Python에서 최근에 지원하는 <a href="https://docs.python.org/ko/3.10/library/typing.html">Type Hinting</a>은 Early Binding을 흉내라도 내보자고 하여 기능이 추가되었다고 함 
+
 ## 기억 공간 바인딩 (Storage Binding)
 
 변수에 바인딩되는 memory cell은 memory pool로부터 가져와야 하는데 이때 memory pool에 할당(allocation)하고, 회수(deallocation)하여 다시 반환하는 과정을 의미한다.
 
 이때 변수의 존속기간(lifetime)은 4가지 유형으로 구분할 수 있다.
+
+Storage Binding은 garbage, dragling reference 등의 이슈가 존재한다.
+
+Java는 위 이슈를 제거하기 위해 goto, delete를 제거했다.
+
+Rust는 소유권이라는 개념을 추가하여 dragling reference를 차단한다.
 
 ### 정적 변수 (Static Variable)
 
