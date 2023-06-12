@@ -33,10 +33,28 @@ floating point는 real number가 아닌 실수 값에 대한 근사 값이며, I
 ### Others
 
 * Decimal
+    * fixed point라고 생각하면 된다. (ex: 99.999라고 할 때 숫자 각각을 인코딩하는 것이다. (문자 스트링과 매우 흡사하게 저장된다.) - 고정된 10진수 숫자(coded digit)들의 모임)
+    * 장점은 제한된 범위 내에서 정확하다. (부동 소수점은 오차 존재)
+    * 단점은 제한된 범위, 메모리 낭비가 있다. (ex: 1282라는 수 각각을 인코딩하면 2^4 = 16바이트 필요)
 * Boolean
+    * 불리언 값은 한 개의 비트로 표현될 수 있지만 대부분의 컴퓨터는 비트 단위를 효율적으로 접근할 수 없기 때문에 바이트 단위로 구현하는 경우가 많다.
 * Character
+    * ASCII: 8비트
+    * UNICODE: 16비트
 
 ## 문자 스트링 타입 (Character String Type)
+
+* 스트링이 단순히 문자 배열의 특수한 유형인가 또는 기본 타입인가?
+* 스트링이 정적 길이 또는 동적 길이를 갖는가?
+
+* 선언 (assignment)
+* 비교 (comparison)
+* 문자 연결
+    * `NAME1 := NAME1 & NAME2;` - Ada
+* 슬라이스(slice) - 부분 스트링 참조(substring reference)
+    * `NAME(2:4);` - Ada
+* 패턴 매칭 (Pattern Matching)
+    * `NAME ~= /\d+/` - Perl
 
 ## 사용자 정의 타입 (User-Defined Ordinal Type)
 
