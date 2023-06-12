@@ -171,7 +171,7 @@ unshift @colors, "yellow";
 print "@colors";  # Output: yellow red green blue
 ```
 
-### Subscript Type
+### 첨자 타입 (Subscript Type)
 
 Fortran, C, Java 등은 index에서 integer 값만 사용할 수 있다.
 
@@ -305,24 +305,122 @@ Pascal, Modula-2에서는 with을 사용하여 위 코드처럼 생략 참조를
 
 ### 레코드 타입의 구현
 
-p301 참고
+p301 참고 - 수업에서 언급 X
 
 ## 공용체 타입 (union type)
 
-ㅁㄴㅇㅁㄴㅇ
+변수가 프로그램 실행 중에 다른 시기에 다른 타입의 값을 저장할 수 있는 타입이다. - 자세한 정리는 일단 보류
 
 ## 포인터 타입 (pointer type)
 
-dangling pointer, dangling reference - User After Free
+값은 메모리 주소 혹은 nil(null)을 가리킨다.
+
+주소 지정으로 인한 유연성 제공, 동적 기억공간을 관리하기 위한 용도로 설계되었다. (포인터를 사용하여 동적으로 할당되는 heap 공간에 접근할 수 있다.)
+
+포인터는 구조화된 타입이 아니다. 데이터를 저장하기보다 참조하기 위해서 사용하기 때문이다.
+
+### 역참조 (dereferencing)
+
+주소에 접근하여 주소의 데이터 값에 접근하는 것을 의미
+
+C++에서 별표(`*`)를 사용하여 역참조를 명시할 수 있다.
+
+![0](/assets/images/concepts-of-programming-languages-6/0.png)
+
+```cpp
+j = *ptr
+```
+
+```cpp
+struct Main {
+    int age;
+    char *name;
+};
+
+struct Man m1 = {18, "Bob"};
+struct Man *p;
+...
+p = &m1;
+if (p->age > 20)
+// (*p).age > 20
+...
+```
+
+### 묵시적 역참조 (implicit dereferencing)
+
+ALGOL 68, FORTRAN 90
+
+### 명시적 역참조 (explicit dereferencing)
+
+Pascal, C/C++, Ada
+
+### 허상 포인터 (dangling pointer)
+
+```cpp
+int * arrayPtr1;
+int * arrayPtr2 = new int[100];
+arrayPtr1 = arrayPtr2;
+delete [] arrayPtr2;
+```
+
+arrayPtr2를 delete하면서 arrayPtr1은 허상 포인터가 된다.
+
+heap 공간이 반환되었기 때문이다. (동적 변수의 명시적 회수는 허상 포인터의 원인을 제공한다. - 데이터 훼손의 가능성 제공)
+
+이는 User After Free 취약점의 원인을 제공하기도 한다.
+
+### 분실된 힙-동적 변수 (lost heap-dynamic variable)
+
+```cpp
+p = new Integer(1);
+p = new Integer(2);
+```
+
+이전에 생성한 `new Integer(1)`에는 이제 접근할 수 없는 쓰레기(garbage) 상태가 된다.
+
+분실되어 접근할 수 없는 상태는 메모리 누수(memory leak)를 유발하기도 한다.
 
 ### 비석 접근 방법 (tombstone)
 
-ㅁㄴㅇㅁㄴㅇ
+힙-동적 변수는 비석을 가리키고 비석이 해당 포인터를 가리킨다.
+
+회수될 때도 변수는 비석을 가리키고, 비석은 nil을 가리키도록 설정한다.
+
+에러를 감지하여 dangling pointer 문제를 해결하지만, 공간과 역참조 오버헤드가 존재한다. (비석이라는 별도의 공간 소모, 비석을 통해 접근하기 때문에 한 수준 더 많은 간접 주소지정을 요구한다.)
+
+**이러한 추가 비용을 지불할 정도로 의미있는 안정성을 제공하지 않는다고 판단 - 안쓴다고 함**
 
 ### 잠금-키 접근 방법 (locks-and-keys approach)
 
-ㅁㄴㅇㅁㄴㅇ
+포인터 값을 (키, 주소) 형태의 쌍으로 표현한다. (여기서 키는 정수 값)
+
+역참조된 포인터에 접근할 때 포인터의 key 값을 힙-동적 변수의 잠금 값과 비교하며, 일치하지 않으면 실행 시간 오류로 처리된다. (포인터의 값을 다른 포인터로 복사할 때 반드시 key 값도 함께 복사해야 한다.)
+
+객체가 회수될 때 잠금도 해제된다.
 
 ## 참조 타입 (reference type)
 
-ㅁㄴㅇㅁㄴㅇ
+포인터는 메모리 주소를 참조하는 것이며, 참조 변수는 메모리 객체, 값을 참조하는 것 (C++에서 `&` 사용)
+
+```cpp
+void swap(int &i, int &j) { // pass-by-reference
+    int t = i;
+    i = j;
+    j = t;
+}
+
+int result = 0;
+int &ref_result = result;
+...
+ref_result = 100;
+```
+
+Java에서는 포인터 계산이 없으며 참조만 존재하고, 묵시적으로 회수(가비지 컬렉터에 의해 회수됨, 별도의 회수 연산자가 없음)하기 때문에 허상 참조가 존재하지 않는다. - heap에 있는 객체만 가리킬 수 있다.
+
+## 타입 검사 (type checking)
+
+수업 언급 X
+
+## 타입 동등 (type equivalence)
+
+수업 언급 X
