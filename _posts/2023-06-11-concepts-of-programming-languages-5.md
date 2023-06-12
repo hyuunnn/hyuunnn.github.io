@@ -196,11 +196,9 @@ Rust는 소유권이라는 개념을 추가하여 dragling reference를 차단�
     * FORTRAN I, II, IV는 모든 변수가 static이다.
     * C, C++, Java는 static 키워드를 제공한다.
 
-장점은 효율성이다. 변수를 할당하고 회수하는 것에 대한 부담이 초래되지 않는다.
+장점은 효율성이다. 변수를 할당하고 회수하는 것에 대한 부담이 초래되지 않는다. (history sensitive하다. - 동일한 공간에 바인딩되어 프로그램 종료 시까지 유지되기 때문)
 
 단점은 유연성 감소이다. 정적 변수만을 갖는 언어는 재귀를 지원할 수 없다.
-
-또한 기억공간이 변수들 간 공유될 수 없으며(static 변수는 서로 접근할 수 있지 않나? non static 변수들 간 공유를 의미하는건가),  **history sensitive** 문제가 존재한다. (subprogram에서 static 변수나 메서드를 호출할 수 있음)
 
 ### 스택-동적 변수 (static-dynamic variable)
 
