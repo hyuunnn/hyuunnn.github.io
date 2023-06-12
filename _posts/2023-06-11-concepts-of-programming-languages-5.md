@@ -20,6 +20,7 @@ tags: [PL]
     * FORTRAN 77은 6글자, Fortran 95+는 31글자, COBOL은 30글자까지 허용한다.
     * C99는 내부 이름에서 제한이 없으나 처음 63글자까지만 의미가 있다.
     * 모던한 언어들은 제한하지 않는다. (Ada, Java, C++ 등)
+        * 이론적으로 무한이어야 하나 사실상 그렇진 않다.
 
 * 언어의 특수어가 예약어인가 또는 키워드인가?
     * 대부분의 언어에서 특수어는 예약어로 정의되어서 재정의할 수 없다.
@@ -49,6 +50,8 @@ tags: [PL]
 
 이름과 속성을 연관지은 것이다. 바인딩은 언어 정의 시점, 언어 구현 시점, 컴파일 시점, 로드(적재) 시점, 링크 시점, 실행 시점 등에서 일어날 수 있다.
 
+이는 언어 구성요소(예약어, 일반어 등)마다, 또는 같은 구성요소라도 속성(동적, 정적 언어)에 따라 바인딩 시간이 다를 수 있다.
+
 ```c
 static int X; int Y; 
 scanf("%d", &x); 
@@ -65,13 +68,17 @@ X = X + 10;
 * 변수 X의 주소는 **프로그램 로드 시점**에 바인딩된다.
 * 변수 Y의 주소는 **프로그램 실행 시점**에 바인딩된다.
 
-### 정적 타입 바인딩 (Static Typing)
+### 정적 타입 바인딩 (Static Type Binding)
 
 **명시적 선언(explicit declaration)**
 
 변수 이름과 특정 타입이라고 명시하는 방법이다. (대부분의 언어들이 채택하고 있다.)
 
 1960년대 이후 설계된 널리 사용되는 대부분의 언어들은 명시적 선언을 요구한다. (JavaScript, Perl, Ruby 등은 예외)
+
+```c
+int a, b, c;
+````
 
 **묵시적 선언(implicit declaration)**
 
@@ -85,32 +92,64 @@ Perl에서는 `@`으로 시작하는 이름은 배열, `%`으로 시작하는 �
 
 묵시적 선언의 다른 유형은 문맥을 파악하고 타입을 추론(type inference)하여 정적으로 타입을 부여하는 방법이다. (70년대부터 있었는데 최근 2011년경에 유명해졌다. - 메이저 언어들에서 이 기능을 도입하고 있다.)
 
-```csharp
-var sum = 0; // int
-var total = 0.0; // float 
-var name = "Fred"; // string
-```
+* C#
+    ```csharp
+    var sum = 0; // int
+    var total = 0.0; // float 
+    var name = "Fred"; // string
+    ```
+* Basic
+    ```basic
+    X = 10
+    A$ = "WIN"
+    ```
+* Perl
+    ```perl
+    # 빈 배열 생성
+    my @array;
 
-```java
-// ArrayList의 element 타입이 Integer 타입으로 추론된다.
-List<Integer> list2 = new ArrayList<>();
-```
+    # 배열에 요소 추가
+    push @array, "apple";
+    push @array, "banana";
+    push @array, "orange";
 
-```cpp
-string s = "HELLO";
-for (auto c: s)
-    cout << c << endl;
-```
+    # 빈 해시 생성
+    my %hash;
 
-### 동적 타입 바인딩 (Dynamic Typing)
+    # 해시에 키-값 쌍 추가
+    $hash{"name"} = "John";
+    $hash{"age"} = 30;
+    $hash{"city"} = "New York";
+    ```
+* Java
+    ```java
+    // ArrayList의 element 타입이 Integer 타입으로 추론된다.
+    List<Integer> list2 = new ArrayList<>();
+    ```
+    * <a href="https://docs.oracle.com/javase/tutorial/java/generics/erasure.html">Type Erasure</a>에 의해 컴파일 타임에 타입이 추론된다고 한다. (<a href="https://stackoverflow.com/questions/7213355/java-arraylist-generics-and-late-binding">stackoverflow</a>)
+* C++
+    ```cpp
+    string s = "HELLO";
+    for (auto c: s)
+        cout << c << endl;
+    ```
 
-타입을 선언문으로 명세하지 않고, 값이 할당될 때 타입이 바인딩된다. 즉 변수의 타입은 일시적일 수 있음을 인지해야 한다.
+### 동적 타입 바인딩 (Dynamic Type Binding)
 
-Python, Ruby, JavaScript, PHP 등은 동적 타입 바인딩이다.
+타입을 선언문으로 명세하지 않고, 값이 할당될 때 타입이 바인딩된다. (Late Binding)
+
+즉 변수의 타입은 일시적일 수 있음을 인지해야 한다. (언제든지 타입의 변경 가능성을 제공한다.)
+
+Python, Ruby, JavaScript, PHP, <a href="https://xpqz.github.io/learnapl/intro.html">APL</a>(<a href="https://en.wikipedia.org/wiki/APL_syntax_and_symbols">APL syntax and symbols</a>), SNOBOL4, Scheme 등은 동적 타입 바인딩이다.
 
 ```python
 a = [10.2, 3.5] # list type
 a = 47 # int type
+```
+
+```apl
+LIST <- 2 4 6 8 (LIST는 integer의 배열 타입이다.)
+LIST <- 10.2 (LIST는 부동소수점 타입이다.)
 ```
 
 유연한 프로그래밍이 가능하다는 장점이 있으나 단점도 존재한다.
@@ -118,16 +157,21 @@ a = 47 # int type
 * 프로그램이 덜 신뢰적이게 한다.
     * 잘못된 타입에 대한 오류를 탐지하지 못한다. (새로운 변수 선언으로 인식하게 되는 것)
         ```python
-        i = x 
+        i = x
         i = y # 이때 y가 다른 타입이라도 오류가 발생하지 않는다.
         ```
 * 타입 검사가 실행 시간에 수행되기 때문에 비용이 크다.
+    * 해당 이유로 인해 오류 검사가 늦어질 수 밖에 없다.
 
 위와 같은 이유들로 인해 동적 타입 바인딩은 **인터프리터**로 구현된다.
 
-정적 타입 바인딩 언어는 **순수 인터프리터**로 구현되지 않는데, 기계 코드로 쉽게 번역할 수 있기 때문이다.
+정적 타입 바인딩 언어는 **순수 인터프리터**로 구현되지 않는데, 기계 코드로 쉽게 번역할 수 있기 때문이다. (Early Binding)
 
 ## 기억 공간 바인딩 (Storage Binding)
+
+변수에 바인딩되는 memory cell은 memory pool로부터 가져와야 하는데 이때 memory pool에 할당(allocation)하고, 회수(deallocation)하여 다시 반환하는 과정을 의미한다.
+
+이때 변수의 존속기간(lifetime)은 4가지 유형으로 구분할 수 있다.
 
 ### 정적 변수 (Static Variable)
 
