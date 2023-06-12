@@ -104,12 +104,12 @@ type VOWELS is ('A','E','I','O','U');
 
 Pascal에서 도입되었고 Ada에서 포함된 기능이다.
 
-* pascal
+* Pascal
     ```pascal
     type
         index = 1..100;
     ```
-* ada
+* Ada
     ```ada
     type DAYS is (Sun, Mon, Tue, Wed, Thu, Fri, Sat);
     subtype WEEKDAYS is DAYS range Mon..Fri;
