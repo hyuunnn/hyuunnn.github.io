@@ -58,24 +58,34 @@ Ada, FORTRAN90, Python 등은 두 방법을 병용한다.
 
 ### pass by value (call by value)
 
-ㅁㄴㅇㅁㄴㅇ
+호출 시 복사 (in mode)
 
 ### pass by result (call by result)
 
-ㅁㄴㅇㅁㄴㅇ
-
-### pass by value-result (call by value-result)
-
-ㅁㄴㅇㄴㅁㅇ
+반환 시 복사 (out mode)
 
 ### pass by reference (call by reference)
 
-ㅁㄴㅇㄴㅁㅇ
+주소를 전달 (in-out)
+
+### pass by value-result (call by value-result, call by copy)
+
+reference 전달을 할 때 별칭(alias)로 인한 문제가 발생할 수 있다.
+
+이를 해결하기 위해 전달, 반환할 때 복사하는 방법 (in-out)
 
 ### pass by name (call by name)
+
+주소 계산 함수, 값 계산 함수를 통틀어서 thunk라고 하는데 parameter를 사용할 때마다 thunk가 판단하여 상황에 맞는 함수로 동작함  -> 함수를 호출할 때 대응된 식을 계산한다 - lazy binding
+
+단순 변수(scalar variable)는 reference 전달, 상수 식(constant expression)은 value 전달 방식으로 동작한다.
 
 <a href="https://for-development.tistory.com/142">[Scala] Call-by-value 와 Call-by-name</a>
 
 <a href="https://bambielli.com/til/2016-07-24-CBV-vs-CBN/">Call By Value vs Call By Name</a>
 
 <a href="https://stackoverflow.com/questions/2962987/what-is-call-by-name">What is "Call By Name"?</a>
+
+<a href="https://stackoverflow.com/questions/838079/what-is-pass-by-name-and-how-does-it-work-exactly">What is "pass-by-name" and how does it work exactly?</a>
+
+<a href="https://github.com/racket/algol60">racket - algol60</a>
