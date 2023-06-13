@@ -76,11 +76,60 @@ reference 전달을 할 때 별칭(alias)로 인한 문제가 발생할 수 있�
 
 ### pass by name (call by name)
 
-주소 계산 함수, 값 계산 함수를 통틀어서 thunk라고 하는데 parameter를 사용할 때마다 thunk가 판단하여 상황에 맞는 함수로 동작함  -> 함수를 호출할 때 대응된 식을 계산한다 - lazy binding
+<a href="https://wiki.c2.com/?CallByName">c2 wiki</a>, <a href="https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_name">wikipedia</a>
 
-단순 변수(scalar variable)는 `reference` 전달, 상수 식(constant expression)은 `value` 전달 방식으로 동작한다.
+주소 계산 함수, 값 계산 함수를 통틀어서 thunk라고 하는데 parameter를 사용할 때마다 thunk가 판단하여 상황에 맞는 함수로 동작함 -> 함수를 호출할 때 대응된 식을 계산한다 - lazy binding
 
-algol 60은 pass by name을 사용하는 언어 중 하나인데, DrRacket에서 <a href="https://github.com/racket/algol60">algol 60</a>을 실험용으로 제공하고 있다.
+```algol
+begin
+  integer n;
+  procedure p(k: integer);
+  begin
+    print(k);
+    n := n+10;
+    print(k);
+    n := n+5;
+    print(k);
+  end;
+  n := 0;
+  p(n+1);
+end;
+
+Output:
+call by value:     1  1  1
+call by name:      1 11 16
+```
+<a href="https://courses.cs.washington.edu/courses/cse341/03wi/imperative/parameters.html">cse341 - washington</a>
+
+lazy binding 방식이기 때문에 `print(k);`를 할 때 마다 k의 식을 계산하므로 call by name은 1 11 16이 출력된다. (<a href="https://destiny738.tistory.com/206">destiny738님 tistory</a>, <a href="https://stackoverflow.com/questions/2962987/what-is-call-by-name">What is "Call By Name"?</a> - 비슷한 예제)
+
+```scala
+// 무한루프 함수
+def loop:Boolean = loop
+
+// Call-by-Value
+def and(x: Boolean, y: Boolean): Boolean = if (x) y else false
+and(false, loop) 
+// Output : 무한루프
+
+
+// Call-by-Name
+def and(x: Boolean, y: => Boolean): Boolean = if (x) y else false
+and(false, loop)
+// Output : false 
+```
+
+<a href="https://for-development.tistory.com/142">[Scala] Call-by-value 와 Call-by-name</a>
+
+위 예제는 call by value라면 y에 들어온 무한 루프를 계산하기 위해 함수가 종료되지 않지만, call by name은 y를 호출하지 않기 때문에 정상적으로 종료된다. (<a href="https://bambielli.com/til/2016-07-24-CBV-vs-CBN/">Call By Value vs Call By Name</a> - 비슷한 예제)
+
+또한 단순 변수(scalar variable)는 `reference` 전달, 상수 식(constant expression)은 `value` 전달 방식으로 동작한다.
+
+![1](/assets/images/concepts-of-programming-languages-9/1.png)
+
+<a href="https://stackoverflow.com/questions/3331143/example-of-call-by-name">example-of-call-by-name</a>
+
+algol 60은 pass by name을 사용하는 언어 중 하나인데, <a href="https://github.com/racket/drracket">DrRacket</a>에서 <a href="https://github.com/racket/algol60">algol 60</a>을 실험용으로 제공하고 있다.
 
 ```algol60
 #lang algol60
@@ -94,13 +143,15 @@ begin
     단순 변수 전달인 U, V, W, X는 pass by reference처럼 동작한다.
     상수 식인 A, B, C, D는 pass by value처럼 동작한다.
 
-    V := U + A에서 V는 reference로 동작하여 B = A + A (2 + 2 = 4)
+    V := U + A에서 V와 U는 reference로 동작하여 B = A + A (2 + 2 = 4)
     W := A + B에서 W는 refernece로 동작하여 W = A + B (2 + 4 = 6)
     A := A + 1에서 A는 전역변수로 동작하여 A = A + 1 (2 + 1 = 3)
-    X := A + 2에서 X는 reference로 동작하여 X = A + 2 (3 +2 = 5)
+    X := A + 2에서 X는 reference로 동작하여 X = A + 2 (3 + 2 = 5)
 
     결국 reference로 접근하여 값을 변경했기 때문에 P와 main에서의 출력 결과는 3 4 6 5로 같다.
   ;
+
+  integer A, B, C, D;
 
   procedure P(U, V, W, X);
     comment value U, V, W, X;
@@ -116,7 +167,6 @@ begin
     printnln (X);
   end;
 
-  integer A, B, C, D;
   A := 2; B := 5; C := 8; D := 9;
 
   P(A, B, C, D);
@@ -129,10 +179,6 @@ end
 
 ![0](/assets/images/concepts-of-programming-languages-9/0.png)
 
-<a href="https://bambielli.com/til/2016-07-24-CBV-vs-CBN/">Call By Value vs Call By Name</a> - Example 3을 보면 y에 무한 루프를 수행하는 코드가 들어왔을 때 call by value라면 값을 계산하기 위해 함수가 종료되지 않지만, call by name은 y를 호출하지 않기 때문에 함수가 정상적으로 종료된다.
+**Jensen's Device**
 
-<a href="https://for-development.tistory.com/142">[Scala] Call-by-value 와 Call-by-name</a> - 위와 매우 비슷한 예제
-
-<a href="https://stackoverflow.com/questions/2962987/what-is-call-by-name">What is "Call By Name"?</a>
-
-<a href="https://stackoverflow.com/questions/838079/what-is-pass-by-name-and-how-does-it-work-exactly">What is "pass-by-name" and how does it work exactly?</a>
+<a href="https://en.wikipedia.org/wiki/Jensen%27s_device">wikipedia</a>
