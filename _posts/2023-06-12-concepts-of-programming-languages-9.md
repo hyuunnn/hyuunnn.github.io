@@ -78,14 +78,61 @@ reference 전달을 할 때 별칭(alias)로 인한 문제가 발생할 수 있�
 
 주소 계산 함수, 값 계산 함수를 통틀어서 thunk라고 하는데 parameter를 사용할 때마다 thunk가 판단하여 상황에 맞는 함수로 동작함  -> 함수를 호출할 때 대응된 식을 계산한다 - lazy binding
 
-단순 변수(scalar variable)는 reference 전달, 상수 식(constant expression)은 value 전달 방식으로 동작한다.
+단순 변수(scalar variable)는 `reference` 전달, 상수 식(constant expression)은 `value` 전달 방식으로 동작한다.
 
-<a href="https://for-development.tistory.com/142">[Scala] Call-by-value 와 Call-by-name</a>
+algol 60은 pass by name을 사용하는 언어 중 하나인데, DrRacket에서 <a href="https://github.com/racket/algol60">algol 60</a>을 실험용으로 제공하고 있다.
 
-<a href="https://bambielli.com/til/2016-07-24-CBV-vs-CBN/">Call By Value vs Call By Name</a>
+```algol60
+#lang algol60
+
+begin
+  comment
+    algol60에서 value는 프로시저에 전달된 인자의 값을 변경할 수 없게 지정한다.
+    value U, V, W, X 앞에 있는 comment를 놔두면 call by name, 지우면 call by value로 동작한다.
+
+    * 동작 과정
+    단순 변수 전달인 U, V, W, X는 pass by reference처럼 동작한다.
+    상수 식인 A, B, C, D는 pass by value처럼 동작한다.
+
+    V := U + A에서 V는 reference로 동작하여 B = A + A (2 + 2 = 4)
+    W := A + B에서 W는 refernece로 동작하여 W = A + B (2 + 4 = 6)
+    A := A + 1에서 A는 전역변수로 동작하여 A = A + 1 (2 + 1 = 3)
+    X := A + 2에서 X는 reference로 동작하여 X = A + 2 (3 +2 = 5)
+
+    결국 reference로 접근하여 값을 변경했기 때문에 P와 main에서의 출력 결과는 3 4 6 5로 같다.
+  ;
+
+  procedure P(U, V, W, X);
+    comment value U, V, W, X;
+    integer U, V, W, X;
+  begin
+    V := U + A;
+    W := A + B;
+    A := A + 1;
+    X := A + 2;
+    printn(U); prints(` ');
+    printn(V); prints(` ');
+    printn(W); prints(` ');
+    printnln (X);
+  end;
+
+  integer A, B, C, D;
+  A := 2; B := 5; C := 8; D := 9;
+
+  P(A, B, C, D);
+  printn(A); prints(` ');
+  printn(B); prints(` ');
+  printn(C); prints(` ');
+  printn(D);
+end
+```
+
+![0](/assets/images/concepts-of-programming-languages-9/0.png)
+
+<a href="https://bambielli.com/til/2016-07-24-CBV-vs-CBN/">Call By Value vs Call By Name</a> - Example 3을 보면 y에 무한 루프를 수행하는 코드가 들어왔을 때 call by value라면 값을 계산하기 위해 함수가 종료되지 않지만, call by name은 y를 호출하지 않기 때문에 함수가 정상적으로 종료된다.
+
+<a href="https://for-development.tistory.com/142">[Scala] Call-by-value 와 Call-by-name</a> - 위와 매우 비슷한 예제
 
 <a href="https://stackoverflow.com/questions/2962987/what-is-call-by-name">What is "Call By Name"?</a>
 
 <a href="https://stackoverflow.com/questions/838079/what-is-pass-by-name-and-how-does-it-work-exactly">What is "pass-by-name" and how does it work exactly?</a>
-
-<a href="https://github.com/racket/algol60">racket - algol60</a>
