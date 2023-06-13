@@ -140,7 +140,7 @@ Perl에서는 `@`으로 시작하는 이름은 배열, `%`으로 시작하는 �
 
 타입을 선언문으로 명세하지 않고, 값이 할당될 때 타입이 바인딩된다. (Late Binding)
 
-즉 변수의 타입은 일시적일 수 있음을 인지해야 한다. (언제든지 타입의 변경 가능성을 제공한다.) - type checking을 하긴 하는데 정적이 아닌 동적으로 하기 때문에 동작 중에 터지게 되는 것
+즉 변수의 타입은 일시적일 수 있음을 인지해야 한다. (언제든지 타입의 변경 가능성을 제공한다.) - type checking을 하긴 하는데 정적이 아닌 동적으로 하기 때문에 프로그램이 동작하다가 오류가 발생하면 터지게 되는 것임
 
 Python, Ruby, JavaScript, PHP, <a href="https://xpqz.github.io/learnapl/intro.html">APL</a>(<a href="https://en.wikipedia.org/wiki/APL_syntax_and_symbols">APL syntax and symbols</a>), SNOBOL4, Scheme 등은 동적 타입 바인딩이다.
 
