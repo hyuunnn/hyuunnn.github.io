@@ -139,6 +139,9 @@ begin
     algol60에서 value는 프로시저에 전달된 인자의 값을 변경할 수 없게 지정한다.
     value U, V, W, X 앞에 있는 comment를 놔두면 call by name, 지우면 call by value로 동작한다.
 
+    * 실행 방법
+    DrRacket 실행 -> 왼쪽 하단 언어 선택에서 Determine language from source 선택 (Algol 60 선택 X) -> 코드 복사해서 Run
+ 
     * 동작 과정
     단순 변수 전달인 U, V, W, X는 pass by reference처럼 동작한다.
     상수 식인 A, B, C, D는 pass by value처럼 동작한다.
