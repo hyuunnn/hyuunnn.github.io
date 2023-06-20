@@ -22,7 +22,7 @@ tags: [testing]
 
 ![1](/assets/images/black-box-testing/1.png)
 
-![2](/assets/images/black-box-testing/2.png)
+![3](/assets/images/black-box-testing/3.png)
 
 같은 결과를 반환하는 여러개의 다른 입력 값들 중에서 하나만 선택하고 분할하는 방법
 
