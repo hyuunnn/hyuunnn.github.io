@@ -80,7 +80,27 @@ valid, invalid한 케이스들을 조합하여 적절한 테스트 케이스를 
 
 ### Decision Table/Cause-Effect Graphing - 인자가 복수개 존재
 
--
+다양한 조건에 따라 여러가지 동작을 표현할 때 Decision Table을 사용한다. (테스트 대상이 여러가지면서 각각의 동작이 복수개의 condition들로 조합되는 경우)
+
+여러가지 조건들이 존재하며, 조건들의 조합에 따라 어떤 결과가 산출되는지 표현할 때 효과적이다. (입력 값의 조합에 따라 달라지거나, decision making이 복잡할 때, 복잡한 계산 로직을 가지고 있을 때 등등)
+
+![9](/assets/images/black-box-testing/9.png)
+
+조건들이 많아지는 만큼 주의할 점도 존재한다. - 무슨 의미인지 100% 이해는 안된다.
+
+* Decision table은 scale up 하는게 쉽지 않다. (limited가 아닌 extended한 entry decision을 사용할 필요가 있다.)
+* 동일한 액션을 취하는 rule들을 하나의 rule로 간결하게 수정하라.
+* 일관성(inconsistent)이 있는 rule이 있는지 확인하라.
+    * 동일한 condition임에도 action들이 유니크하게 결정되지 않는다면 condition들을 세분화할 필요가 있다. 
+* 다양한 조합들이 정의되어 있는지 확인하라. (예를 들어 날짜 계산 테스트 코드에 윤년 조건을 테스트하지 않는 경우)
+
+#### <a href="https://en.wikipedia.org/wiki/Decision_Model_and_Notation">DMN</a> (Decision Model and Notation) - <a href="https://www.omg.org/spec/DMN/">OMG Standard</a>
+
+Decision table에 대한 표준을 정의하고 있다.
+
+풍부한 표현법을 지원하여 복잡한 소프트웨어의 동작을 정의할 수 있다.
+
+![10](/assets/images/black-box-testing/10.png)
 
 ### Pair-wise Testing - 인자가 복수개 존재
 
