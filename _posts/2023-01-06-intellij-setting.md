@@ -236,15 +236,21 @@ jetbrains 도구에서 지원하는 새로운 UI인데 전체적으로 깔끔하
 
 ## Dark Purple Theme
 
-<a href="https://plugins.jetbrains.com/plugin/12100-dark-purple-theme">Dark Purple Theme</a>
+<a href="https://plugins.jetbrains.com/plugin/12100-dark-purple-theme">Jetbrains</a>
 
 jetbrains 기본 테마인 Darcula만 사용하다가 다른 테마도 다운받아서 사용해보고 있는데, 꽤 괜찮다.
 
 2023-05-14 기준 New UI + 기본 Black 테마 사용
 
+## Catppuccin Theme
+
+<a href="https://plugins.jetbrains.com/plugin/18682-catppuccin-theme">Jetbrains</a>, <a href="https://github.com/catppuccin/catppuccin">Github</a>
+
+2023-06-20 기준 New UI + Catppuccin 테마 사용
+
 ## Atom Material Icons
 
-<a href="https://plugins.jetbrains.com/plugin/10044-atom-material-icons">Atom Material Icons</a>
+<a href="https://plugins.jetbrains.com/plugin/10044-atom-material-icons">Jetbrains</a>
 
 아이콘 관련 플러그인들을 중에서 다운로드 수를 보면 압도적으로 많다. 나는 일단 New UI에서 제공하는 기본 아이콘을 사용하고 있는데, Atom 아이콘은 뭔가 정신 사납다는 느낌이 들었다 ㅎ.. 기본 아이콘이 깔끔하고, 개인적으로 더 좋은 것 같다.
 
@@ -299,6 +305,20 @@ test snippet에서 메서드명을 한글로 작성한 후에 영어로 바꿔�
 <a href="https://github.com/SonarSource/sonarlint-core">Github</a>, <a href="https://plugins.jetbrains.com/plugin/7973-sonarlint">Jetbrains</a>
 
 code smell을 찾아주는 플러그인이다. 짧게 사용해봤는데 괜찮은 것 같다. 
+
+## DiscordIJ 플러그인
+
+<a href="https://github.com/re-ovo/discord-ij">Github</a>, <a href="https://plugins.jetbrains.com/plugin/21240-discordij">Jetbrains</a>
+
+Discord에 Intellij 상태 표시해주는 플러그인이다.
+
+<a href="https://plugins.jetbrains.com/plugin/10233-discord-integration">Discord Integration</a>도 있는데 2022년 이후로 업데이트를 안하고 있고, 문제가 있다는 리뷰가 있어서 DiscordIJ를 사용했다.
+
+## JetBrains Academy 플러그인
+
+<a href="https://plugins.jetbrains.com/plugin/10081-jetbrains-academy">JetBrains</a>
+
+<a href="https://www.yes24.com/Product/Goods/117817486">아토믹 코틀린</a> 책의 예제들도 위 플러그인을 통해 실습할 수 있으며 그 외에도 다양한 실습을 제공한다. (<a href="https://kotlinlang.org/docs/koans.html">Kotlin Koans</a>, <a href="https://www.jetbrains.com/edu-products/learning/scala/">Scala Tutorial</a>, <a href="https://plugins.jetbrains.com/plugin/16631-learn-rust">Learn Rust</a> 등)
 
 ## 그 외에 플러그인 관련 링크
 
