@@ -70,15 +70,40 @@ var foo = "method(" + argument1+","+argument2+")";
 
 ### Tip 04. 실행하기, 반복하기, 되돌리기
 
+```
+j.j.j.을 반복해서 입력하다보면 마치 드럼치듯 리듬을 타기 쉽다. 하지만 실수로 누른다면 어떻게 해야할까? - p9
+```
+
+지금까지 사용한 기능들의 반대 역할도 존재한다. 
+
+|기능|동작|반복|되돌리기|
+|---|---|---|---|
+|내용 변경하기|{편집}|.|u(undo), `<C-R>`(redo)|
+|행에서 다음 문자 찾기|f{문자} / t{문자}|;|,|
+|행에서 이전 문자 찾기|F{문자} / T{문자}|;|,|
+|문서에서 다음 일치 찾기|/패턴`<CR>`|n|N|
+|문서에서 이전 일치 찾기|?패턴`<CR>`|n|N|
+|치환 동작하기|:s/대상/치환|&|u|
+|연속 변경 실행하기|qx{변경}q|@x|u|
 
 
 ### Tip 05. 직접 찾고 치환하기
 
+```text
+...We're waiting for content before the site can go live...
+...If you are content with this, let's go ahead with it...
+...We'll launch as soon as we have the content...
+```
 
+위 문장에서 모든 `content`를 `copy`로 치환하고 싶다면 `:%s/content/copy/g`를 입력하면 된다.
+
+하지만 일부만 치환하고 싶다면 커서가 위치한 단어를 찾아주는 `*` 명령을 사용하고 수정할 단어를 입력한 후 `n.`을 입력하면 된다.
+
+GitHub Copilot: 더 좋은 방법은 `c` 플래그를 사용하면 된다. `:%s/content/copy/gc`를 입력하면 일치하는 모든 문자열을 치환하기 전에 사용자에게 확인을 요청한다.
 
 ### Tip 06. 점 공식 만나기
 
-
+-
 
 ### Tip 07. 붓을 놓고 잠시 멈추기
 
