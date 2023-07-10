@@ -206,7 +206,7 @@ Vim에서 REDO, UNDO가 가능한 이유는 변경점을 저장하는 레지스�
 
 출력은 10진수로 나오는데 16진수로 출력할 수 있는가?
 
-ChatGPT: `<C-r>=printf("0x%x", 0x10*35)`를 입력하면 `230`이 입력된다.
+ChatGPT: `<C-r>=printf("0x%x", 0x10*35)`를 입력하면 `0x230`이 입력된다.
 
 <a href="https://vimhelp.org/usr_41.txt.html#function-list">vimhelp - usr_41.txt</a>
 
