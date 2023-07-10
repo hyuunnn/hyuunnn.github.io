@@ -208,6 +208,10 @@ Vim에서 REDO, UNDO가 가능한 이유는 변경점을 저장하는 레지스�
 
 ChatGPT: `<C-r>=printf("0x%x", 0x10*35)`를 입력하면 `230`이 입력된다.
 
+<a href="https://vimhelp.org/usr_41.txt.html#function-list">vimhelp - usr_41.txt</a>
+
+<a href="https://vimhelp.org/eval.txt.html#printf%28%29">vimhelp - eval.txt</a>
+
 ### Tip 17. 문자 코드를 이용해 일반적이지 않은 문자 입력하기
 
 
