@@ -215,6 +215,8 @@ ChatGPT: `<C-r>=printf("0x%x", 0x10*35)`를 입력하면 `0x230`이 입력된다
 
 <a href="https://vimhelp.org/eval.txt.html#printf%28%29">vimhelp - eval.txt</a>
 
+Vim 안에서 다른 도구를 사용할 수도 있는데 텍스트에 적혀있는 사칙연산 식에 `V:!bc<CR>`을 입력하면 계산 결과로 바꿀 수 있다. (Vim 기능으로 모든 것을 해결할 필요는 없다. - 다양한 도구들이 존재하기 때문) - johngrib
+
 ### Tip 17. 문자 코드를 이용해 일반적이지 않은 문자 입력하기
 
 
