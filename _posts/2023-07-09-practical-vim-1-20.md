@@ -40,6 +40,12 @@ Vim의 NORMAL 모드 명령 시스템은 텍스트 처리 언어로 볼 수 있�
 
 <a href="https://johngrib.github.io/wiki/two-views-of-vim/">Vim, 두 가지 관점</a>
 
+```
+Vim을 잘쓰는 사람을 보면 피아니스트가 악기를 다루는 것처럼 사용한다. 머슬 메모리가 기억하기 떄문에 인지 부하를 줄이고 개발에 집중할 수 있다. (에디터마다 다른 단축키를 알 필요 없이) - vim-galore 
+```
+
+<a href="https://github.com/mhinz/vim-galore">vim-galore</a>
+
 ### Tip 01. 점 명령 만나기
 
 Vim은 반복적인 작업에 최적화된 편집기이다. Tip 01에서 알려주는 점 명령(`.`)을 사용하면 마지막 변경을 반복할 수 있다.
