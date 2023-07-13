@@ -16,5 +16,5 @@ OneDrive 프로그램 때문에 멈춘다는 사람도 있었으나 나는 그�
 
 <a href="https://tiplog.co.kr/1422">1</a>, <a href="https://itsvc.tistory.com/entry/%EC%9D%B4%EB%B2%A4%ED%8A%B8-ID-10016-DistributedCOM-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95">2</a>, <a href="https://showering.tistory.com/144">3</a>, <a href="https://gall.dcinside.com/m/td2/264445">4</a>
 
-위 링크들 참고해서 설정해봤는데 더 지켜봐야겠다...
+위 링크들 참고해서 설정했는데 더 지켜봐야겠다...
 
