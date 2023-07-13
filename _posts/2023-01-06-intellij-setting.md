@@ -335,3 +335,5 @@ https://github.com/jojoldu/intellij-development
 https://github.com/judasn/IntelliJ-IDEA-Tutorial
 
 https://github.com/guobinhit/intellij-idea-tutorial
+
+https://github.com/cheese10yun/IntelliJ
