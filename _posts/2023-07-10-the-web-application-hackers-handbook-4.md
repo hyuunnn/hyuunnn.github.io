@@ -32,6 +32,8 @@ HTML Form에 임의의 값을 넣어서 요청을 보내기도 한다고 한다.
 
 URL에 존재하는 매개변수 값에 따라서 일회성 정보(타이머, 난수 등)를 반환하는 페이지의 경우에는 각 URL이 다른 URL이라고 판단하여 무한으로 스파이더링을 수행할 수도 있다.
 
+<a href="https://www.zaproxy.org/">OWASP ZAP</a>도 있다.
+
 ## User-Directed Spidering
 
 Burp Suite에서 사용하는 방법이다. 사용자가 일반적으로 브라우징하듯이 여러 링크들을 접속하면서 주고받은 내용들은 프록시를 거쳐서 Burp Suite에 저장된다.
@@ -45,3 +47,25 @@ Burp Suite에서 사용하는 방법이다. 사용자가 일반적으로 브라�
 **완전 자동화는 쉽지 않고, 최소한의 수작업이 필요하다.** -> 수작업으로 접속한 URL을 바탕으로 스파이더 도구가 수집하며, 수집한 URL을 다시 수동으로 열어보면서 새로운 컨텐츠를 찾는다. (이때 위에서 설명했던 문제가 발생할 수 있는 URL은 접근하지 않게 설정해야 한다.)
 
 ## Burp Intruder
+
+무차별 대입 공격에 사용할 수 있는 도구이다.
+
+예를 들어 `/auth/ForgotPassword`라는 페이지를 찾았을 때 네이밍 규칙을 확인하고 `/auth/$$Password/`처럼 와일드 카드를 사용하여 대입 공격을 할 수 있다. (`Add`, `Get`, `Reset`, `Update` 등 대문자로 시작할 것임을 짐작할 수 있다.)
+
+이외에 `.DS_Store`, `.php~1`, `.tmp`와 같은 임시 파일들도 찾아본다.
+
+### Discover Content
+
+위 기능을 사용하면 Burp Suite에서 만든 자주 사용되는 파일명, 디렉토리명으로 무차별 대입 공격을 진행한다. 또한 발견한 이름의 패턴을 파악하여 단어 목록을 생성하고, 숫자와 날짜를 조합하여 이름을 만들기도 한다. 
+
+발견한 컨텐츠에 스파이더링 공격을 진행하기도 한다.
+
+아래 사진은 Discover Content 기능으로 무차별 대입 공격이 찍힌 로그이다.
+
+![1](/assets/images/the-web-application-hackers-handbook-4/0.png)
+
+그리고 워드프레스, 그누보드 관리자 페이지나 phpmyadmin 등등 고정적인 위치에 설치되기 때문에 관련 페이지들을 무차별 대입하여 숨겨진 리소스들을 찾을 수 있다.
+
+<a href="https://github.com/sullo/nikto">nikto</a>, <a href="https://sourceforge.net/projects/dirbuster/">OWASP DirBuster</a> 등이 있다.
+
+이외에도 매개변수에 `debug=true`을 넣으면 디버그 모드를 활성화할 수 있다던지 (`test`, `hide`, `source` 등), 웹 페이지의 매개변수로 전달한 메서드 이름에 따라서 다르게 동작한다던지 등 가능성이 있기 때문에 다양한 방법을 시도해봐야 한다.
