@@ -8,6 +8,8 @@ tags: ["misc"]
 
 프로그래밍 언어의 유행은 킬러 앱의 중요성이 어느정도 있는 것 같다. 그런 의미에서 <a href="https://hyuunnn.github.io/2023/05/08/concepts-of-programming-languages-1/">언어의 트렌드는 계속 바뀐다.</a>
 
+<a href="https://jojoldu.tistory.com/687">다른 언어로 성장하기</a>
+
 ### <a href="https://github.com/golang/go">golang</a>
 
 <a href="https://github.com/docker">docker</a>, <a href="https://github.com/kubernetes/kubernetes">kubernetes</a>, <a href="https://github.com/hashicorp/terraform">terraform</a>, <a href="https://github.com/containerd/containerd">containerd</a>, <a href="https://github.com/cri-o/cri-o">cri-o</a>, <a href="https://github.com/etcd-io/etcd">etcd</a>, <a href="https://github.com/istio/istio">istio</a> <a href="https://github.com/flannel-io/flannel">flannel</a> 등 클라우드 분야..? 특히 컨테이너 쪽은 golang이 압도적인 점유율을 보여주고 있다.
