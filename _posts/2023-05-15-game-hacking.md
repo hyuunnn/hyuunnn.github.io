@@ -16,5 +16,9 @@ https://github.com/dsasmblr/game-hacking
 
 https://github.com/kovidomi/game-reversing
 
+https://github.com/id-Software
+
+https://github.com/snowcra5h/windows-api-function-cheatsheets
+
 https://www.unknowncheats.me/forum/index.php
 
