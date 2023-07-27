@@ -38,6 +38,7 @@ tags: []
           VPA(Vertical Pod Autoscaler)의 경우, 스케일 업을 수행하기 위해 파드를 제거하고 다시 배포하는 과정이 수행되면서 큰 오버헤드가 발생하기 때문에 일반적으로는 HPA가 많이 사용된다.
           오토스케일링 알고리즘 비교를 위한 요청 수 기반 쿠버네티스 Horizontal Pod Autoscaler 모델링 - 장용현 외 4명
           ```
+            * VPA는 파드의 리소스가 부족한 경우, 파드를 스케일 업한다. (<a href="https://kimjingo.tistory.com/166">설명</a>)
 
 * 파드는 생성될 때마다 새로운 내부 IP를 할당 받는다는데?
     * ```
