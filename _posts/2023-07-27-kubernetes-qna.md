@@ -76,4 +76,6 @@ tags: []
 
 * <a href="https://www.yes24.com/Product/Goods/92426926">핵심만 콕! 쿠버네티스</a>
 * <a href="https://www.yes24.com/Product/Goods/102099414">컨테이너 인프라 환경 구축을 위한 쿠버네티스/도커</a>
+* <a href="https://seongjin.me/kubernetes-core-concepts/">쿠버네티스와 컨테이너 오케스트레이션, 그리고 핵심 설계 사상</a>
 * <a href="https://seongjin.me/kubernetes-pods/">파드(Pod)의 개념과 생명 주기, 그리고 상태 진단을 위한 프로브(Probe) 활용</a>
+* <a href="https://seongjin.me/kubernetes-service-types/">쿠버네티스에서 반드시 알아야 할 서비스(Service) 유형</a>
