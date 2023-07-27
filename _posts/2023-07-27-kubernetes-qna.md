@@ -69,3 +69,9 @@ tags: []
         * ![5](/assets/images/kubernetes-qna/5.png)
     * 현재 상태에서 `in-ip-pod`의 수를 5개에서 9개로 늘렸을 때 - 모두 `w2-k8s`에 배치된다.
         * ![6](/assets/images/kubernetes-qna/6.png)
+
+## 참고
+
+* <a href="https://www.yes24.com/Product/Goods/92426926">핵심만 콕! 쿠버네티스</a>
+* <a href="https://www.yes24.com/Product/Goods/102099414">컨테이너 인프라 환경 구축을 위한 쿠버네티스/도커</a>
+* <a href="https://seongjin.me/kubernetes-pods/">파드(Pod)의 개념과 생명 주기, 그리고 상태 진단을 위한 프로브(Probe) 활용</a>
