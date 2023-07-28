@@ -25,6 +25,8 @@ tags: []
 
 <a href="https://youtu.be/_SVS4qn8HuY">MongoDB의 샤딩에 대해 알아보기</a>
 
+<a href="https://youtu.be/8Eb_n7JA1yA">[2019] 200만 동접 게임을 위한 MySQL 샤딩</a>
+
 <a href="https://youtu.be/y42TXZKFfqQ">👨‍💻히브리의 Sharding, Clustering, Replication</a>
 
 <a href="https://fastcampus.co.kr/story_article_yhs">LINE+가 사내에 MongoDB를 도입한 이유</a>
