@@ -32,3 +32,5 @@ tags: []
 <a href="https://tv.kakao.com/channel/3693125/cliplink/414072595">카카오와 MongoDB</a> - <a href="https://freedeveloper.tistory.com/341">1</a>, <a href="https://sundries-in-myidea.tistory.com/106">2</a>
 
 <a href="https://tv.kakao.com/channel/3693125/cliplink/414132056">MySQL on Kubernetes: 발표자도 데이터베이스를 컨테이너로 운영하게 될 줄 몰랐다</a>
+
+<a href="https://engineering.linecorp.com/ko/blog/line-shopping-platform-kafka-mongodb-kubernetes">Kafka와 MongoDB, Kubernetes로 유연하고 확장 가능한 LINE 쇼핑 플랫폼 구축하기</a>
