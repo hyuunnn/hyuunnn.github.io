@@ -92,3 +92,6 @@ tags: []
 * <a href="https://seongjin.me/kubernetes-core-concepts/">쿠버네티스와 컨테이너 오케스트레이션, 그리고 핵심 설계 사상</a>
 * <a href="https://seongjin.me/kubernetes-pods/">파드(Pod)의 개념과 생명 주기, 그리고 상태 진단을 위한 프로브(Probe) 활용</a>
 * <a href="https://seongjin.me/kubernetes-service-types/">쿠버네티스에서 반드시 알아야 할 서비스(Service) 유형</a>
+* <a href="https://saramin.github.io/2022-05-17-kubernetes-autoscaling/">Kubernetes에서 HPA를 활용한 오토스케일링</a>
+* <a href="https://youtu.be/76e2KOcmNSY">Kubernetes에서 확장 가능한 운영 HPA - 김상혁</a>
+* <a href="https://tech.kakao.com/2018/12/24/kubernetes-deploy/">kubernetes를 이용한 서비스 무중단 배포</a>
