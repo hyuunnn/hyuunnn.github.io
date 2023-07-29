@@ -78,7 +78,7 @@ tags: []
 * 노드가 죽으면 해당 노드 안의 파드는 어떻게 되는가?
     * `w2-k8s` 종료 전 - `in-ip-pod` 5개, `np-pods` 9개 존재
         * ![3](/assets/images/kubernetes-qna/3.png)
-    * `w2-k8s` 종로 후 - `in-ip-pod` 2개, `np-pods` 3개 Terminating 상태이며, `w1-k8s`, `w3-k8s` 노드에 새로운 파드 생성
+    * `w2-k8s` 종료 후 - `in-ip-pod` 2개, `np-pods` 3개 Terminating 상태이며, `w1-k8s`, `w3-k8s` 노드에 새로운 파드 생성
         * ![4](/assets/images/kubernetes-qna/4.png)
     * `w2-k8s` 다시 시작
         * Terminating 상태였던 파드들의 READY 값이 0/1로 바뀌었다.
