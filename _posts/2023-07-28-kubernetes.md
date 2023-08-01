@@ -6,41 +6,41 @@ date: 2023-07-28
 tags: ["cloud"]
 ---
 
-### 책 모음
+## 책 모음
 
-<a href="https://brunch.co.kr/@topasvga/1455">쿠버네티스 추천 책</a>
+* <a href="https://brunch.co.kr/@topasvga/1455">쿠버네티스 추천 책</a>
+* <a href="https://www.yes24.com/Product/Goods/115457586">그림으로 이해하는 가상화와 컨테이너</a>
+* <a href="https://www.yes24.com/Product/Goods/92426926">핵심만 콕! 쿠버네티스</a>
+* <a href="https://www.yes24.com/Product/Goods/102099414">컨테이너 인프라 환경 구축을 위한 쿠버네티스/도커</a>
+* <a href="https://www.yes24.com/Product/Goods/118327245">디지털 플랫폼 전략 수립을 위한 쿠버네티스 실전 활용서</a>
+* <a href="https://www.yes24.com/Product/Goods/115187666">24단계 실습으로 정복하는 쿠버네티스</a>
+* <a href="https://www.yes24.com/Product/Goods/89607047">쿠버네티스 인 액션</a>
+* <a href="https://www.yes24.com/Product/Goods/120763051">코어 쿠버네티스</a>
+* <a href="https://www.yes24.com/Product/Goods/83556239">쿠버네티스를 활용한 클라우드 네이티브 데브옵스</a>
+* <a href="https://www.yes24.com/Product/Goods/115082096">쿠버네티스 개발 전략</a>
+* <a href="https://www.yes24.com/Product/Goods/95560470">쿠버네티스 모범 사례</a>
+* <a href="https://www.yes24.com/Product/Goods/89861207">쿠버네티스 패턴</a>
+* <a href="https://www.yes24.com/Product/Goods/73416815">매니징 쿠버네티스</a> - <a href="https://blog.outsider.ne.kr/1668">outsider님 후기</a>
+* <a href="https://www.yes24.com/Product/Goods/103324076">CoreDNS 시작하기</a>
 
-<a href="https://www.yes24.com/Product/Goods/115457586">그림으로 이해하는 가상화와 컨테이너</a>
+### 나중에 추가로 공부할 책
 
-<a href="https://www.yes24.com/Product/Goods/92426926">핵심만 콕! 쿠버네티스</a>
+* <a href="https://www.yes24.com/Product/Goods/117458772">클라우드 네이티브 쿠버네티스</a>
+* <a href="https://www.yes24.com/Product/Goods/80452497">프로메테우스, 오픈소스 모니터링 시스템</a>
+* <a href="https://www.yes24.com/Product/Goods/85153015">프로메테우스 인프라스트럭처 모니터링</a>
+* <a href="https://www.yes24.com/Product/Goods/90263520">이스티오 첫걸음</a>
+* <a href="https://www.yes24.com/Product/Goods/89973440">Istio로 시작하는 서비스 메시</a>
+* <a href="https://www.yes24.com/Product/Goods/94489227">gRPC 시작에서 운영까지</a>
+* <a href="https://www.yes24.com/Product/Goods/99351473">쿼커스 쿡북</a>
+* <a href="https://www.yes24.com/Product/Goods/95078870">쿠버네티스 오퍼레이터</a>
+* <a href="https://www.yes24.com/Product/Goods/91166501">쿠버네티스 시작하기 2/e</a>
+* <a href="https://www.yes24.com/Product/Goods/102280203">헬름 배우기</a>
 
-<a href="https://www.yes24.com/Product/Goods/102099414">컨테이너 인프라 환경 구축을 위한 쿠버네티스/도커</a>
+## 링크 모음
 
-<a href="https://www.yes24.com/Product/Goods/115187666">24단계 실습으로 정복하는 쿠버네티스</a>
+<a href="https://subicura.com/k8s/">쿠버네티스 안내서</a>
 
-<a href="https://www.yes24.com/Product/Goods/89607047">쿠버네티스 인 액션</a>
-
-<a href="https://www.yes24.com/Product/Goods/120763051">코어 쿠버네티스</a>
-
-<a href="https://www.yes24.com/Product/Goods/83556239">쿠버네티스를 활용한 클라우드 네이티브 데브옵스</a>
-
-<a href="https://www.yes24.com/Product/Goods/117458772">클라우드 네이티브 쿠버네티스</a>
-
-<a href="https://www.yes24.com/Product/Goods/95560470">쿠버네티스 모범 사례</a>
-
-<a href="https://www.yes24.com/Product/Goods/89861207">쿠버네티스 패턴</a>
-
-<a href="https://www.yes24.com/Product/Goods/73416815">매니징 쿠버네티스</a> - <a href="https://blog.outsider.ne.kr/1668">outsider님 후기</a>
-
-<a href="https://www.yes24.com/Product/Goods/80452497">프로메테우스, 오픈소스 모니터링 시스템</a>
-
-<a href="https://www.yes24.com/Product/Goods/90263520">이스티오 첫걸음</a>
-
-<a href="https://www.yes24.com/Product/Goods/89973440">Istio로 시작하는 서비스 메시</a>
-
-<a href="https://www.yes24.com/Product/Goods/103324076">CoreDNS 시작하기</a>
-
-### 링크 모음
+<a href="https://seongjin.me/tag/kubernetes/">seongjin님 블로그</a>
 
 <a href="https://tech-verse.me/#ux_design">tech-verse</a>
 
