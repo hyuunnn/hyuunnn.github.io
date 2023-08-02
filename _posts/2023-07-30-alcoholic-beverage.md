@@ -40,6 +40,7 @@ tags: []
 
 * 술의 세계 - 학교 수업
     * <a href="https://www.yes24.com/Product/Goods/14638958">술의 세계</a>
+    * <a href="https://www.yes24.com/Product/Goods/2176528">와인, 어떻게 즐길까</a>
     * <a href="https://www.yes24.com/Product/Goods/118068208">와인</a>
     * <a href="https://www.yes24.com/Product/Goods/3608008">와인양조학</a>
     * <a href="https://product.kyobobook.co.kr/detail/S000001368193">국제화시대의 양주상식</a>
