@@ -114,3 +114,4 @@ tags: []
 * <a href="https://youtu.be/V-Ib-DdconY">K8S HPA 강의 제대로 듣고 있었습니까? 정신 차리십시오</a>
 * <a href="https://youtu.be/76e2KOcmNSY">Kubernetes에서 확장 가능한 운영 HPA - 김상혁</a>
 * <a href="https://tech.kakao.com/2018/12/24/kubernetes-deploy/">kubernetes를 이용한 서비스 무중단 배포</a>
+* <a href="https://youtu.be/hJO1nxsB5uY">온프레미스에서도 로드밸런서를?</a>
