@@ -22,5 +22,11 @@ https://github.com/snowcra5h/windows-api-function-cheatsheets
 
 https://github.com/matthieu-hackwitharts/Win32_Offensive_Cheatsheet
 
+https://github.com/korcankaraokcu/PINCE
+
+https://github.com/scanmem/scanmem
+
+https://github.com/cheat-engine/cheat-engine
+
 https://www.unknowncheats.me/forum/index.php
 
