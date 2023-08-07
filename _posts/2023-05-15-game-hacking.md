@@ -20,5 +20,7 @@ https://github.com/id-Software
 
 https://github.com/snowcra5h/windows-api-function-cheatsheets
 
+https://github.com/matthieu-hackwitharts/Win32_Offensive_Cheatsheet
+
 https://www.unknowncheats.me/forum/index.php
 
