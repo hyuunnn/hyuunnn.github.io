@@ -31,6 +31,7 @@ tags: ["cloud"]
 * <a href="https://www.yes24.com/Product/Goods/85153015">프로메테우스 인프라스트럭처 모니터링</a>
 * <a href="https://www.yes24.com/Product/Goods/90263520">이스티오 첫걸음</a>
 * <a href="https://www.yes24.com/Product/Goods/89973440">Istio로 시작하는 서비스 메시</a>
+* <a href="https://www.yes24.com/Product/Goods/109988402">서비스 메시 마스터: Istio, Linkerd, Consul을 활용한 마이크로서비스의 효과적인 관리</a>
 * <a href="https://www.yes24.com/Product/Goods/94489227">gRPC 시작에서 운영까지</a>
 * <a href="https://www.yes24.com/Product/Goods/99351473">쿼커스 쿡북</a>
 * <a href="https://www.yes24.com/Product/Goods/95078870">쿠버네티스 오퍼레이터</a>
