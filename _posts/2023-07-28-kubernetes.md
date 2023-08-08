@@ -14,6 +14,7 @@ tags: ["cloud"]
 * <a href="https://www.yes24.com/Product/Goods/102099414">컨테이너 인프라 환경 구축을 위한 쿠버네티스/도커</a>
 * <a href="https://www.yes24.com/Product/Goods/118327245">디지털 플랫폼 전략 수립을 위한 쿠버네티스 실전 활용서</a>
 * <a href="https://www.yes24.com/Product/Goods/115187666">24단계 실습으로 정복하는 쿠버네티스</a>
+* <a href="https://www.yes24.com/Product/Goods/102847901">쿠버네티스 완벽 가이드</a>
 * <a href="https://www.yes24.com/Product/Goods/89607047">쿠버네티스 인 액션</a> - <a href="https://sgc109.github.io/2021/01/26/kubernetes-in-action-review/">책 리뷰</a>
 * <a href="https://www.yes24.com/Product/Goods/120763051">코어 쿠버네티스</a>
 * <a href="https://www.yes24.com/Product/Goods/83556239">쿠버네티스를 활용한 클라우드 네이티브 데브옵스</a>
