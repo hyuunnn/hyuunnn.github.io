@@ -138,3 +138,15 @@ tags: ["cloud"]
 <a href="https://youtu.be/jXN0AhOt_8A">멀티 테넌트 k8s 클러스터로 구축하는 신뢰할 수 있는 로그 수집 인프라</a>
 
 <a href="https://tv.kakao.com/channel/3693125/cliplink/423597081">Kubernetes Cluster 확장 어디까지 알아보고 오셨어요?</a>
+
+<a href="https://github.com/jatrost/awesome-kubernetes-threat-detection">Awesome Kubernetes (K8s) Threat Detection</a>
+
+<a href="https://github.com/magnologan/awesome-k8s-security">Awesome Kubernetes (K8s) Security</a>
+
+<a href="https://github.com/ramitsurana/awesome-kubernetes">awesome-kubernetes - ramitsurana</a>
+
+<a href="https://github.com/run-x/awesome-kubernetes">awesome-kubernetes - run-x</a>
+
+<a href="https://github.com/tomhuang12/awesome-k8s-resources">Awesome Kubernetes Resources</a>
+
+<a href="https://github.com/vilaca/awesome-k8s-tools">awesome-k8s-tools</a>
