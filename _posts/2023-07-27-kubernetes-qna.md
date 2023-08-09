@@ -158,7 +158,9 @@ tags: []
     * 현재 상태에서 `in-ip-pod`의 수를 5개에서 9개로 늘렸을 때 - 모두 `w2-k8s`에 배치된다.
         * ![6](/assets/images/kubernetes-qna/6.png)
 
-
+* Ingress를 설정할 때 path에 따른 Service를 매핑하는데, 외부에서 Ingress를 통해 접속한다면 LoadBalancer(Service의 타입 중 하나)를 사용할 필요가 없지 않나?
+  * 이미 Ingress로 외부의 접속을 열어놨는데 LoadBalancer로 또 열어둘 필요가 있나?
+  * Service의 기능 중 하나가 외부의 접속을 허용하기 위함인데 Ingress의 역할이 헷갈린다.
 
 ### 국내 대기업의 현대화를 통한 생산성 혁신 사례
 
