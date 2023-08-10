@@ -25,3 +25,16 @@ sudo systemctl start mongod
 ```
 
 ![2](/assets/images/mongodb-error/2.png)
+
+그외에 잡다한 에러들은 충돌 가능성도 있고, 이유를 모르는 문제라서 깔끔하게 삭제 후 다시 설치하는 것을 추천한다.
+
+```console
+dpkg --list |grep mongo
+sudo apt-get --purge remove 패키지명
+```
+
+### 참고 링크
+
+https://hoyeong-rithm.tistory.com/69
+
+<a href="https://velog.io/@tyufjvbn2/%EC%9A%B0%EB%B6%84%ED%88%AC-Mongo-DB-%EC%A4%91%EB%B3%B5-%EC%84%A4%EC%B9%98%EC%8B%9C-%EC%98%A4%EB%A5%98">우분투 Mongo DB 중복 설치시 오류</a>
