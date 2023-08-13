@@ -150,3 +150,5 @@ tags: ["cloud"]
 <a href="https://github.com/tomhuang12/awesome-k8s-resources">Awesome Kubernetes Resources</a>
 
 <a href="https://github.com/vilaca/awesome-k8s-tools">awesome-k8s-tools</a>
+
+<a href="https://github.com/nemonik/hands-on-DevOps-gen2">hands-on-DevOps-gen2</a>
