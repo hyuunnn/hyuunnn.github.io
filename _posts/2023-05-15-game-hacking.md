@@ -10,6 +10,11 @@ tags: [reversing]
     * https://github.com/danielkrupinski/Osiris
     * https://github.com/ExpLife0011/awesome-windows-kernel-security-development
 
+* theori 블로그
+    * https://blog.theori.io/game-hacking-1-881e940ffe00
+    * https://blog.theori.io/game-hacking-2-6874da8d1b1e
+    * https://blog.theori.io/game-hacking-3-c8d24ba30856
+
 https://github.com/dsasmblr/hacking-online-games
  
 https://github.com/dsasmblr/game-hacking
