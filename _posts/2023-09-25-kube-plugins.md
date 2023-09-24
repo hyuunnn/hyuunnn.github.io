@@ -34,6 +34,10 @@ tags: []
 
 ### <a href="https://github.com/iovisor/kubectl-trace">kubectl-trace</a>
 
+### <a href="https://github.com/doitintl/kube-no-trouble">kubent</a>
+
+### <a href="https://github.com/derailed/popeye">popeye</a>
+
 ## 참고자료
 
 <a href="https://www.yes24.com/Product/Goods/115187666">24단계 실습으로 정복하는 쿠버네티스</a>
