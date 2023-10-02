@@ -12,6 +12,8 @@ tags: []
 
 ### grep, egrep
 
+<a href="https://github.com/adrianlarion/quick-grep">quick-grep</a>
+
 ### cut
 
 ### file
@@ -22,9 +24,19 @@ tags: []
 
 ### awk
 
+<a href="https://mug896.github.io/awk-script/">mug896 - awk-script</a>
+
+<a href="https://github.com/adrianlarion/simple-awk">simple-awk</a>
+
+<a href="https://github.com/freznicek/awesome-awk">awesome-awk</a>
+
+<a href="https://www.gnu.org/software/gawk/manual/">Effective AWK Programming</a>
+
 ### join
 
 ### sed
+
+<a href="https://github.com/adrianlarion/useful-sed">useful-sed</a>
 
 ### tail
 
@@ -37,6 +49,20 @@ tags: []
 ### uniq
 
 ### sdiff
+
+### etc
+
+<a href="https://github.com/ibraheemdev/modern-unix">modern-unix</a>
+
+<a href="http://mug896.github.io/bash-shell/">mug896 - bash-shell</a>
+
+<a href="https://mug896.github.io/make-script/">mug896 - make-script</a>
+
+<a href="https://mug896.github.io/macro/">mug896 - macro</a>
+
+<a href="https://github.com/learnbyexample/scripting_course">scripting_course</a>
+
+<a href="https://github.com/ezrosent/frawk">frawk</a>
 
 ## 참고 자료
 
