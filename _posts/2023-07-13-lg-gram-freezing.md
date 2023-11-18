@@ -17,3 +17,13 @@ OneDrive 프로그램 때문에 멈춘다는 사람도 있었으나 나는 그�
 <a href="https://tiplog.co.kr/1422">1</a>, <a href="https://itsvc.tistory.com/entry/%EC%9D%B4%EB%B2%A4%ED%8A%B8-ID-10016-DistributedCOM-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95">2</a>, <a href="https://showering.tistory.com/144">3</a>, <a href="https://gall.dcinside.com/m/td2/264445">4</a>, <a href="https://www.backyrd.net/entry/20211004/1633347934">5</a>, <a href="https://learn.microsoft.com/ko-kr/troubleshoot/windows-client/application-management/event-10016-logged-when-accessing-dcom">6</a>, <a href="https://answers.microsoft.com/ko-kr/windows/forum/all/%EC%9D%B4%EB%B2%A4%ED%8A%B8id-10016-distributedcom/c6572cb7-4143-4417-a9b2-4444971daf0b">7</a>
 
 위 링크들 참고해서 설정했는데 더 지켜봐야겠다...
+
+### 2023-11-19
+
+최근에 자꾸 프리징 생김
+
+뭔가 업데이트나 배터리 충전 중에 생기는 것 같음
+
+![1](/assets/images/lg-gram-freezing/1.png)
+
+<a href="https://youtu.be/QQi6ZeBiYZs">How to fix Event ID 10016 DistributedCOM ShellServiceHost errors</a> 이거 보고 일단 조치해봄.. 지켜봐야할듯
