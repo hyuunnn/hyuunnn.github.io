@@ -95,6 +95,14 @@ xsim hello_sim -gui -wdb hello_waveform.wdb
 
 <a href="https://verilog-hdl-design.tistory.com/14">테스트벤치 작성 예시</a>
 
+<a href="https://youtu.be/sGQoBnFcmwc">Writing a Verilog Testbench</a>
+
+<a href="https://youtu.be/onMmG_U4SVo">How to use vivado for Beginners | Verilog code | Testbench | Schematic View</a>
+
+<a href="https://youtu.be/hK6vBKjPs-k">Verilog Code for D Flip Flop with Testbench | Sequential Circuits | Vivado Simulator</a>
+
+<a href="https://youtu.be/-Kdbzax9EOQ">Vivado Simulator and Test Bench in Verilog</a>
+
 Quartus에서는 마우스로 Waveform을 그려서 사용했었는데 Vivado에서는 테스트벤치 파일을 작성해야하는 것 같다.
 
 ## 참고자료
