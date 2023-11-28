@@ -12,7 +12,7 @@ tags: []
 
 그러나 영상에서는 `./build`로 결과를 확인하는데 해당 강의를 구매해야 예제 파일들을 받을 수 있었다.
 
-인프런 질문 글<a href="https://www.inflearn.com/questions/450178/build%EC%97%90-%EA%B4%80%ED%95%B4%EC%84%9C">1</a>, <a href="https://www.inflearn.com/questions/752579/vivado-%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98-%EB%94%94%EB%B2%84%EA%B9%85-%EA%B4%80%EB%A0%A8-%EC%A7%88%EB%AC%B8">2</a>에서 `build` 파일의 내용을 확인할 수 있었고 해당 파일에서는 `xvlog`, `xelab`, `xsim` 명령어를 사용하고 있었다.
+인프런 질문 글(<a href="https://www.inflearn.com/questions/450178/build%EC%97%90-%EA%B4%80%ED%95%B4%EC%84%9C">1</a>, <a href="https://www.inflearn.com/questions/752579/vivado-%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98-%EB%94%94%EB%B2%84%EA%B9%85-%EA%B4%80%EB%A0%A8-%EC%A7%88%EB%AC%B8">2</a>)에서 `build` 파일의 내용을 확인할 수 있었고 해당 파일에서는 `xvlog`, `xelab`, `xsim` 명령어를 사용하고 있었다.
 
 Verilog 파일명은 `hello.v` 라고 가정한다.
 
