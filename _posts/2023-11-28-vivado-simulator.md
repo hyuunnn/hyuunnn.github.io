@@ -12,7 +12,7 @@ tags: []
 
 그러나 영상에서는 `./build`로 결과를 확인하는데 해당 강의를 구매해야 예제 파일들을 받을 수 있었다.
 
-<a href="https://www.inflearn.com/questions/450178/build%EC%97%90-%EA%B4%80%ED%95%B4%EC%84%9C">인프런 질문 글</a>에서 `build` 파일의 내용을 확인할 수 있었고 해당 파일에서는 `xvlog`, `xelab`, `xsim` 명령어를 사용하고 있었다.
+인프런 질문 글<a href="https://www.inflearn.com/questions/450178/build%EC%97%90-%EA%B4%80%ED%95%B4%EC%84%9C">1</a>, <a href="https://www.inflearn.com/questions/752579/vivado-%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98-%EB%94%94%EB%B2%84%EA%B9%85-%EA%B4%80%EB%A0%A8-%EC%A7%88%EB%AC%B8">2</a>에서 `build` 파일의 내용을 확인할 수 있었고 해당 파일에서는 `xvlog`, `xelab`, `xsim` 명령어를 사용하고 있었다.
 
 Verilog 파일명은 `hello.v` 라고 가정한다.
 
@@ -56,6 +56,8 @@ $ xelab test -R hello_sim
 ![0](/assets/images/vivado-simulator/4.png)
 
 `-debug wave` 옵션을 사용하면 Waveform을 사용할 수 있는 기능을 제공한다.
+
+`-debug line` 옵션을 사용하면 HDL breakpoint를 설정할 수 있다. 그 외에 다양한 옵션들은 `xelab --help`를 참고한다.
 
 `-s` 옵션을 사용하면 스냅샷 파일이 생성되는 폴더명을 지정할 수 있다.
 
