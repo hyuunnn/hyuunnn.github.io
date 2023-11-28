@@ -91,6 +91,12 @@ xsim hello_sim -gui -wdb hello_waveform.wdb
 
 이때 `Add to Wave Window`를 클릭하면 Waveform 창에 추가할 수 있다.
 
+## 테스트벤치
+
+<a href="https://verilog-hdl-design.tistory.com/14">테스트벤치 작성 예시</a>
+
+Quartus에서는 마우스로 Waveform을 그려서 사용했었는데 Vivado에서는 테스트벤치 파일을 작성해야하는 것 같다.
+
 ## 참고자료
 
 <a href="https://itsembedded.com/dhd/vivado_sim_1/">Series on Vivado Simulator Scripted Flow</a>
