@@ -112,3 +112,5 @@ Quartus에서는 마우스로 Waveform을 그려서 사용했었는데 Vivado에
 <a href="https://yhkwon6658.github.io/2023-01-29/systemverilog-compiler-and-simulator">Window 에서 사용 가능한 System Verilog 컴파일러와 시뮬레이터</a>
 
 <a href="https://docs.xilinx.com/r/en-US/ug900-vivado-logic-simulation/xelab-xvhdl-and-xvlog-xsim-Command-Options">xilinx docs</a>
+
+<a href="https://xilinx.github.io/xup_fpga_vivado_flow/lab1.html">Vivado Design Flow</a>
