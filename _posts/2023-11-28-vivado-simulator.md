@@ -48,7 +48,7 @@ $ xvlog hello.v
 `-R` 옵션을 사용하면 커맨드 창에서 출력 결과를 확인할 수 있다.
 
 ```console
-$ xelab test -R hello_sim
+$ xelab test -R
 ```
 
 위 명령어에서 `test`는 모듈명을 의미한다. Verilog 코드에서 모듈명을 확인하자.
