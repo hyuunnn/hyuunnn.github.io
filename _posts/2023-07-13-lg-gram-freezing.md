@@ -27,3 +27,13 @@ OneDrive 프로그램 때문에 멈춘다는 사람도 있었으나 나는 그�
 ![1](/assets/images/lg-gram-freezing/1.png)
 
 <a href="https://youtu.be/QQi6ZeBiYZs">How to fix Event ID 10016 DistributedCOM ShellServiceHost errors</a> 이거 보고 일단 조치해봄.. 지켜봐야할듯
+
+### 2023-12-18
+
+최근에 프리징 현상이 계속 발생함
+
+디스플레이 전원 절감 기술 사용 안함으로 설정
+
+뭔가 업데이트나 배터리 완충되었을 때, 배터리 충전을 시작했을 때 멈추는 것 같다.
+
+<a href="https://jmoneystudy.tistory.com/184">1</a>, <a href="https://www.lge.co.kr/support/solutions-20150756927988">LG Q/A</a>
