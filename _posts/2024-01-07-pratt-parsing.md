@@ -6,6 +6,8 @@ date: 2024-01-07
 tags: []
 ---
 
+<a href="https://www.yes24.com/Product/Goods/103157156">밑바닥부터 만드는 인터프리터 in Go</a>
+
 <a href="https://eli.thegreenplace.net/2010/01/02/top-down-operator-precedence-parsing">Top-Down operator precedence (Pratt) parsing - Eli Bendersky</a>
 
 <a href="https://crockford.com/javascript/tdop/tdop.html">Top Down Operator Precedence - Douglas Crockford</a> (<a href="https://github.com/douglascrockford/TDOP">Github</a>)
