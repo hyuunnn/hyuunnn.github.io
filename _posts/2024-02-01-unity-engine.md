@@ -12,6 +12,8 @@ tags: []
 
 <a href="https://www.youtube.com/@wergia/playlists">베르의 게임 개발 유튜브</a>
 
+<a href="https://www.youtube.com/@hero11">용사의집TV (코드마스터)</a>
+
 <a href="https://www.yes24.com/Product/Goods/106537338">레트로의 유니티 게임 프로그래밍 에센스</a>
 
 <a href="https://www.yes24.com/Product/Goods/117747780">대마왕의 유니티 URP 셰이더 그래프 스타트업</a>
