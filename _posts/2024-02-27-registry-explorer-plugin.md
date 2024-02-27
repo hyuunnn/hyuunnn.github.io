@@ -40,9 +40,9 @@ tags: [Forensic, Registry, EZ-Tools]
 
 데이터를 출력하는 cs파일과 Registry 데이터 추출에 사용되는 cs파일 2개를 만들어야 한다.
 
-manual에서는 데이터 출력에 사용되는 파일을 ValuesOut.cs으로 사용하는데, github에 있는 파일명들을 보면 꼭 그렇진 않은 것 같다.
+manual에서는 데이터 출력에 사용되는 파일을 `ValuesOut.cs`으로 사용하는데, github에 있는 파일명들을 보면 꼭 그렇진 않은 것 같다.
 
-아무튼 ValuesOut.cs는 IValueOut, 추출 파일은 IRegistryPluginGrid 인터페이스를 구현하면 되며, 다른 플러그인들의 코드를 참고해서 개발하면 된다. 물론 필요한 라이브러리들을 import해서 개발할 수 있다.
+아무튼 `ValuesOut.cs`는 `IValueOut`, 추출 파일은 `IRegistryPluginGrid` 인터페이스를 구현하면 되며, 다른 플러그인들의 코드를 참고해서 개발하면 된다. 물론 필요한 라이브러리들을 import해서 개발할 수 있다.
 
 ![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/11.png)
 
@@ -64,7 +64,7 @@ manual에서는 데이터 출력에 사용되는 파일을 ValuesOut.cs으로 �
 
 그리고 `IRegistryPluginGrid` 인터페이스에 있는 `ProcessValues`의 `return` 값이 테이블의 데이터로 들어간다.
 
-`return` 값은 `var l = new List<ValuesOut>();`으로 생성된 객체에 for loop를 돌면서 `l.Add(ff)`에 의해 추가된다. 
+`var l = new List<ValuesOut>();`으로 생성된 객체에 for loop를 돌면서 `l.Add(ff)`에 의해 추가되며, `l` 변수를 반환한다.
 
 ![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/4.png)
 
