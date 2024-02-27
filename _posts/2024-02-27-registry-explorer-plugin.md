@@ -52,7 +52,7 @@ manual에서는 데이터 출력에 사용되는 파일을 `ValuesOut.cs`으로 
 
 ![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/12.png)
 
-이제 빨간 밑줄이 뜨지 않는다. `IRegistryPluginGrid`에 있는 밑줄은 인터페이스에서 요구하는 메서드들이 구현되어 있지 않았기 때문이다.
+이제 빨간 밑줄이 뜨지 않는다. `IRegistryPluginGrid`에 있는 밑줄은 인터페이스에서 요구하는 메서드들을 구현하지 않았기 때문이다.
 
 ![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/1.png)
 
