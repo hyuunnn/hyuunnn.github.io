@@ -6,9 +6,29 @@ date: 2023-05-28
 tags: [Forensic, Registry, EZ-Tools]
 ---
 
-http://ericzimmerman.github.io/ 에서 RegistryExplorer 다운로드 후 RegistryExplorerManual.pdf 참고
+우선 플러그인을 개발하기 전에 http://ericzimmerman.github.io/ 에서 RegistryExplorer 다운로드 후 압축파일에 있는 `RegistryExplorerManual.pdf`를 받아두자. 플러그인 개발과 관련된 내용이 있다.
 
-<a href="https://github.com/EricZimmerman/RegistryPlugins">RegistryPlugins</a>에서 repo 다운로드 후 sln 파일을 open한다.
+## 환경 세팅
+
+<a href="https://github.com/EricZimmerman/RegistryPlugins">RegistryPlugins</a>에서 repo 다운로드 후 `sln` 파일을 실행한다.
+
+프로젝트에서 사용하는 라이브러리들이 존재하는데, 버전이 같지 않다는 warning 또는 패키지가 없다는 오류가 발생한다.
+
+![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/5.png)
+
+나는 <a href="https://www.nuget.org/packages/">nuget</a>에서 패키지를 수동으로 다운로드 받아서 해결했다.
+
+`도구` -> `NuGet 패키지 관리자` -> `패키지 관리자 설정` -> `패키지 소스`를 보면 사용 가능한 패키지들이 위치한 경로를 확인할 수 있는데, 다운로드한 패키지 파일들이 해당 경로에 위치하면 된다.
+
+![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/6.png)
+
+![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/7.png)
+
+패키지 소스 경로에 파일들을 준비했다면 플러그인을 빌드했을 때 `dll` 파일이 정상적으로 생성된다.
+
+![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/8.png)
+
+## 프로젝트 생성
 
 새 프로젝트의 이름을 `RegistryPlugin.Name` 형식으로 만든다.
 
