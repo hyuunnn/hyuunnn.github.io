@@ -46,9 +46,13 @@ manual에서는 데이터 출력에 사용되는 파일을 `ValuesOut.cs`으로 
 
 ![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/11.png)
 
-개발하기 전에 종속성 패키지에 `RegistryPluginBase`, `Registry`가 없는 것을 확인할 수 있다.
+개발하기 전에 종속성 패키지에 `RegistryPluginBase`가 없는 것을 확인할 수 있다.
 
 환경 설정 파트에서 `nupkg` 파일들을 준비했다면 `프로젝트 오른쪽 클릭` -> `NuGet 패키지 관리` -> 필요한 패키지들을 설치하면 된다.
+
+![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/13.png)
+
+다른 패키지가 추가로 필요하지 않는 이상 대부분의 경우 `RegistryPluginBase`만 설치하면 된다.
 
 ![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/12.png)
 
