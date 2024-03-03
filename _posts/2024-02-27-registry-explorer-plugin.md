@@ -36,6 +36,8 @@ tags: [Forensic, Registry, EZ-Tools]
 
 플러그인 프로젝트에 존재하는 `csproj` 파일을 보면 `netstandard2.0`을 사용하고 있으니, 알맞게 선택하자.
 
+![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/14.png)
+
 ![Registry-Explorer](/assets/images/RegistryExplorer-Plugin/10.png)
 
 데이터를 출력하는 cs파일과 Registry 데이터 추출에 사용되는 cs파일 2개를 만들어야 한다.
